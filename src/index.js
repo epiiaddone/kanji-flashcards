@@ -2,17 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import KanjiDisplay from './KanjiDisplay';
-import AnswerButtons from './AnswerButtons';
-import Score from './Score';
 import Game from './Game';
+import { AppProvider } from './context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Game>
-
-    </Game>
+    <AppProvider>
+    <Game/>
+    </AppProvider>
   </React.StrictMode>
 );
 

@@ -1,13 +1,270 @@
-body {
+:root{
+  --correct-color:#33d662;
+  --false-color:#f2351f;
+  --dont-know-color:orange;
+  --content-box-shadow:0 4px 8px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.5);
+  --app-background-color:#f0efed;
+  --app-background-color-dark:#202021;
+  --app-text-color:black;
+  --app-text-color-dark:beige;
+  --app-button-background-color:#fff;
+  --app-button-background-color-dark:#414145;
+}
+
+  body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    /*slightly lighter in weight */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--app-background-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div{
+  box-sizing:border-box;
+}
+
+.game{
+  position:relative;
+}
+
+.header{
+  --header-top-padding:0.25rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.header__align{
+  padding-top:var(--header-top-padding);
+}
+
+.lesson-select{
+display:flex;
+flex-direction: row;
+position:relative;
+}
+
+.lesson-select > div{
+  margin-left:0.5rem;
+}
+
+.lesson-select__button{
+border-radius:6px;
+background-color: var(--app-button-background-color);
+border: 1px solid #aaa;
+padding-left: 0.5rem;
+padding-right:0.5rem;
+padding-bottom:var(--header-top-padding);
+cursor: pointer;
+}
+
+.lesson-select__window{
+position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--app-background-color);
+}
+
+.lesson-select__window > div{
+  margin: 0.25rem;
+  border-radius: 4px;
+  height: 3rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:bold;
+}
+
+.lesson-select__window > div.highlight-correct{
+  background-color:var(--correct-color);
+}
+
+.lesson-select__window > div.highlight-wrong{
+  background-color:var(--false-color);
+}
+
+.lesson-select__window > div.highlight-dont-know{
+  background-color:var(--dont-know-color);
+}
+
+.lesson-select__window___button{
+  cursor:pointer;
+  background-color: var(--app-button-background-color);
+}
+
+.score{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.score > div{
+  margin-right:1rem;
+}
+
+.score mark{
+  background-color: transparent;
+  font-weight:bold;
+}
+
+.score--correct > mark{
+  color:var(--correct-color);
+}
+
+.score--false > mark{
+  color:var(--false-color);
+}
+
+.kanji-display{
+  width:90%;
+  margin-left: auto;
+  margin-right:auto;
+  color:white;
+  background-color: midnightblue;
+  text-align: center;
+  align-items: center;
+  border-radius:10px;
+  box-shadow: var(--content-box-shadow);
+}
+
+.kanji-display__text{
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:700px){
+  .kanji-display__text{
+    font-size:4rem;
+  }
+}
+
+.highlight-correct{
+  background-color:var(--correct-color);
+}
+
+.highlight-correct-color{
+  color:var(--correct-color);
+}
+
+.highlight-wrong{
+  background-color:var(--false-color);
+}
+
+.highlight-wrong-color{
+  color:var(--false-color);
+}
+
+.highlight-dont-know{
+  background-color:var(--dont-know-color);
+}
+
+.highlight-dont-know-color{
+  color:var(--dont-know-color);
+}
+
+.answer-buttons{
+  margin-top:1rem;
+  width:90%;
+  margin-right: auto;
+  margin-left:auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.answer-buttons > div{
+  border-radius:4px;
+  text-align: center;
+  width: 6.5rem;
+  height: 3rem;
+  margin: 0.25rem;
+  box-shadow: var(--content-box-shadow);
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  cursor:pointer;
+  padding:0.1rem;
+}
+
+@media (min-width:1100px){
+  .answer-buttons > div{
+    width:8rem;
+    height:4rem;
+  }
+}
+
+
+.answer-buttons > div.dont-know{
+  background-color: var(--dont-know-color);
+}
+
+
+.answer-buttons__card{
+  background-color: var(--app-button-background-color);
+}
+
+.game-over{
+  position: absolute;
+    width: 100%;
+    background-color: var(--app-background-color);
+    height: 100vh;
+    top: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-over__percent{
+  text-align: center;
+  font-size:6rem;
+}
+
+.game-over__button{
+  border-radius:6px;
+background-color: var(--app-button-background-color);
+border: 1px solid #aaa;
+padding-left: 0.5rem;
+padding-right:0.5rem;
+padding-bottom:var(--header-top-padding);
+cursor: pointer;
+text-align: center;
+margin-top:3rem;
+padding:1rem;
+font-size:2rem;
+}
+
+.toggle-container{
+
+}
+
+.dark-toggle{
+  background: transparent;
+  border-color: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color:inherit;
+}
+
+.toggle-icon{
+  font-size: 1.5rem;
+}
+
+.dark-theme{
+  background-color:var(--app-background-color-dark);
+  color:var(--app-text-color-dark);
+}
+
+.button_dark-theme{
+  background-color: var(--app-button-background-color-dark);
 }

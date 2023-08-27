@@ -1,0 +1,27 @@
+.answer-buttons{
+    margin-top:1rem;
+    width:90%;
+    margin-right: auto;
+    margin-left:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .answer-buttons > div{
+    background-color: #fff;
+    border-radius:4px;
+    text-align: center;
+    width: 6rem;
+    height: 3rem;
+    margin: 0.25rem;
+    box-shadow: var(--content-box-shadow);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+  }
+  
+  .answer-buttons > div.dont-know{
+    background-color: var(--dont-know-color);
+  }
