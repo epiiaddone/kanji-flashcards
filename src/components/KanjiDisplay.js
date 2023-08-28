@@ -5,6 +5,7 @@ import heisig_kanji from '../data/kanji-data';
 export default function KanjiDisplay({gameVisible}){
     const {currentQuestion} = useAnswerContext();
     const {lesson} = useLessonContext();
+    if(lesson === 'none') return;
 
     if(!gameVisible) return(<></>);    
     else return(

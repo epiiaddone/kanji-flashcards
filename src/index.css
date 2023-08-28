@@ -9,6 +9,15 @@
   --app-text-color-dark:beige;
   --app-button-background-color:#fff;
   --app-button-background-color-dark:#414145;
+  --score-90-color:rgb(40, 170, 10);
+  --score-80-color: rgb(60, 150, 10);
+  --score-70-color: rgb(80, 130, 10);
+  --score-60-color: rgb(100, 110, 10);
+  --score-50-color: rgb(120, 90, 10);
+  --score-40-color: rgb(140, 70, 10);
+  --score-30-color: rgb(160, 50, 10);
+  --score-20-color: rgb(180, 30, 10);
+  --score-10-color: rgb(200, 10, 10);
 }
 
   body {
@@ -66,7 +75,6 @@ cursor: pointer;
 
 .lesson-select__window{
 position: absolute;
-    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--app-background-color);
@@ -267,4 +275,32 @@ font-size:2rem;
 
 .button_dark-theme{
   background-color: var(--app-button-background-color-dark);
+}
+
+.score-90{
+  background-color: var(--score-90-color);
+}
+.score-80{
+  background-color: var(--score-80-color);
+}
+.score-70{
+  background-color: var(--score-70-color);
+}
+.score-60{
+  background-color: var(--score-60-color);
+}
+.score-50{
+  background-color: var(--score-50-color);
+}
+.score-40{
+  background-color: var(--score-40-color);
+}
+.score-30{
+  background-color: var(--score-30-color);
+}
+.score-20{
+  background-color: var(--score-20-color);
+}
+.score-10{
+  background-color: var(--score-10-color);
 }

@@ -8,6 +8,7 @@ export default function Score(){
 
     const {highlight, falseCount, correctCount} = useAnswerContext();
     const {lesson} = useLessonContext();
+    if(lesson === 'none') return;
 
     const questionsRemaining = heisig_kanji[lesson].length - falseCount - correctCount;
 

@@ -6,24 +6,29 @@ import { useLessonContext } from '../context/lesson_context';
 
 export default function AnswerButtons({gameVisible, handleDontKnowClick}){
     const { isDarkTheme } = useThemeContext();
-    const {verifyAnswer, answersActive, answerOrder} = useAnswerContext();
+    const {verifyAnswer, answersActive} = useAnswerContext();
+    const {answerOrder} = useLessonContext();
     const {lesson} = useLessonContext();
 
-    const modifiedOnAnswerClick = answersActive ? verifyAnswer : null;
+    if(lesson === 'none') return;
 
+    const modifiedOnAnswerClick = answersActive ? verifyAnswer : null;
+    console.log('AB-lesson[' + lesson + ']')
     console.log('AB' + answerOrder);
 
     if(!gameVisible) return(<></>);
     else return(
     <div className="answer-buttons">
-        {answerOrder.map(answer => (
+        {answerOrder.map(answer => {
+            return(
         <div className={isDarkTheme ? "answer-buttons__card button_dark-theme" : "answer-buttons__card"}
             onClick={modifiedOnAnswerClick}
             key={answer}
             data-id={heisig_kanji[lesson][answer][0]}>
                 {heisig_kanji[lesson][answer][2]}           
         </div>
-        ))}
+            )}
+        )}
         <DontKnow
         gameVisible={gameVisible}
         onDontKnowClick={handleDontKnowClick}

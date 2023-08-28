@@ -14,6 +14,7 @@ import kanjiDataStats from "../data/kanji-data-stats";
 
 import shuffleArray from "../utils/shuffleArray";
 import { useAnswerContext } from "../context/answer_context";
+import { useLessonContext } from "../context/lesson_context";
 
 
 export default function Game(){
@@ -29,11 +30,14 @@ export default function Game(){
     const {
         isQuestionsComplete,
         lesson,
-        questionOrder,
         questionNumber,
         correctCount,
         falseCount
         } = useAnswerContext();
+
+    const {
+        questionOrder
+    } = useLessonContext();
 
     if(isQuestionsComplete) questionNumber--;
 
