@@ -1,11 +1,15 @@
 import heisig_kanji from '../data/kanji-data';
 import DontKnow from './DontKnow';
-import { useGlobalContext } from '../context';
+import { useThemeContext } from '../context/theme_context';
+import { useAnswerContext } from '../context/answer_context';
+import { useLessonContext } from '../context/lesson_context';
 
-export default function AnswerButtons({gameVisible, lesson, answerOrder, onAnswerClick, answersActive, handleDontKnowClick}){
+export default function AnswerButtons({gameVisible, handleDontKnowClick}){
+    const { isDarkTheme } = useThemeContext();
+    const {verifyAnswer, answersActive, answerOrder} = useAnswerContext();
+    const {lesson} = useLessonContext();
 
-    const { isDarkTheme } = useGlobalContext();
-    const modifiedOnAnswerClick = answersActive ? onAnswerClick : null;
+    const modifiedOnAnswerClick = answersActive ? verifyAnswer : null;
 
     console.log('AB' + answerOrder);
 

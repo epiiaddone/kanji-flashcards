@@ -1,7 +1,12 @@
- import heisig_kanji from '../data/kanji-data';
+ import { useAnswerContext } from '../context/answer_context';
+import { useLessonContext } from '../context/lesson_context';
+import heisig_kanji from '../data/kanji-data';
 
-export default function KanjiDisplay({gameVisible, lesson, currentQuestion}){
-    if(!gameVisible) return(<></>);
+export default function KanjiDisplay({gameVisible}){
+    const {currentQuestion} = useAnswerContext();
+    const {lesson} = useLessonContext();
+
+    if(!gameVisible) return(<></>);    
     else return(
         <div className="kanji-display">
             <div className="kanji-display__text" 
