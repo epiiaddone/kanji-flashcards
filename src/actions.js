@@ -5,3 +5,5 @@ export const NEXT_QUESTION = 'NEXT_QUESTION';
 export const LOAD_GAME = 'LOAD_GAME';
 export const LESSON_SELECTED = 'LESSON_SELECTED';
 export const OPEN_LESSON_SELECT = 'OPEN_LESSON_SELECT';
+export const GAME_OVER = 'GAME_OVER';
+export const SELECT_NEXT = 'SELECT_NEXT';

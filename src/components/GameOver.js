@@ -1,18 +1,21 @@
+import { useLessonContext } from "../context/lesson_context";
 import { useThemeContext } from "../context/theme_context";
+import { getScoreColorClassName } from "../utils/scoreColors";
 
-export default function GameOver({isQuestionsComplete, correctPercent, onSelectNextClick}){
+export default function GameOver(){
     const {isDarkTheme} = useThemeContext();
-    
-    let percentColorClass = 'highlight-wrong-color';
-    if(correctPercent > 50) percentColorClass = 'highlight-dont-know-color';
-    if(correctPercent > 80) percentColorClass = 'highlight-correct-color';
+    const {isGameOver, gameOver, correctPercent, selectNext} = useLessonContext();
 
-    if(isQuestionsComplete) return(
+    if(!isGameOver) return;
+    
+    const percentColorClass = getScoreColorClassName(correctPercent)
+
+    return(
         <div className={ isDarkTheme ? "game-over dark-theme" : "game-over dark-theme"}>
             <div className={percentColorClass + " game-over__percent"}>{correctPercent}%</div>
             <div
                 className={ isDarkTheme ? "game-over__button button_dark-theme" :"game-over__button"}
-                onClick={onSelectNextClick}>
+                onClick={selectNext}>
                     Select Next Level</div>
         </div>
     )

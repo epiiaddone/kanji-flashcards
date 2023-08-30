@@ -1,4 +1,3 @@
-import { useAnswerContext } from "../context/answer_context";
 import { useLessonContext } from "../context/lesson_context";
 
 import heisig_kanji from "../data/kanji-data";
@@ -6,8 +5,7 @@ import heisig_kanji from "../data/kanji-data";
 
 export default function Score(){
 
-    const {highlight, falseCount, correctCount} = useAnswerContext();
-    const {lesson} = useLessonContext();
+    const {highlight, falseCount, correctCount, lesson} = useLessonContext();
     if(lesson === 'none') return;
 
     const questionsRemaining = heisig_kanji[lesson].length - falseCount - correctCount;

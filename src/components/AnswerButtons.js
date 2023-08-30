@@ -1,14 +1,11 @@
 import heisig_kanji from '../data/kanji-data';
 import DontKnow from './DontKnow';
 import { useThemeContext } from '../context/theme_context';
-import { useAnswerContext } from '../context/answer_context';
 import { useLessonContext } from '../context/lesson_context';
 
 export default function AnswerButtons({gameVisible, handleDontKnowClick}){
     const { isDarkTheme } = useThemeContext();
-    const {verifyAnswer, answersActive} = useAnswerContext();
-    const {answerOrder} = useLessonContext();
-    const {lesson} = useLessonContext();
+    const {answerOrder, verifyAnswer, answersActive, lesson} = useLessonContext();
 
     if(lesson === 'none') return;
 
