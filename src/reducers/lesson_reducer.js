@@ -8,7 +8,7 @@ import {
     DONT_KNOW_ANSWER,
     NEXT_QUESTION,
     GAME_OVER,
-    SELECT_NEXT
+    RESET
 } from '../actions';
 
 const lesson_reducer = (state,action)=>{
@@ -33,11 +33,23 @@ const lesson_reducer = (state,action)=>{
     if(action.type=== OPEN_LESSON_SELECT){
         return{
             ...state,
+            isLessonSelectOpen: true,
+            isGameOver:false
+        }
+    }
+
+    if(action.type === RESET){
+        return{
+            ...state,
             lesson:'none',
             questionOrder:[0],
             answerOrder:[0],
-            isLessonSelectOpen: true,
-            gameOver:false
+            correctCount:0,
+            falseCount:0,
+            questionNumber:1,
+            correctPercent:0,
+            highlight:'',
+            answersActive:true
         }
     }
 
@@ -81,16 +93,9 @@ const lesson_reducer = (state,action)=>{
     if(action.type === GAME_OVER){
         return{
             ...state,
-            gameOver: true,
+            isGameOver: true,
             correctPercent: action.payload,
         }
-        }
-    
-        if(action.type === SELECT_NEXT){
-            return{
-                ...state,
-                gameOver:false
-            }
         }
 
     throw new Error(`No Matching "${action.type}" - action type`)

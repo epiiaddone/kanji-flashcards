@@ -31,7 +31,7 @@ export default function LessonSelect(){
                             //use map because the keys are not in the same order for objects
                             keys.map(lesson =>{
                                 const lessonScore = localStorage.getItem(lesson);
-                                const scoreColorClass = getScoreColorClassName(lessonScore);
+                                const scoreColorClass = getScoreColorClassName(lessonScore, 'bg');
                                 return(
                                 <div className={ 
                                         isDarkTheme ? 

@@ -4,11 +4,11 @@ import { getScoreColorClassName } from "../utils/scoreColors";
 
 export default function GameOver(){
     const {isDarkTheme} = useThemeContext();
-    const {isGameOver, gameOver, correctPercent, selectNext} = useLessonContext();
+    const {isGameOver, correctPercent, selectNext} = useLessonContext();
 
     if(!isGameOver) return;
     
-    const percentColorClass = getScoreColorClassName(correctPercent)
+    const percentColorClass = getScoreColorClassName(correctPercent, 'text')
 
     return(
         <div className={ isDarkTheme ? "game-over dark-theme" : "game-over dark-theme"}>

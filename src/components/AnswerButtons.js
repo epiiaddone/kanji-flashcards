@@ -10,11 +10,10 @@ export default function AnswerButtons({gameVisible, handleDontKnowClick}){
     if(lesson === 'none') return;
 
     const modifiedOnAnswerClick = answersActive ? verifyAnswer : null;
-    console.log('AB-lesson[' + lesson + ']')
-    console.log('AB' + answerOrder);
+    //console.log('AB-lesson[' + lesson + ']')
+    //console.log('AB-answerOrder' + answerOrder);
 
-    if(!gameVisible) return(<></>);
-    else return(
+    return(
     <div className="answer-buttons">
         {answerOrder.map(answer => {
             return(

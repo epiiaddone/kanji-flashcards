@@ -14,8 +14,8 @@ import {
     DONT_KNOW_ANSWER,
     NEXT_QUESTION,
     GAME_OVER,
+    RESET
 } from '../actions';
-
 
 
 const initialState ={
@@ -46,7 +46,7 @@ export const LessonProvider = ({children})=>{
         const tempArray2 = [];
         let counter = 0;
   
-        console.log('in use effect');
+       // console.log('in use effect');
   
         heisig_kanji[state.lesson].map(item => {
             tempArray1.push(counter);
@@ -60,7 +60,8 @@ export const LessonProvider = ({children})=>{
 
 
     const openLessonSelect = ()=>{
-        dispatch({type:OPEN_LESSON_SELECT})
+        dispatch({type:OPEN_LESSON_SELECT});
+        dispatch({type:RESET});
     }
 
     const selectLesson = (e)=>{
@@ -71,13 +72,13 @@ export const LessonProvider = ({children})=>{
     let currentQuestion = state.questionOrder[state.questionNumber - 1];
 
     const gameOver = ()=>{
-      const correctPercent = state.questionNumber > 1 ?
+      const newCorrectPercent = state.questionNumber > 1 ?
         Math.round(state.correctCount / state.questionNumber * 100) : 0;
 
-      localStorage.setItem(state.lesson, state.correctPercent);
+      localStorage.setItem(state.lesson, newCorrectPercent);
 
       setTimeout(()=>{
-        dispatch({type:GAME_OVER, payload:correctPercent})
+        dispatch({type:GAME_OVER, payload:newCorrectPercent})
       },QUESTION_DELAY)
     }
 
@@ -132,6 +133,7 @@ export const LessonProvider = ({children})=>{
     
     const selectNext = ()=>{
       dispatch({type:OPEN_LESSON_SELECT})
+      dispatch({type:RESET});
     }
 
     return (
@@ -141,7 +143,6 @@ export const LessonProvider = ({children})=>{
             currentQuestion,
             verifyAnswer,
             dontKnowClick,
-            gameOver,
             selectNext,
             openLessonSelect,
             selectLesson
