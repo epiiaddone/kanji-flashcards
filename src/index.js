@@ -12,9 +12,11 @@ import './css/header.css';
 import './css/highlight.css';
 import './css/kanji-display.css';
 import './css/lesson-select.css';
-import './css/score-colors.css';
 import './css/score.css';
-import './css/theme-toggle.css';//import last as overwrites
+
+// this order of import as overwrite colors
+import './css/theme-toggle.css';
+import './css/score-colors.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
