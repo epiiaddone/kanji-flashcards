@@ -15,3 +15,9 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+  
+  @media (min-width:700px){
+    .kanji-display__text{
+      font-size:4rem;
+    }
+  }

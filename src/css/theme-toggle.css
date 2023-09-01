@@ -1,0 +1,21 @@
+.dark-toggle{
+    background: transparent;
+    border-color: transparent;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    color:inherit;
+  }
+  
+  .toggle-icon{
+    font-size: 1.5rem;
+  }
+  
+  .dark-theme{
+    background-color:var(--app-background-color-dark);
+    color:var(--app-text-color-dark);
+  }
+  
+  .button_dark-theme{
+    background-color: var(--app-button-background-color-dark);
+  }

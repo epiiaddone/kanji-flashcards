@@ -1,0 +1,13 @@
+.header{
+    --header-top-padding:0.25rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  
+  .header__align{
+    padding-top:var(--header-top-padding);
+  }
+  

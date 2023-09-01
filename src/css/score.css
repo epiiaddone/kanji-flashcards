@@ -1,0 +1,22 @@
+.score{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .score > div{
+    margin-right:1rem;
+  }
+  
+  .score mark{
+    background-color: transparent;
+    font-weight:bold;
+  }
+  
+  .score--correct > mark{
+    color:var(--correct-color);
+  }
+  
+  .score--false > mark{
+    color:var(--false-color);
+  }
