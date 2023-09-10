@@ -5,7 +5,14 @@ import { useLessonContext } from '../context/lesson_context';
 
 export default function AnswerButtons({gameVisible, handleDontKnowClick}){
     const { isDarkTheme } = useThemeContext();
-    const {answerOrder, verifyAnswer, answersActive, lesson} = useLessonContext();
+    const {
+        answerOrder,
+        verifyAnswer,
+        answersActive,
+        lesson,
+        highlight,
+        highlightAnswerId,
+        } = useLessonContext();
 
     if(lesson === 'none') return;
 
@@ -13,11 +20,20 @@ export default function AnswerButtons({gameVisible, handleDontKnowClick}){
     //console.log('AB-lesson[' + lesson + ']')
     //console.log('AB-answerOrder' + answerOrder);
 
+    const classNameString = isDarkTheme ? "answer-buttons__card button_dark-theme" : "answer-buttons__card";
+    let highlightClassName = '';
+    if(highlight === 'correct') highlightClassName = 'highlight-correct';
+    if(highlight === 'wrong') highlightClassName = 'highlight-wrong';
+    if(highlight === 'dont-know') highlightClassName = 'highlight-dont-know';
+    highlightClassName = classNameString + ' ' + highlightClassName;
+
     return(
     <div className="answer-buttons">
         {answerOrder.map(answer => {
             return(
-        <div className={isDarkTheme ? "answer-buttons__card button_dark-theme" : "answer-buttons__card"}
+        <div
+            className={heisig_kanji[lesson][answer][0] === highlightAnswerId? 
+                highlightClassName : classNameString}
             onClick={modifiedOnAnswerClick}
             key={answer}
             data-id={heisig_kanji[lesson][answer][0]}>

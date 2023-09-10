@@ -9,13 +9,14 @@ import './index.css';
 import './css/answer-buttons.css';
 import './css/game-over.css';
 import './css/header.css';
-import './css/highlight.css';
 import './css/kanji-display.css';
+import './css/kanji-info.css';
 import './css/lesson-select.css';
 import './css/score.css';
 
-// this order of import as overwrite colors
+// this order is import as overwrite colors
 import './css/theme-toggle.css';
+import './css/highlight.css';
 import './css/score-colors.css';
 
 

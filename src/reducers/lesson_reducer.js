@@ -49,7 +49,9 @@ const lesson_reducer = (state,action)=>{
             questionNumber:1,
             correctPercent:0,
             highlight:'',
-            answersActive:true
+            answersActive:true,
+            isShowInfo:false,
+            highlightAnswerId:null
         }
     }
 
@@ -58,7 +60,9 @@ const lesson_reducer = (state,action)=>{
             ...state,
             highlight: 'dont-know',
             answersActive: false,
-            falseCount: state.falseCount + 1
+            falseCount: state.falseCount + 1,
+            isShowInfo:true,
+            highlightAnswerId: action.payload
         }
     }
 
@@ -68,7 +72,9 @@ const lesson_reducer = (state,action)=>{
             ...state,
             highlight: 'correct',
             answersActive: false,
-            correctCount: state.correctCount + 1
+            correctCount: state.correctCount + 1,
+            isShowInfo:true,
+            highlightAnswerId: action.payload
         }
     }
 
@@ -77,16 +83,21 @@ const lesson_reducer = (state,action)=>{
             ...state,
             highlight: 'wrong',
             answersActive: false,
-            falseCount: state.falseCount + 1
+            falseCount: state.falseCount + 1,
+            isShowInfo:true,
+            highlightAnswerId: action.payload
         }
     }
 
     if(action.type === NEXT_QUESTION){
+        //console.log('NEXT_QUESTION RUN')
         return{
             ...state,
             highlight: '',
             answersActive: true,
-            questionNumber: state.questionNumber + 1
+            questionNumber: state.questionNumber + 1,
+            isShowInfo:false,
+            highlightAnswerId:null
         }
     }
 

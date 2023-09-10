@@ -30,9 +30,9 @@ const initialState ={
   lesson: '1',
   questionOrder: [0],
   answerOrder: [0],
+  isShowInfo: false,
+  highlightAnswerId:null
 }
-
-const QUESTION_DELAY = 1000;
 
 const LessonContext = createContext();
 
@@ -58,6 +58,24 @@ export const LessonProvider = ({children})=>{
           dispatch({type:LOAD_GAME, payload: {tempArray1, tempArray2}})
     },[state.lesson])
 
+    //event listener is using stale state, so have to add each time state changes
+    useEffect(()=>{
+      if(state.isShowInfo){ window.addEventListener('keypress', spacePressed);
+      //console.log('window event listener added')
+      }
+      return ()=>{
+        window.removeEventListener('keypress', spacePressed);
+        //console.log('window event listener removed')
+      } 
+    }, [state.isShowInfo]);
+
+    const spacePressed = (e)=>{      
+      const SPACE_KEY_CODE = 32;
+      if(e.keyCode === SPACE_KEY_CODE){
+        //console.log('next question')
+        nextQuestion();
+      }
+    }
 
     const openLessonSelect = ()=>{
         dispatch({type:OPEN_LESSON_SELECT});
@@ -77,57 +95,34 @@ export const LessonProvider = ({children})=>{
 
       localStorage.setItem(state.lesson, newCorrectPercent);
 
-      setTimeout(()=>{
-        dispatch({type:GAME_OVER, payload:newCorrectPercent})
-      },QUESTION_DELAY)
+       dispatch({type:GAME_OVER, payload:newCorrectPercent})
+
     }
 
 
     const verifyAnswer = (e)=>{
-      const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
-
-      if(heisig_kanji[state.lesson][currentQuestion][0] === e.target.getAttribute('data-id')){
-        dispatch({type: CORRECT_ANSWER})
-        e.target.style.backgroundColor='#33d662';
-        if(isLastQuestion){
-         gameOver();
-         return;
-        }
-        setTimeout(()=>{
-          dispatch({type:NEXT_QUESTION})
-          e.target.style.backgroundColor='';
-        }
-          ,QUESTION_DELAY)
+      const clickedAnswerId = e.target.getAttribute('data-id')
+      
+      if(heisig_kanji[state.lesson][currentQuestion][0] === clickedAnswerId){
+        dispatch({type: CORRECT_ANSWER, payload:clickedAnswerId})
       }else{
-        dispatch({type: INCORRECT_ANSWER})
-        e.target.style.backgroundColor='#f2351f';
-        if(isLastQuestion){
-          gameOver();
-          return;
-         }
-        setTimeout(()=>{
-          dispatch({type:NEXT_QUESTION})
-          e.target.style.backgroundColor='';
-        }
-        ,QUESTION_DELAY)
+        dispatch({type: INCORRECT_ANSWER, payload:clickedAnswerId})
       }
     }
 
-    const dontKnowClick = ()=>{
+    const dontKnowClick = ()=>{      ; 
+      dispatch({type:DONT_KNOW_ANSWER, payload:heisig_kanji[state.lesson][currentQuestion][0]})
+    }
+
+    const nextQuestion = ()=>{
+      //console.log('nextQuestion:isShowInfo', state.isShowInfo)
+      if(!state.isShowInfo) return;
       const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
-      dispatch({type:DONT_KNOW_ANSWER})
-      const correctAnswer = heisig_kanji[state.lesson][currentQuestion][0];
-      const correctAnswerElement = document.querySelector(
-        '.answer-buttons__card[data-id="' + correctAnswer + '"]');
-        correctAnswerElement.style.backgroundColor='orange';
-        if(isLastQuestion){
-          gameOver();
-          return;
-         }
-      setTimeout(()=>{
-        dispatch({type:NEXT_QUESTION})
-        correctAnswerElement.style.backgroundColor='';
-      },QUESTION_DELAY)
+      if(isLastQuestion){
+        gameOver();
+        return;
+       }
+      dispatch({type:NEXT_QUESTION})
     }
 
     

@@ -1,0 +1,23 @@
+.kanji-info{
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+    color:white;
+    background-color: midnightblue;
+    text-align: center;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: var(--content-box-shadow);
+  }
+  
+  .kanji-info__character{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  @media (min-width:700px){
+    .kanji-info__character{
+      font-size:4rem;
+    }
+  }
