@@ -14,7 +14,7 @@ const heisig_kanji_map = new Map([
 ['11','口','mouth','口, くち, mouth',''],
 ['12','日','day','日, にち, day',''],
 ['13','月','month','月, つき, month',''],
-['14','田','rice field', '田舎, inaka, rural area',''],
+['14','田','rice field', '田舎, いなか, rural area',''],
 ['15','目','eye','項目, こうもく, item','']
 ]],
 ['2',

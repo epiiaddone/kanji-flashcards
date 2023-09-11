@@ -58,25 +58,6 @@ export const LessonProvider = ({children})=>{
           dispatch({type:LOAD_GAME, payload: {tempArray1, tempArray2}})
     },[state.lesson])
 
-    //event listener is using stale state, so have to add each time state changes
-    useEffect(()=>{
-      if(state.isShowInfo){ window.addEventListener('keypress', spacePressed);
-      //console.log('window event listener added')
-      }
-      return ()=>{
-        window.removeEventListener('keypress', spacePressed);
-        //console.log('window event listener removed')
-      } 
-    }, [state.isShowInfo]);
-
-    const spacePressed = (e)=>{      
-      const SPACE_KEY_CODE = 32;
-      if(e.keyCode === SPACE_KEY_CODE){
-        //console.log('next question')
-        nextQuestion();
-      }
-    }
-
     const openLessonSelect = ()=>{
         dispatch({type:OPEN_LESSON_SELECT});
         dispatch({type:RESET});
@@ -115,8 +96,6 @@ export const LessonProvider = ({children})=>{
     }
 
     const nextQuestion = ()=>{
-      //console.log('nextQuestion:isShowInfo', state.isShowInfo)
-      if(!state.isShowInfo) return;
       const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
       if(isLastQuestion){
         gameOver();
@@ -140,7 +119,8 @@ export const LessonProvider = ({children})=>{
             dontKnowClick,
             selectNext,
             openLessonSelect,
-            selectLesson
+            selectLesson,
+            nextQuestion
           }}
         >
           {children}

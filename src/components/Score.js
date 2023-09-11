@@ -2,7 +2,6 @@ import { useLessonContext } from "../context/lesson_context";
 
 import heisig_kanji from "../data/kanji-data";
 
-
 export default function Score(){
 
     const {highlight, falseCount, correctCount, lesson} = useLessonContext();
@@ -19,7 +18,7 @@ export default function Score(){
 <div className={highlightClassName + " score header__align"}>
     <div className="score--correct"><mark>✓</mark> {correctCount}</div>
     <div className="score--false"><mark>✘</mark> {falseCount}</div>
-    <div className="score--remaining">Remaining: {questionsRemaining}</div>
+    <div className="score--remaining">Left: {questionsRemaining}</div>
 </div>
     );
 }
