@@ -10,4 +10,12 @@
   .header__align{
     padding-top:var(--header-top-padding);
   }
+
+  @media(min-width:500px){
+    .header{
+      width:90%;
+      margin-left: auto;
+    margin-right: auto;
+    }
+  }
   

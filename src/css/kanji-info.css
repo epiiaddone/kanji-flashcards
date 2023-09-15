@@ -35,7 +35,7 @@
     gap:0.5rem;
   }
   
-  @media (min-width:700px){
+  @media (min-width:500px){
     .kanji-info__character{
       font-size:4rem;
     }
@@ -43,6 +43,18 @@
       font-size:1rem;
     }
     .kanji-info{
-      font-size:1.2rem;
+      font-size:1.5rem;
+    }
+  }
+
+  @media (min-width:900px){
+    .kanji-info__character{
+      font-size:5rem;
+    }
+    .kanji-info--label{
+      font-size:1.5rem;
+    }
+    .kanji-info{
+      font-size:2rem;
     }
   }
