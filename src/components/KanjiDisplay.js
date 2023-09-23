@@ -28,13 +28,17 @@ export default function KanjiDisplay(){
                 <div className="kanji-info__word">
                     <div className="kanji-info__word--text">
                     <span className="kanji-info--label">Example: </span><br></br>
+                    <span className="kanji-info__example">
                     {heisig_kanji[lesson][currentQuestion][3] ? heisig_kanji[lesson][currentQuestion][3] : 'N/A'}
+                    </span>
                     </div>
                 </div>
                 <div className="kanji-info__components">
                     <div className="kaji-info__components--text">
                     <span className="kanji-info--label">Mnemonic: </span><br></br>
-                    {heisig_kanji[lesson][currentQuestion][4] ? heisig_kanji[lesson][currentQuestion][4] : 'N/A'}
+                    <span className="kanji-info__mneonic">
+                        {heisig_kanji[lesson][currentQuestion][4] ? heisig_kanji[lesson][currentQuestion][4] : 'N/A'}
+                    </span>
                     </div>
                 </div>
                 <div

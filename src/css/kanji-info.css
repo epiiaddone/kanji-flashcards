@@ -37,6 +37,19 @@
 
   .kaji-info__components--text{
     font-size:0.8rem;
+    text-transform: uppercase;
+  }
+
+  .kanji_info__word--text{
+    font: size 1.2rem;
+  }
+
+  .kanji-info__example{
+    font-size:1.2rem;
+  }
+
+  .kanji-info__mnemonic{
+    font-size:1rem;
   }
   
   @media (min-width:500px){
@@ -50,6 +63,10 @@
       font-size:1.5rem;
     }
 
+    .kanji-info__example{
+      font-size:1.5rem;
+    }
+
     .kaji-info__components--text{
       font-size:1rem;
     }
@@ -59,10 +76,10 @@
     .kanji-info__character{
       font-size:5rem;
     }
-    .kanji-info--label{
-      font-size:1.5rem;
-    }
     .kanji-info{
+      font-size:2rem;
+    }
+    .kanji-info__example{
       font-size:2rem;
     }
   }
