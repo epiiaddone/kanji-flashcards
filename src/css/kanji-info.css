@@ -4,10 +4,13 @@
   margin-right: auto;
   color: white;
   background-color: midnightblue;
-  text-align: center;
-  align-items: center;
   border-radius: 10px;
   box-shadow: var(--content-box-shadow);
+}
+
+.kanji-info__container {
+  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -15,9 +18,18 @@
   gap: 0.5rem;
 }
 
-.kanji-info__continue {
+.kanji-info__next-question {
+  all: unset;
   font-size: 0.8rem;
   cursor: pointer;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 6px;
+  left: 100%;
+  translate: calc(-100% - 0.5rem);
+  bottom: 0.5rem;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
 }
 
 .kanji-info__character {
@@ -36,8 +48,8 @@
 }
 
 
-.kanji-info__mneonic {
-  font-size: 0.8rem;
+.kanji-info__mnemonic {
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -49,9 +61,6 @@
   font-size: 1.2rem;
 }
 
-.kanji-info__mnemonic {
-  font-size: 1rem;
-}
 
 @media (min-width:500px) {
   .kanji-info__character {
@@ -86,5 +95,9 @@
 
   .kanji-info__example {
     font-size: 2rem;
+  }
+
+  .kanji-info__mnemonic {
+    font-size: 1.2rem;
   }
 }

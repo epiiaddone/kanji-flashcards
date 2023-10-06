@@ -8,3 +8,4 @@ export const OPEN_LESSON_SELECT = 'OPEN_LESSON_SELECT';
 export const GAME_OVER = 'GAME_OVER';
 export const SELECT_NEXT = 'SELECT_NEXT';
 export const RESET = 'RESET';
+export const SET_BUTTON_ORDER = 'SET_BUTTON_ORDER';

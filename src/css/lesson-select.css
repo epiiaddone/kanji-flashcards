@@ -1,54 +1,64 @@
-.lesson-select{
-    display:flex;
-    flex-direction: row;
-    position:relative;
-    }
-    
-    .lesson-select > div{
-      margin-left:0.5rem;
-    }
-    
-    .lesson-select__button{
-    border-radius:6px;
-    background-color: var(--app-button-background-color);
-    border: 1px solid #aaa;
-    padding-left: 0.5rem;
-    padding-right:0.5rem;
-    padding-bottom:var(--header-top-padding);
-    cursor: pointer;
-    }
-    
-    .lesson-select__window{
-    position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: var(--app-background-color);
-    }
-    
-    .lesson-select__window > div{
-      margin: 0.25rem;
-      border-radius: 4px;
-      height: 3rem;
-      width: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight:bold;
-    }
-    
-    .lesson-select__window > div.highlight-correct{
-      background-color:var(--correct-color);
-    }
-    
-    .lesson-select__window > div.highlight-wrong{
-      background-color:var(--false-color);
-    }
-    
-    .lesson-select__window > div.highlight-dont-know{
-      background-color:var(--dont-know-color);
-    }
-    
-    .lesson-select__window___button{
-      cursor:pointer;
-      background-color: var(--app-button-background-color);
-    }
+.lesson-select {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.lesson-select>div {
+  margin-left: 0.5rem;
+}
+
+.lesson-select__button {
+  border-radius: 6px;
+  background-color: var(--app-button-background-color);
+  border: 1px solid #aaa;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: var(--header-top-padding);
+  cursor: pointer;
+}
+
+.lesson-select__open {
+  position: absolute;
+  background-color: var(--app-background-color);
+  left: 0;
+}
+
+.lesson-select__window {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--app-background-color);
+  justify-content: center;
+}
+
+.lesson-select__window>div {
+  margin: 0.25rem;
+  border-radius: 4px;
+  height: 3rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.lesson-select__window___button {
+  cursor: pointer;
+  background-color: var(--app-button-background-color);
+}
+
+.lesson-select__order {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.lesson-select__order--btn {
+  all: unset;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: var(--app-button-background-color);
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+}

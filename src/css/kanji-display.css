@@ -1,22 +1,22 @@
-.kanji-display{
-    width:90%;
-    margin-left: auto;
-    margin-right:auto;
-    color:white;
-    background-color: midnightblue;
-    text-align: center;
-    border-radius:10px;
-    box-shadow: var(--content-box-shadow);
+.kanji-display {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: var(--app-game-color);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--content-box-shadow);
+}
+
+.kanji-display__text {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:700px) {
+  .kanji-display__text {
+    font-size: 4rem;
   }
-  
-  .kanji-display__text{
-    font-size: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  
-  @media (min-width:700px){
-    .kanji-display__text{
-      font-size:4rem;
-    }
-  }
+}

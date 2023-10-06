@@ -1,15 +1,16 @@
-:root{
-  --correct-color:#33d662;
-  --false-color:#f2351f;
-  --dont-know-color:orange;
-  --content-box-shadow:0 4px 8px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.5);
-  --app-background-color:#f0efed;
-  --app-background-color-dark:#202021;
-  --app-text-color:black;
-  --app-text-color-dark:beige;
-  --app-button-background-color:#fff;
-  --app-button-background-color-dark:#414145;
-  --score-90-color:rgb(40, 170, 10);
+:root {
+  --correct-color: #33d662;
+  --false-color: #f2351f;
+  --dont-know-color: orange;
+  --content-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, .5);
+  --app-background-color: #f0efed;
+  --app-background-color-dark: #202021;
+  --app-text-color: black;
+  --app-text-color-dark: beige;
+  --app-button-background-color: #fff;
+  --app-button-background-color-dark: #414145;
+  --app-game-color: midnightblue;
+  --score-90-color: rgb(40, 170, 10);
   --score-80-color: rgb(60, 150, 10);
   --score-70-color: rgb(80, 130, 10);
   --score-60-color: rgb(100, 110, 10);
@@ -18,24 +19,25 @@
   --score-30-color: rgb(160, 50, 10);
   --score-20-color: rgb(180, 30, 10);
   --score-10-color: rgb(200, 10, 10);
+  --score-0-color: rgb(220, 0, 10);
 }
 
-  body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-    /*slightly lighter in weight */
+  /*slightly lighter in weight */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--app-background-color);
 }
 
-div{
-  box-sizing:border-box;
+div {
+  box-sizing: border-box;
 }
 
-.game{
-  position:relative;
+.game {
+  position: relative;
 }

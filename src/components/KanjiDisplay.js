@@ -16,38 +16,40 @@ export default function KanjiDisplay() {
     else return (
         <>
             <div className="kanji-info">
-                <div>
-                    <div className="kanji-info__character">
-                        {heisig_kanji[lesson][currentQuestion][1]}
-                    </div>
-                    <div className="kanji-info__meaning">
-                        {heisig_kanji[lesson][currentQuestion][2]}
-                    </div>
-                </div>
-                <div className="kanji-info--meta">
-                    <div className="kanji-info__word">
-                        <div className="kanji-info__word--text">
-                            <span className="kanji-info--label">Example: </span><br></br>
-                            <span className="kanji-info__example">
-                                {heisig_kanji[lesson][currentQuestion][3] ? heisig_kanji[lesson][currentQuestion][3] : 'N/A'}
-                            </span>
+                <div className="kanji-info__container">
+                    <div>
+                        <div className="kanji-info__character">
+                            {heisig_kanji[lesson][currentQuestion][1]}
+                        </div>
+                        <div className="kanji-info__meaning">
+                            {heisig_kanji[lesson][currentQuestion][2]}
                         </div>
                     </div>
-                    <div className="kanji-info__components">
-                        <div className="kaji-info__components--text">
-                            <span className="kanji-info--label">Mnemonic: </span><br></br>
-                            <span className="kanji-info__mneonic">
-                                {heisig_kanji[lesson][currentQuestion][4] ? heisig_kanji[lesson][currentQuestion][4] : 'N/A'}
-                            </span>
+                    <div className="kanji-info--meta">
+                        <div className="kanji-info__word">
+                            <div className="kanji-info__word--text">
+                                <span className="kanji-info--label">Example: </span><br></br>
+                                <span className="kanji-info__example">
+                                    {heisig_kanji[lesson][currentQuestion][3] ? heisig_kanji[lesson][currentQuestion][3] : 'N/A'}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="kanji-info__components">
+                            <div className="kaji-info__components--text">
+                                <span className="kanji-info--label">Mnemonic: </span><br></br>
+                                <span className="kanji-info__mnemonic">
+                                    {heisig_kanji[lesson][currentQuestion][4] ? heisig_kanji[lesson][currentQuestion][4] : 'N/A'}
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div
-                        className="kanji-info__continue"
-                        onClick={nextQuestion}
-                    >Click here to continue</div>
                 </div>
+                <button
+                    className="kanji-info__next-question"
+                    onClick={nextQuestion}
+                >Next Question
+                </button>
             </div>
-
         </>
     )
 }

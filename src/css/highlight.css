@@ -1,26 +1,29 @@
+.highlight-correct {
+  background-color: var(--correct-color);
+}
 
 
-.highlight-correct{
-    background-color:var(--correct-color);
-  }
-  
+.highlight-correct-color {
+  color: var(--correct-color);
+}
 
-.highlight-correct-color{
-    color:var(--correct-color);
-  }
-  
-  .highlight-wrong{
-    background-color:var(--false-color);
-  }
-  
-  .highlight-wrong-color{
-    color:var(--false-color);
-  }
-  
-  .highlight-dont-know{
-    background-color:var(--dont-know-color);
-  }
-  
-  .highlight-dont-know-color{
-    color:var(--dont-know-color);
-  }
+.highlight-wrong {
+  background-color: var(--false-color);
+}
+
+.highlight-wrong-color {
+  color: var(--false-color);
+}
+
+.highlight-dont-know {
+  background-color: var(--dont-know-color);
+}
+
+.highlight-dont-know-color {
+  color: var(--dont-know-color);
+}
+
+.highlight-btn {
+  background-color: var(--app-game-color);
+  color: white;
+}
