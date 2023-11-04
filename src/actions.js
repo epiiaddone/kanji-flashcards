@@ -9,3 +9,4 @@ export const GAME_OVER = 'GAME_OVER';
 export const SELECT_NEXT = 'SELECT_NEXT';
 export const RESET = 'RESET';
 export const SET_BUTTON_ORDER = 'SET_BUTTON_ORDER';
+export const ENTER_PRACTISE_MODE = 'ENTER_PRACTISE_MODE';

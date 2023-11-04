@@ -2,27 +2,50 @@ import { useLessonContext } from '../context/lesson_context';
 import heisig_kanji from '../data/kanji-data';
 
 export default function KanjiDisplay() {
-    const { lesson, currentQuestion, isShowInfo, nextQuestion } = useLessonContext();
+    const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji } = useLessonContext();
 
     if (lesson === 'none') return;
 
+    let kanjiId;
+    let kanjiCharacter;
+    let kanjiMeaning;
+    let kanjiExample;
+    let kanjiMnemonic;
+
+    if (practiseMode) {
+        let currentRemaining = Math.round(Math.random() * practiseKanji.length);
+        kanjiId = heisig_kanji[lesson][currentRemaining][0];
+        kanjiCharacter = heisig_kanji[lesson][currentRemaining][1]
+        kanjiMeaning = heisig_kanji[lesson][currentRemaining][2];
+        kanjiExample = heisig_kanji[lesson][currentRemaining][3];
+        kanjiMnemonic = heisig_kanji[lesson][currentRemaining][4];
+    } else {
+        kanjiId = heisig_kanji[lesson][currentQuestion][0];
+        kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
+        kanjiMeaning = heisig_kanji[lesson][currentQuestion][2];
+        kanjiExample = heisig_kanji[lesson][currentQuestion][3];
+        kanjiMnemonic = heisig_kanji[lesson][currentQuestion][4];
+    }
+
     if (!isShowInfo) return (
         <div className="kanji-display">
+            {practiseMode && <div className="kanji-display__practise">Practise Mode: {practiseKanji.length} Left</div>}
             <div className="kanji-display__text"
-                data-id={heisig_kanji[lesson][currentQuestion][0]}
-            >{heisig_kanji[lesson][currentQuestion][1]}</div>
+                data-id={kanjiId}
+            >{kanjiCharacter}</div>
         </div>
     )
     else return (
         <>
             <div className="kanji-info">
+                {practiseMode && <div className="kanji-display__practise">Practise Mode: {practiseKanji.length} Left</div>}
                 <div className="kanji-info__container">
                     <div>
                         <div className="kanji-info__character">
-                            {heisig_kanji[lesson][currentQuestion][1]}
+                            {kanjiCharacter}
                         </div>
                         <div className="kanji-info__meaning">
-                            {heisig_kanji[lesson][currentQuestion][2]}
+                            {kanjiMeaning}
                         </div>
                     </div>
                     <div className="kanji-info--meta">
@@ -30,7 +53,7 @@ export default function KanjiDisplay() {
                             <div className="kanji-info__word--text">
                                 <span className="kanji-info--label">Example: </span><br></br>
                                 <span className="kanji-info__example">
-                                    {heisig_kanji[lesson][currentQuestion][3] ? heisig_kanji[lesson][currentQuestion][3] : 'N/A'}
+                                    {kanjiExample ? kanjiExample : 'N/A'}
                                 </span>
                             </div>
                         </div>
@@ -38,7 +61,7 @@ export default function KanjiDisplay() {
                             <div className="kaji-info__components--text">
                                 <span className="kanji-info--label">Mnemonic: </span><br></br>
                                 <span className="kanji-info__mnemonic">
-                                    {heisig_kanji[lesson][currentQuestion][4] ? heisig_kanji[lesson][currentQuestion][4] : 'N/A'}
+                                    {kanjiMnemonic ? kanjiMnemonic : 'N/A'}
                                 </span>
                             </div>
                         </div>

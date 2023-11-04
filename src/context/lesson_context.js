@@ -16,6 +16,7 @@ import {
   GAME_OVER,
   RESET,
   SET_BUTTON_ORDER,
+  ENTER_PRACTISE_MODE
 } from '../actions';
 
 export const BUTTON_ORDER_VALUES = ['Numerical Order', 'Lowest Score', 'Oldest Review'];
@@ -35,6 +36,9 @@ const initialState = {
   isShowInfo: false,
   highlightAnswerId: null,
   buttonOrder: BUTTON_ORDER_VALUES[0],
+  practiseMode: false,
+  practiseKanji: [],
+
 }
 
 const LessonContext = createContext();
@@ -101,12 +105,22 @@ export const LessonProvider = ({ children }) => {
   }
 
   const nextQuestion = () => {
-    const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
-    if (isLastQuestion) {
-      gameOver();
-      return;
+    if (state.practiseMode) {
+      if (state.practiseKanji.length === 0) {
+        gameOver();
+      } else {
+        dispatch({ type: NEXT_QUESTION })
+      }
+    } else {
+      const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
+      if (isLastQuestion && state.practiseKanji.lenth > 0) {
+        dispatch({ type: ENTER_PRACTISE_MODE })
+      } else if (isLastQuestion) {
+        gameOver();
+      } else {
+        dispatch({ type: NEXT_QUESTION })
+      }
     }
-    dispatch({ type: NEXT_QUESTION })
   }
 
 

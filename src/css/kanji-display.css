@@ -9,6 +9,11 @@
   box-shadow: var(--content-box-shadow);
 }
 
+.kanji-display__practise {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .kanji-display__text {
   font-size: 2rem;
   padding-top: 0.5rem;

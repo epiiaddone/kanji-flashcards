@@ -9,7 +9,8 @@ import {
     NEXT_QUESTION,
     GAME_OVER,
     RESET,
-    SET_BUTTON_ORDER
+    SET_BUTTON_ORDER,
+    ENTER_PRACTISE_MODE
 } from '../actions';
 
 import { BUTTON_ORDER_VALUES } from '../context/lesson_context';
@@ -39,6 +40,8 @@ const lesson_reducer = (state, action) => {
             isLessonSelectOpen: true,
             isGameOver: false,
             buttonOrder: BUTTON_ORDER_VALUES[0],
+            practiseMode: false,
+            practiseRemaining: 0,
         }
     }
 
@@ -55,53 +58,99 @@ const lesson_reducer = (state, action) => {
             highlight: '',
             answersActive: true,
             isShowInfo: false,
-            highlightAnswerId: null
+            highlightAnswerId: null,
+            practiseMode: false,
+            practiseKanji: [],
         }
     }
 
     if (action.type === DONT_KNOW_ANSWER) {
-        return {
-            ...state,
-            highlight: 'dont-know',
-            answersActive: false,
-            falseCount: state.falseCount + 1,
-            isShowInfo: true,
-            highlightAnswerId: action.payload
+        if (state.practiseMode) {
+            return {
+                ...state,
+                highlight: 'dont-know',
+                answersActive: false,
+                isShowInfo: true,
+                highlightAnswerId: action.payload
+            }
+        } else {
+            return {
+                ...state,
+                highlight: 'dont-know',
+                answersActive: false,
+                falseCount: state.falseCount + 1,
+                isShowInfo: true,
+                highlightAnswerId: action.payload,
+                practiseKanji: [...state.practiseKanji, action.payload],
+            }
         }
     }
 
 
     if (action.type === CORRECT_ANSWER) {
-        return {
-            ...state,
-            highlight: 'correct',
-            answersActive: false,
-            correctCount: state.correctCount + 1,
-            isShowInfo: true,
-            highlightAnswerId: action.payload
+        if (state.practiseMode) {
+            return {
+                ...state,
+                highlight: 'correct',
+                answersActive: false,
+                isShowInfo: true,
+                highlightAnswerId: action.payload,
+                practiseKanji: [...state.practiseKanji.filter(kanji => kanji != action.payload)],
+
+            }
+        } else {
+            return {
+                ...state,
+                highlight: 'correct',
+                answersActive: false,
+                correctCount: state.correctCount + 1,
+                isShowInfo: true,
+                highlightAnswerId: action.payload
+            }
         }
     }
 
     if (action.type === INCORRECT_ANSWER) {
-        return {
-            ...state,
-            highlight: 'wrong',
-            answersActive: false,
-            falseCount: state.falseCount + 1,
-            isShowInfo: true,
-            highlightAnswerId: action.payload
+        if (state.practiseMode) {
+            return {
+                ...state,
+                highlight: 'wrong',
+                answersActive: false,
+                isShowInfo: true,
+                highlightAnswerId: action.payload,
+            }
+        } else {
+            return {
+                ...state,
+                highlight: 'wrong',
+                answersActive: false,
+                falseCount: state.falseCount + 1,
+                isShowInfo: true,
+                highlightAnswerId: action.payload,
+                practiseKanji: [...state.practiseKanji, action.payload],
+            }
         }
     }
 
     if (action.type === NEXT_QUESTION) {
         //console.log('NEXT_QUESTION RUN')
-        return {
-            ...state,
-            highlight: '',
-            answersActive: true,
-            questionNumber: state.questionNumber + 1,
-            isShowInfo: false,
-            highlightAnswerId: null
+        if (state.practiseMode) {
+            return {
+                ...state,
+                highlight: '',
+                answersActive: true,
+                isShowInfo: false,
+                highlightAnswerId: null
+            }
+        } else {
+            return {
+                ...state,
+                highlight: '',
+                answersActive: true,
+                questionNumber: state.questionNumber + 1,
+                isShowInfo: false,
+                highlightAnswerId: null
+            }
         }
     }
 
@@ -117,6 +166,13 @@ const lesson_reducer = (state, action) => {
         return {
             ...state,
             buttonOrder: action.payload,
+        }
+    }
+
+    if (action.type === ENTER_PRACTISE_MODE) {
+        return {
+            ...state,
+            practiseMode: true,
         }
     }
 
