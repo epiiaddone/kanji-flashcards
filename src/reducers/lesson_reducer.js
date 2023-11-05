@@ -41,7 +41,7 @@ const lesson_reducer = (state, action) => {
             isGameOver: false,
             buttonOrder: BUTTON_ORDER_VALUES[0],
             practiseMode: false,
-            practiseRemaining: 0,
+            practiseKanji: [],
         }
     }
 
@@ -61,6 +61,7 @@ const lesson_reducer = (state, action) => {
             highlightAnswerId: null,
             practiseMode: false,
             practiseKanji: [],
+            practiseQuestion: null,
         }
     }
 
@@ -71,7 +72,7 @@ const lesson_reducer = (state, action) => {
                 highlight: 'dont-know',
                 answersActive: false,
                 isShowInfo: true,
-                highlightAnswerId: action.payload
+                highlightAnswerId: action.payload.currentQuestionId
             }
         } else {
             return {
@@ -80,8 +81,8 @@ const lesson_reducer = (state, action) => {
                 answersActive: false,
                 falseCount: state.falseCount + 1,
                 isShowInfo: true,
-                highlightAnswerId: action.payload,
-                practiseKanji: [...state.practiseKanji, action.payload],
+                highlightAnswerId: action.payload.currentQuestionId,
+                practiseKanji: [...state.practiseKanji, action.payload.currentQuestion],
             }
         }
     }
@@ -94,8 +95,8 @@ const lesson_reducer = (state, action) => {
                 highlight: 'correct',
                 answersActive: false,
                 isShowInfo: true,
-                highlightAnswerId: action.payload,
-                practiseKanji: [...state.practiseKanji.filter(kanji => kanji != action.payload)],
+                highlightAnswerId: action.payload.clickedAnswerId,
+                practiseKanji: [...state.practiseKanji.filter(kanji => kanji != state.practiseQuestion)],
 
             }
         } else {
@@ -105,7 +106,7 @@ const lesson_reducer = (state, action) => {
                 answersActive: false,
                 correctCount: state.correctCount + 1,
                 isShowInfo: true,
-                highlightAnswerId: action.payload
+                highlightAnswerId: action.payload.clickedAnswerId
             }
         }
     }
@@ -117,7 +118,7 @@ const lesson_reducer = (state, action) => {
                 highlight: 'wrong',
                 answersActive: false,
                 isShowInfo: true,
-                highlightAnswerId: action.payload,
+                highlightAnswerId: action.payload.clickedAnswerId,
             }
         } else {
             return {
@@ -126,8 +127,8 @@ const lesson_reducer = (state, action) => {
                 answersActive: false,
                 falseCount: state.falseCount + 1,
                 isShowInfo: true,
-                highlightAnswerId: action.payload,
-                practiseKanji: [...state.practiseKanji, action.payload],
+                highlightAnswerId: action.payload.clickedAnswerID,
+                practiseKanji: [...state.practiseKanji, action.payload.currentQuestion],
             }
         }
     }
@@ -140,7 +141,8 @@ const lesson_reducer = (state, action) => {
                 highlight: '',
                 answersActive: true,
                 isShowInfo: false,
-                highlightAnswerId: null
+                highlightAnswerId: null,
+                practiseQuestion: state.practiseKanji[Math.floor(Math.random() * state.practiseKanji.length)],
             }
         } else {
             return {

@@ -2,7 +2,7 @@ import { useLessonContext } from '../context/lesson_context';
 import heisig_kanji from '../data/kanji-data';
 
 export default function KanjiDisplay() {
-    const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji } = useLessonContext();
+    const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji, practiseQuestion } = useLessonContext();
 
     if (lesson === 'none') return;
 
@@ -13,12 +13,11 @@ export default function KanjiDisplay() {
     let kanjiMnemonic;
 
     if (practiseMode) {
-        let currentRemaining = Math.round(Math.random() * practiseKanji.length);
-        kanjiId = heisig_kanji[lesson][currentRemaining][0];
-        kanjiCharacter = heisig_kanji[lesson][currentRemaining][1]
-        kanjiMeaning = heisig_kanji[lesson][currentRemaining][2];
-        kanjiExample = heisig_kanji[lesson][currentRemaining][3];
-        kanjiMnemonic = heisig_kanji[lesson][currentRemaining][4];
+        kanjiId = heisig_kanji[lesson][practiseQuestion][0];
+        kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
+        kanjiMeaning = heisig_kanji[lesson][practiseQuestion][2];
+        kanjiExample = heisig_kanji[lesson][practiseQuestion][3];
+        kanjiMnemonic = heisig_kanji[lesson][practiseQuestion][4];
     } else {
         kanjiId = heisig_kanji[lesson][currentQuestion][0];
         kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
@@ -26,6 +25,8 @@ export default function KanjiDisplay() {
         kanjiExample = heisig_kanji[lesson][currentQuestion][3];
         kanjiMnemonic = heisig_kanji[lesson][currentQuestion][4];
     }
+
+
 
     if (!isShowInfo) return (
         <div className="kanji-display">

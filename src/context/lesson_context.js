@@ -38,7 +38,7 @@ const initialState = {
   buttonOrder: BUTTON_ORDER_VALUES[0],
   practiseMode: false,
   practiseKanji: [],
-
+  practiseQuestion: null,
 }
 
 const LessonContext = createContext();
@@ -92,16 +92,25 @@ export const LessonProvider = ({ children }) => {
   const verifyAnswer = (e) => {
     const clickedAnswerId = e.target.getAttribute('data-id')
 
-    if (heisig_kanji[state.lesson][currentQuestion][0] === clickedAnswerId) {
-      dispatch({ type: CORRECT_ANSWER, payload: clickedAnswerId })
+    let isClickedCorrect;
+    if (state.practiseMode) isClickedCorrect = heisig_kanji[state.lesson][state.practiseQuestion][0] === clickedAnswerId;
+    else isClickedCorrect = heisig_kanji[state.lesson][currentQuestion][0] === clickedAnswerId;
+
+    if (isClickedCorrect) {
+      dispatch({ type: CORRECT_ANSWER, payload: { clickedAnswerId: clickedAnswerId, currentQuestion: currentQuestion } })
     } else {
-      dispatch({ type: INCORRECT_ANSWER, payload: clickedAnswerId })
+      dispatch({ type: INCORRECT_ANSWER, payload: { clickedAnswerId: clickedAnswerId, currentQuestion: currentQuestion } })
     }
   }
 
   const dontKnowClick = () => {
-    ;
-    dispatch({ type: DONT_KNOW_ANSWER, payload: heisig_kanji[state.lesson][currentQuestion][0] })
+    let questionId;
+    if (state.practiseMode) {
+      questionId = heisig_kanji[state.lesson][state.practiseQuestion][0];
+    } else {
+      questionId = heisig_kanji[state.lesson][currentQuestion][0];
+    }
+    dispatch({ type: DONT_KNOW_ANSWER, payload: { currentQuestionId: questionId, currentQuestion: currentQuestion } })
   }
 
   const nextQuestion = () => {
@@ -113,8 +122,9 @@ export const LessonProvider = ({ children }) => {
       }
     } else {
       const isLastQuestion = state.questionNumber >= heisig_kanji[state.lesson].length;
-      if (isLastQuestion && state.practiseKanji.lenth > 0) {
-        dispatch({ type: ENTER_PRACTISE_MODE })
+      if (isLastQuestion && state.practiseKanji.length > 0) {
+        dispatch({ type: ENTER_PRACTISE_MODE });
+        dispatch({ type: NEXT_QUESTION });
       } else if (isLastQuestion) {
         gameOver();
       } else {
