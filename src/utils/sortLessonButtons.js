@@ -13,7 +13,7 @@ export function getSortedLessons(buttonOrder) {
 
     if (buttonOrder === 'Lowest Score') {
 
-        keys.map(lesson => {
+        keys.forEach(lesson => {
             if (localStorage.getItem(lesson)) {
                 lessonData.push([lesson, localStorage.getItem(lesson)])
             }
@@ -25,7 +25,7 @@ export function getSortedLessons(buttonOrder) {
     }
 
     if (buttonOrder === 'Oldest Review') {
-        keys.map(lesson => {
+        keys.forEach(lesson => {
             if (localStorage.getItem(lesson + "-date")) {
                 lessonData.push([lesson, localStorage.getItem(lesson + "-date")])
             }
