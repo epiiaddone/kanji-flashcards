@@ -127,7 +127,7 @@ const lesson_reducer = (state, action) => {
                 answersActive: false,
                 falseCount: state.falseCount + 1,
                 isShowInfo: true,
-                highlightAnswerId: action.payload.clickedAnswerID,
+                highlightAnswerId: action.payload.clickedAnswerId,
                 practiseKanji: [...state.practiseKanji, action.payload.currentQuestion],
             }
         }
