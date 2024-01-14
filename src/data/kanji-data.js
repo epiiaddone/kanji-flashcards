@@ -1313,7 +1313,7 @@ const heisig_kanji =
       ['1117', '塚', 'hillock', '塚, つか, mound', 'PIG ON A HILLOCK WEARING A CROWN'],
       ['1118', '幣', 'cash', '弊害, へいがい, harmful effect', 'TOWEL GOING IN THE SHREDDER IS A WASTE OF CASH'],
       ['1119', '蔽', 'cover over', '', 'COVER OVER THE SHREDDER WITH FLOWERS'],
-      ['1120', '弊', 'abuse' '弊害, へいがい, harmful effect', 'ABUSE THE SHREDDER WITH TWO HANDS'],
+      ['1120', '弊', 'abuse', '弊害, へいがい, harmful effect', 'ABUSE THE SHREDDER WITH TWO HANDS'],
       ['1121', '喚', 'yell', '喚起, かんき, arousal', 'FOUR MEN WITH HORNS YELL'],
       ['1122', '換', 'interchange', '換える, かえる, to replace', 'FOUR MEN WITH HORNS INTERCHANGING HANDS'],
       ['1123', '融', 'dissolve', '融資, ゆうし, finacing loan', 'DISSOLVE ONE INSECT IN MOUTH']
@@ -2581,10 +2581,10 @@ const heisig_kanji =
       ['2199', '卯', 'sign of the hare', '卯, う, zodiac rabbit', 'ZODIAC RABBIT'],
       ['2200', '巳', 'sign of the snake', '巳, み, zodiac snake', 'ZODIAC SNAKE']
     ],
-	'57':
-	[
-	  ['2201', '噛', 'bite', '噛む, to bite, かむ', 'TEETH IN MOUTH ARE FOR BITING']
-	]
+  '57':
+    [
+      ['2201', '噛', 'bite', '噛む, to bite, かむ', 'TEETH IN MOUTH ARE FOR BITING']
+    ]
 };
 
 export default heisig_kanji;

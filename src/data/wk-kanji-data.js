@@ -39,7 +39,7 @@ const heisig_kanji =
       ['32', '亘', 'span', '', 'One dawn will span across the horizon'],
       ['33', '凹', 'concave', '凹む, へこむ, to be dented', 'Radical: concave'],
       ['34', '凸', 'convex', '凸凹, でこぼこ, uneveness', 'Radical: convex']
-    ]],,
+    ],
   '3':
     [
       ['35', '旧', 'former', '旧, きゅう, former', 'Radical: former'],
@@ -100,7 +100,7 @@ const heisig_kanji =
       ['84', '賄', 'bribe', '賄賂, わいろ, bribe', 'Shellfish has a bribe'],
       ['85', '貢', 'tribute', '貢献, こうけん, contribution', 'Shellfish constructs a tribute'],
       ['86', '項', 'paragraph', '項目, こうもく, item', 'Geoduck constructs a paragraph']
-	  ],
+    ],
   '5B':
     [
       ['87', '刀', 'sword', '刀, かたな, sword', 'Radical: sword'],
@@ -148,7 +148,7 @@ const heisig_kanji =
       ['123', '妬', 'jealous', '妬む, ねたむ, to envy', 'Woman is jeleaous of a stone']
     ],
   '7B':
-     [
+    [
       ['124', '削', 'whittle', '削る, けずる, to whittle down', 'Triceratops with its little moon knife, doing some whittling'],
       ['125', 'sunlight', 'ray', '光, ひかり, light', 'Radical: sunlight'],
       ['126', '太', 'fat', '太い, ふとい, fat', 'Radical: fat'],
@@ -1313,7 +1313,7 @@ const heisig_kanji =
       ['1117', '塚', 'hillock', '塚, つか, mound', 'PIG ON A HILLOCK WEARING A CROWN'],
       ['1118', '幣', 'cash', '弊害, へいがい, harmful effect', 'TOWEL GOING IN THE SHREDDER IS A WASTE OF CASH'],
       ['1119', '蔽', 'cover over', '', 'COVER OVER THE SHREDDER WITH FLOWERS'],
-      ['1120', '弊', 'abuse' '弊害, へいがい, harmful effect', 'ABUSE THE SHREDDER WITH TWO HANDS'],
+      ['1120', '弊', 'abuse', '弊害, へいがい, harmful effect', 'ABUSE THE SHREDDER WITH TWO HANDS'],
       ['1121', '喚', 'yell', '喚起, かんき, arousal', 'FOUR MEN WITH HORNS YELL'],
       ['1122', '換', 'interchange', '換える, かえる, to replace', 'FOUR MEN WITH HORNS INTERCHANGING HANDS'],
       ['1123', '融', 'dissolve', '融資, ゆうし, finacing loan', 'DISSOLVE ONE INSECT IN MOUTH']
@@ -2581,10 +2581,10 @@ const heisig_kanji =
       ['2199', '卯', 'sign of the hare', '卯, う, zodiac rabbit', 'ZODIAC RABBIT'],
       ['2200', '巳', 'sign of the snake', '巳, み, zodiac snake', 'ZODIAC SNAKE']
     ],
-	'57':
-	[
-	  ['2201', '噛', 'bite', '噛む, to bite, かむ', 'TEETH IN MOUTH ARE FOR BITING']
-	]
+  '57':
+    [
+      ['2201', '噛', 'bite', '噛む, to bite, かむ', 'TEETH IN MOUTH ARE FOR BITING']
+    ]
 };
 
 export default heisig_kanji;
