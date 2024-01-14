@@ -1,241 +1,239 @@
-const heisig_kanji =
-{
-  '1':
+const heisig_kanji_map = new Map([
+  ['1',
     [
-      ['1', '一', 'one', '一, いち, one', 'ONE FINGER'],
-      ['2', '二', 'two', '二, に, two', 'TWO LINES MEANS TWO, EVEN IF ONE IS SHORT'],
-      ['3', '三', 'three', '三, さん, three', 'THREE FINGERS '],
-      ['4', '四', 'four', '四, し, four', 'FOUR FINGERS IN CLENCHED FIST'],
-      ['5', '五', 'five', '五, ご, five', ' IS A MISSHAPEN REEL BETTER THAN FIVE FINGERS?'],
-      ['6', '六', 'six', '六, ろく, six', 'LADEN TABLE FOR SIX LOSES ITS LEGS'],
-      ['7', '七', 'seven', '七, しち, seven', 'BADLY WRITTEN TEN: ONLY WORTH SEVEN'],
-      ['8', '八', 'eight', '八, はち, eight', 'EIGHT IS EASILY DIVIDED'],
-      ['9', '九', 'nine', '九, きゅう, nine', 'SOMETHING HOOKED AWAY FROM TEN LEAVES NINE'],
-      ['10', '十', 'ten', '十, じゅう, ten', 'A PROPER CROSS GETS TEN OUT OF TEN'],
-      ['11', '口', 'mouth', '口, くち, mouth', 'SQUARE OPEN MOUTH'],
-      ['12', '日', 'day', '日, にち, day', 'IN LINE WITH THE SUN, A NEW DAY’S BEGUN'],
-      ['13', '月', 'month', '月, つき, month', 'CRESCENT MOON IS PITTED AND FACES DOWN'],
-      ['14', '田', 'rice field', '田舎, いなか, rural area', 'A FIELD DIVIDED INTO FOUR QUARTERS'],
-      ['15', '目', 'eye', '項目, こうもく, item', 'SQUARE-EYED AND VERTICAL –WATCHING TOO MUCH TV?']
-    ],
-  '2':
+      ['1', '一', 'one', '一, いち, one', 'Radical: ground'],
+      ['2', '二', 'two', '二, に, two', 'Radical: two'],
+      ['3', '三', 'three', '三, さん, three', 'Radical: three '],
+      ['4', '四', 'four', '四, し, four', 'Four legs in your mouth'],
+      ['5', '五', 'five', '五, ご, five', 'Radical: five'],
+      ['6', '六', 'six', '六, ろく, six', 'Six fins under the lid'],
+      ['7', '七', 'seven', '七, しち, seven', 'Radical: seven'],
+      ['8', '八', 'eight', '八, はち, eight', 'Eight curvy fins'],
+      ['9', '九', 'nine', '九, きゅう, nine', 'Radical: nine'],
+      ['10', '十', 'ten', '十, じゅう, ten', 'Radical: cross'],
+      ['11', '口', 'mouth', '口, くち, mouth', 'Radical: mouth'],
+      ['12', '日', 'sun', '日, にち, day', 'Radical: sun'],
+      ['13', '月', 'moon', '月, つき, month', 'Radical: moon'],
+      ['14', '田', 'rice paddy', '田舎, いなか, rural area', 'Radical: rice paddy'],
+      ['15', '目', 'eye', '項目, こうもく, item', 'Radical: eye']
+    ]],
+  ['2',
     [
-      ['16', '古', 'old', '古い, ふるい, old', 'AN OLD ORAL TALE TOLD TEN TIMES OVER'],
-      ['17', '吾', 'I', '吾輩, わがはい, I', 'SAY "I" FIVE TIMES'],
-      ['18', '冒', 'risk', '冒険, ぼうけん, adventure', 'DEFY SUN IN THE EYE IN RISKY ATTACK'],
-      ['19', '朋', 'companion', '', 'TWO BODIES'],
-      ['20', '明', 'bright', '明るい, あかるい, bright', 'THE SUN AND MOON ARE BOTH BRIGHT'],
-      ['21', '唱', 'chant', '唱える, となえる, to chant', 'CHANT FOR TWO DAYS'],
-      ['22', '晶', 'sparkle', '水晶, すいしょう, crystal', 'THREE SUNS MAKE IT BRIGHT AND CRYSTAL CLEAR'],
-      ['23', '品', 'goods', '品質, ひんしつ, quality', 'THREE BOXES OF QUALITY GOODS'],
-      ['24', '呂', 'spine', '風呂, ふろ, bath', ' BACKBONE HAS CONNECTED SQUARE BONES'],
-      ['25', '昌', 'prosperous', '', 'TWO DAYS ARE A PROSPEROUS WEEKEND'],
-      ['26', '早', 'early', '早い, はやい, early', 'SUN SHOWS TEN BUT IT’S STILL EARLY'],
-      ['27', '旭', 'rising sun', '', 'THE SUN WILL RISE ON THE 9TH DAY'],
-      ['28', '世', 'generation', '世, よ, world', 'THE ODD WORLD OF THE GEERATION OF 32'],
-      ['29', '胃', 'stomach', '胃, い, stomach', 'YOU WILL NEED A FULL STOMACH TO WORK YOU BODY IN THE FIELD'],
-      ['30', '旦', 'nightbreak', '旦那, だんな, master', 'DAY ONE STARTS WITH DAWN'],
-      ['31', '胆', 'gall bladder', '胆石, たんせき, gall stones', 'AT DAWN, GALL-BLADDER WILL BE TAKEN FROM BODY'],
-      ['32', '亘', 'span', '', 'ONE AT BOTH THE START AND END OF THE DAY WILL SPAN THE DAY'],
-      ['33', '凹', 'concave', '凹む, へこむ, to be dented', ' A CONCAVITY HOLLOWED OUT OF A SQUARE'],
-      ['34', '凸', 'convex', '凸凹, でこぼこ, uneveness', 'BOX-SHAPE HAS A PROTRUSION, SO IT IS CONVEX']
-    ],
-  '3':
+      ['16', '古', 'old', '古い, ふるい, old', 'Radical: old'],
+      ['17', '吾', 'I', '吾輩, わがはい, I', 'I eat like I have five mouths'],
+      ['18', '冒', 'dare', '冒険, ぼうけん, adventure', 'Dare to get sun in eye'],
+      ['19', '朋', 'companion', '', 'Two moons are good companions'],
+      ['20', '明', 'bright', '明るい, あかるい, bright', 'Radical: bright'],
+      ['21', '唱', 'chant', '唱える, となえる, to chant', 'Open mouth and chant "sun, sun"'],
+      ['22', '晶', 'crystal', '水晶, すいしょう, crystal', 'Three suns make it bright and crystal clear'],
+      ['23', '品', 'products', '品質, ひんしつ, quality', 'Radical: products'],
+      ['24', '呂', 'bath', '風呂, ふろ, bath', 'Radical: bathtub'],
+      ['25', '昌', 'prosperous', '繁昌, はんじょう, prosperity', 'Two suns make a prosperous planet'],
+      ['26', '早', 'early', '早い, はやい, early', 'Radical: early'],
+      ['27', '旭', 'rising sun', '', 'The sun will rise on the 9th day'],
+      ['28', '世', 'world', '世, よ, world', 'Radical: world'],
+      ['29', '胃', 'stomach', '胃, い, stomach', 'Radical: stomach'],
+      ['30', '旦', 'dawn', '旦那, だんな, master', 'Radical: dawn'],
+      ['31', '胆', 'guts', '胆石, たんせき, gall stones', 'Need guts to go moon viewing at dawn'],
+      ['32', '亘', 'span', '', 'Dawn spans across the ground'],
+      ['33', '凹', 'concave', '凹む, へこむ, to be dented', 'Radical: concave'],
+      ['34', '凸', 'convex', '凸凹, でこぼこ, uneveness', 'Radical: convex']
+    ]],
+  ['3',
     [
-      ['35', '旧', 'olden times', '旧, きゅう, former', 'ONE DAY OLD'],
-      ['36', '自', 'oneself', '自然, しぜん, nature', ' NOSE JUST A STROKE AWAY FROM THE EYE, SYMBOLISING SELF'],
-      ['37', '白', 'white', '白い, しろい, white', 'SUNSTROKE LEAVES YOU WHITE!?'],
-      ['38', '百', 'hundred', '百, ひゃく, hundred', 'ONE WHITE THUMBNAIL IS WORTH A HUNDRED ACORNS'],
-      ['39', '中', 'in', '真ん中, まんなか, middle', 'CHINESE LANCE PIERCES MIDDLE OF TARGET'],
-      ['40', '千', 'thousand', '千切る, ちぎる, to tear to pieces', 'ADD A STROKE ON TOP, AND TEN BECOMES A THOUSAND'],
-      ['41', '舌', 'tongue', '舌, した, tongue', 'A THOUSAND MOUTHS, A THOUSAND TONGUES'],
-      ['42', '升', 'measuring box', '升, しょう, 1.8 litre', 'MEASURE ENOUGH FOR TEN PERSONS'],
-      ['43', '昇', 'rise up', '昇給, しょうきゅう, payrise', 'SUN RISES OVER TEN PERSONS'],
-      ['44', '丸', 'round', '丸, まる, circle', 'NINE IS ROUNDED OFF WITH AN EXTRA STROKE'],
-      ['45', '寸', 'measurement', '寸前, すんぜん, just before', 'PULSE MEASURED AS ONE INCH FROM HAND'],
-      ['46', '肘', 'elbow', '肘, ひじ, elbow', 'ELBOW CONNECTS HAND TO BODY'],
-      ['47', '専', 'specialty', '専攻, せんこう, major subject', 'SPECIAL POSSESSION OF TEN FIELDS'],
-      ['48', '博', 'Dr.', '博士, はかせ, expert', 'A DOCTOR NEEDS SPECAILITY WITH NEEDLES'],
-      ['49', '占', 'fortune-telling', '占う, うらな, to tell fortune', 'OCCUPIED AS A DIVINER, ONE GETS TO SPEAK ABOUT CRACKS'],
-      ['50', '上', 'above', '上手い, うまい, skilled', 'BAR WITH HANDLE RISES UP OVER THE BASE LINE'],
-      ['51', '下', 'below', '下さい, ください, please', 'T-BAR WITH DROOPY LOWER HANDLE UNDERNEATH'],
-      ['52', '卓', 'eminent', '卓球, たっきゅう, table tennis', 'THE EMINENT EARLY TO BUY THEIR WAND'],
-      ['53', '朝', 'morning', '朝, あさ, morning', 'THE MIST OF THE MOON IS STILL PRESENT IN THE MORNING'],
-      ['54', '嘲', 'derision', '嘲る, あざける, to scoff', 'DERISION IS OFTEN SPOKEN IN THE MORNING']
-    ],
-  '4':
+      ['35', '旧', 'former', '旧, きゅう, former', 'Radical: former'],
+      ['36', '自', 'self', '自然, しぜん, nature', 'Radical: self'],
+      ['37', '白', 'white', '白い, しろい, white', 'Radical: white'],
+      ['38', '百', 'hundred', '百, ひゃく, hundred', 'Radical: hundred'],
+      ['39', '中', 'middle', '真ん中, まんなか, middle', 'Radical: middle'],
+      ['40', '千', 'thousand', '千切る, ちぎる, to tear to pieces', 'Radical: thousand'],
+      ['41', '舌', 'tongue', '舌, した, tongue', 'Radical: tongue'],
+      ['42', '升', 'grid', '升, しょう, 1.8 litre', 'Twenty slides laid out in a grid system'],
+      ['43', '昇', 'ascend', '昇給, しょうきゅう, payrise', 'Ascend up 20 slides in the sun'],
+      ['44', '丸', 'circle', '丸, まる, circle', 'Radical: circle'],
+      ['45', '寸', 'measurement', '寸前, すんぜん, just before', 'Radical: measurement'],
+      ['46', '肘', 'elbow', '肘, ひじ, elbow', 'Use elbow to measure the moon'],
+      ['47', '専', 'specialty', '専攻, せんこう, major subject', 'Radical: speciality'],
+      ['48', '博', 'exhibition', '博士, はかせ, expert', 'Show ten drops of your speciality in exhibition'],
+      ['49', '占', 'fortune', '占う, うらな, to tell fortune', 'Radical: fortune'],
+      ['50', '上', 'above', '上手い, うまい, skilled', 'Radical: above'],
+      ['51', '下', 'below', '下さい, ください, please', 'Radical: below'],
+      ['52', '卓', 'table', '卓球, たっきゅう, table tennis', 'Early in morning hit toe on table'],
+      ['53', '朝', 'morning', '朝, あさ, morning', 'Sun and moon cross twice in the morning'],
+      ['54', '嘲', 'derision', '嘲る, あざける, to scoff', 'Morning mouth speaks derision']
+    ]],
+  ['4',
     [
-      ['55', '只', 'only', '只, ただ, free/usual', 'MOUTH WITH ONLY TWO TEETH'],
-      ['56', '貝', 'shellfish', '貝, かい, shellell', 'SHELLFISH LOOKS LIKE AN EYE WITH FEELERS'],
-      ['57', '唄', 'pop song', '', 'SHELLFISH SINGING'],
-      ['58', '貞', 'upright', '貞節, ていせつ, fidelity', 'SHELLFISH STAND UPRIGHT WITH WAND'],
-      ['59', '員', 'employee', '員, いん, member', 'SHELLFISH WITH MOUTH OPEN IS GOOD EMPLOYEE'],
-      ['60', '貼', 'post a bill', '貼り付ける, はりつける, to stick', 'THE SHELLFISH IS POSTING FORTUNES'],
-      ['61', '見', 'see', '見る, みる, to see', 'PERSON WITH BIG EYE BENDS TO SEE'],
-      ['62', '児', 'newborn babe', '児童, じどう, children', 'OLD PERSON WITH BENT LEGS IS REALLY A CHILD'],
-      ['63', '元', 'beginning', '元気, げんき, lively', 'TWO BENT PERSONS OF SAME ORIGIN'],
-      ['64', '頁', 'page', '頁, ページ, page', 'SHELLFISH COVERS HEAD WITH PAGE'],
-      ['65', '頑', 'stubborn', '頑張る, がんばる , do your best', 'THE STUBBORN LEARNER WILL START THE BEGINING OF THE PAGE'],
-      ['66', '凡', 'mediocre', '凡そ, およそ, about', 'IT’S COMMON FOR MEDIOCRE TABLES TO HAVE A SCRATCH'],
-      ['67', '負', 'defeat', '負ける, まける, to lose', 'SHELLFISH WAVING THE FLAG OF DEFEAT'],
-      ['68', '万', 'ten thousand', '万, まん, 10,000', 'TEN THOUSAND HEADLESS PERSONS'],
-      ['69', '句', 'phrase', '俳句, はいく, haiku', 'WHAT YOU CAN SAY IN PRISON IS THE SECRET PHRASE'],
-      ['70', '肌', 'texture', '肌, はだ, skin', 'BODY AT DESK HAS FINE TEXTURED SKIN'],
-      ['71', '旬', 'decameron', '旬, しゅん, in season', 'HOW MANY DAYS IN PRISON? 10'],
-      ['72', '勺', 'ladle', '', 'LADLE UP A DROP OF POOP'],
-      ['73', '的', 'bull\'s eye', '的確, てきかく, precise', 'WHITE LADLE MAKES GOOD TARGET'],
-      ['74', '首', 'neck', '首, くび, neck', 'A NOSE, BROW AND HORNS SIGNIFY A HEAD']
-    ],
-  '5A':
+      ['55', '只', 'only', '只, ただ, free/usual', 'Only fins couldn\'t fit in mouth'],
+      ['56', '貝', 'shellfish', '貝, かい, shell', 'Radical: shellfish'],
+      ['57', '唄', 'shamisen song', '長唄, ながうた, long shamisen song', 'Shellfish opening mouth to sing'],
+      ['58', '貞', 'chastity', '貞節, ていせつ, fidelity', 'Shellfish won\'t even reveal toe'],
+      ['59', '員', 'member', '員, いん, member', 'Radical: member'],
+      ['60', '貼', 'paste', '貼り付ける, はりつける, to stick', 'Shellfish is pasting fortunes'],
+      ['61', '見', 'see', '見る, みる, to see', 'Radical: see'],
+      ['62', '児', 'child', '児童, じどう, children', 'Child uses stick to hide legs from sun'],
+      ['63', '元', 'origin', '元気, げんき, lively', 'Radical: origin'],
+      ['64', '頁', 'page', '頁, ページ, page', 'Radical: geoduck'],
+      ['65', '頑', 'stubborn', '頑張る, がんばる , do your best', 'To begin with geoduck is stubborn'],
+      ['66', '凡', 'mediocre', '凡そ, およそ, about', 'Drops landing on the mediocre table'],
+      ['67', '負', 'lose', '負ける, まける, to lose', 'Shellfish in prison has lost'],
+      ['68', '万', 'ten thousand', '万, まん, 10,000', 'Radical: ten thousand'],
+      ['69', '句', 'paragraph', '俳句, はいく, haiku', 'Radical: paragraph'],
+      ['70', '肌', 'skin', '肌, はだ, skin', 'Table has skin like the moon'],
+      ['71', '旬', 'in season', '旬, しゅん, in season', 'Fruit trapped in a sun prision will come into season'],
+      ['72', '勺', 'ladle', '', 'Radical: pool'],
+      ['73', '的', 'target', '的確, てきかく, precise', 'The white pool is a target'],
+      ['74', '首', 'neck', '首, くび, neck', 'Radical: neck']
+    ]],
+  ['5A',
     [
-      ['75', '乙', 'fish guts', '乙, おつ, the latter', 'TWO BLADED INTRAMENT TO CUT OUT FISH GUTS'],
-      ['76', '乱', 'riot', '乱用, らんよう, misuse', 'TONGUE OUT MIGHT LEAD TO RIOT'],
-      ['77', '直', 'straightaway', '正直, しょうじき, honest', 'CROSS EYED – NEED TO FIX IT STRAIGHTAWAY'],
-      ['78', '具', 'tool', '具合, ぐあい, condition', 'KEEP AN EYE ON THAT TABLE – IT’S USEFUL EQUIPMENT'],
-      ['79', '真', 'true', '真ん中, まんなか, middle', 'IT TAKES 10 TOOLS TO EXTRACT THE TRUTH'],
-      ['80', '工', 'craft', '工場, こうじょう, factory', ' WORK WITH CARPENTER’S SET-SQUARE'],
-      ['81', '左', 'left', '左右, さゆう,  left and right', ' LEFT HAND HOLDS THE CARPENTER’S SQUARE'],
-      ['82', '右', 'right', '左右, さゆう,  left and right', 'RIGHT HAND TO THE MOUTH'],
-      ['83', '有', 'possess', '有名, ゆうめい, famous', 'EXISTENCE IS DEPENDENT ON HAVING MEAT IN HAND'],
-      ['84', '賄', 'bribe', '賄賂, わいろ, bribe', 'SHELLFISH IS IN POSSESION OF MANY BRIBES'],
-      ['85', '貢', 'tribute', '貢献, こうけん, contribution', 'SHELLFISH CONSTRUCTING A TRIBUE'],
-      ['86', '項', 'paragraph', '項目, こうもく, item', 'ONE CONSTRUCTS A PAGE WITH PARAGRAPHS']
-    ],
-  '5B':
+      ['75', '乙', 'latter', '乙, おつ, the latter', 'Radical: nose'],
+      ['76', '乱', 'riot', '乱用, らんよう, misuse', 'Licking umbrella lead to riot'],
+      ['77', '直', 'fix', '正直, しょうじき, honest', 'Radical: fix'],
+      ['78', '具', 'tool', '具合, ぐあい, condition', 'Put a tool on eye to see fins hidden underground'],
+      ['79', '真', 'reality', '真ん中, まんなか, middle', 'Radical: reality'],
+      ['80', '工', 'construction', '工場, こうじょう, factory', 'Radical: construction'],
+      ['81', '左', 'left', '左右, さゆう,  left and right', 'Narwhal does consruction with left hand'],
+      ['82', '右', 'right', '左右, さゆう,  left and right', 'Radical: right'],
+      ['83', '有', 'have', '有名, ゆうめい, famous', 'Radical: have'],
+      ['84', '賄', 'bribe', '賄賂, わいろ, bribe', 'Shellfish has a bribe'],
+      ['85', '貢', 'tribute', '貢献, こうけん, contribution', 'Shellfish constructs a tribute'],
+      ['86', '項', 'paragraph', '項目, こうもく, item', 'Geoduck constructs a paragraph']
+	  ]],
+  ['5B',
     [
-      ['87', '刀', 'sword', '刀, かたな, sword', 'TWO-EDGED SWORD'],
-      ['88', '刃', 'blade', '刃, は, blade', 'SWORD IN MOTION'],
-      ['89', '切', 'cut', '切手, きって, ticket', 'SEVEN SWORDS'],
-      ['90', '召', 'seduce', '召し上がる, めしあがる, to eat', 'USE YOUR MOUTH INSTEAD OF YOUR SWORD AND SEDUCE THE EMENY'],
-      ['91', '昭', 'shining', '昭和, しょうわ, showa era (1926-1989)', 'SEDUCE THE SUN TO MAKE IT SHINE'],
-      ['92', '則', 'rule', '規則, きそく, rule', 'SHELLFISH MAKES RULES WITH THE KNIFE'],
-      ['93', '副', 'vice-', '副作用, ふくさよう, side effect', 'VICE-PRESIDENT IS CUT DOWN AT SINGLE ENTRANCE TO FIELD'],
-      ['94', '別', 'separate', '別, べつ, different', 'USING KNIFE TO SEPERATE OPENING NEEDS SPECIAL STRENGTH'],
-      ['95', '丁', 'street', '丁度, ちょうど, exact', 'STREET IS EXACT TO A ‘T’'],
-      ['96', '町', 'village', '町, まち, town', 'TOWN AT T-JUNCTION NEXT TO FIELD'],
-      ['97', '可', 'can', '可愛い, かわい, cute', 'WHAT YOU CAN SAY ON THE STREET'],
-      ['98', '頂', 'place on the head', '頂上, ちょうじょう, summit', 'NAIL A PAGE ON YOUR HEAD']
-    ],
-  '6':
+      ['87', '刀', 'sword', '刀, かたな, sword', 'Radical: sword'],
+      ['88', '刃', 'blade', '刃, は, blade', 'Radical: blade'],
+      ['89', '切', 'cut', '切手, きって, ticket', 'Seven swords used to cut'],
+      ['90', '召', 'call', '召し上がる, めしあがる, to eat', 'Radical: call'],
+      ['91', '昭', 'shining', '昭和, しょうわ, showa era (1926-1989)', 'Sun calls out using shining rays'],
+      ['92', '則', 'rule', '規則, きそく, rule', 'Shellfish has a rule about the knife'],
+      ['93', '副', 'vice-', '副作用, ふくさよう, side effect', 'Scarecrow with knife is vice president'],
+      ['94', '別', 'separate', '別, べつ, different', 'Use sword and knife to seperate mouth'],
+      ['95', '丁', 'street', '丁度, ちょうど, exact', 'Radical: street'],
+      ['96', '町', 'town', '町, まち, town', 'Town is rice paddys and roads'],
+      ['97', '可', 'possible', '可愛い, かわい, cute', 'Radical: lip ring'],
+      ['98', '頂', 'summit', '頂上, ちょうじょう, summit', 'Geoduck takes the street up to the summit']
+    ]],
+  ['6',
+       ['99', '子', 'child', '子, こ, child', 'Radical: child'],
+      ['100', '孔', 'cavity', '瞳孔, どうこう, pupil of eye', 'Child carrying umbrella fell into a cavity'],
+      ['101', '了', 'finish', '了, りょう, completion', 'A child without arms is finished'],
+      ['102', '女', 'woman', '女, おんな, woman', 'Radical: woman'],
+      ['103', '好', 'like', '好き, すき, like', 'Woman likes her child'],
+      ['104', '如', 'likeness', '如何, どう, how', 'Womens\' mouths all share a likeness'],
+      ['105', '母', 'mother', '母, はは, mum', 'Mama likes two drops of sun'],
+      ['106', '貫', 'pierce', '貫く, つらぬく, to pierce', 'Shellfish pierces window'],
+      ['107', '兄', 'older brother', '兄弟, きょうだい, siblings', 'Radical: older brother'],
+      ['108', '呪', 'curse', '呪い, のろい, curse', 'Older brother opens mouth to curse'],
+      ['109', '克', 'overcome', '克服, こくふく, conquest', 'Old legs can still overcome'],
+    ]],
+  ['7A',
     [
-      ['99', '子', 'child', '子, こ, child', 'CHILD ON MUM’S BACK WITH ARMS OUT'],
-      ['100', '孔', 'cavity', '瞳孔, どうこう, pupil of eye', 'PUT A HOOK IN THE CHILD  \'S CAVITY'],
-      ['101', '了', 'complete', '了, りょう, completion', 'ONE UNDERSTANDS THAT A CHILD NEEDS ARMS TO BE COMPLETE'],
-      ['102', '女', 'woman', '女, おんな, woman', 'KNEELING WOMAN'],
-      ['103', '好', 'fond', '好き, すき, like', 'WOMAN IS FOND OF HER CHILD'],
-      ['104', '如', 'likeness', '如何, どう, how', 'WOMEN\'S MOUTHS ARE SIMILAR'],
-      ['105', '母', 'mama', '母, はは, mum', 'A MOTHER IS A WOMAN WITH PROMINENT NIPPLES'],
-      ['106', '貫', 'pierce', '貫く, つらぬく, to pierce', 'MOTHER PIERCED BY SHELLFISH'],
-      ['107', '兄', 'elder brother', '兄弟, きょうだい, siblings', 'ELDER BROTHER IS JUST MOUTH AND LEGS'],
-      ['108', '呪', 'curse', '呪い, のろい, curse', 'OLDER BROTHER OPEN MOUTH TO CURSE'],
-      ['109', '克', 'overcome', '克服, こくふく, conquest', 'OLD LEGS CAN STILL OVERCOME'],
-    ],
-  '7A':
+      ['110', '小', 'small', '小さい, ちいさい, small', 'Radcial: small'],
+      ['111', '少', 'few', '少ない, すくない, few', 'Radical: few'],
+      ['112', '大', 'big', '大学, だいがく, university', 'Radical: big'],
+      ['113', '多', 'many', '多分, たぶん, maybe', 'Two evenings is many'],
+      ['114', '夕', 'evening', '夕べ, ゆうべ, evening', 'Radcial: evening'],
+      ['115', '汐', 'eventide', '', 'Tsunami in the evening'],
+      ['116', '外', 'outside', '外, そと, outside', 'In the evening put your toe outside'],
+      ['117', '名', 'name', '有名, ゆうめい, famous', 'Radical: name'],
+      ['118', '石', 'stone', '石, いし, stone', 'Radical: stone'],
+      ['119', '肖', 'resemblance', '肖像, しょうぞう, portait', 'To the triceratops, the moon has some resembelance'],
+      ['120', '硝', 'nitrate', '硝子, ガラス, glass', 'Nitrates resemble stone'],
+      ['121', '砕', 'smash', '砕く, くだく, to smash', '9 stones smashed with a cross'],
+      ['122', '砂', 'sand', '砂糖, さとう, sugar', 'A lot of sand comes for just a few stones'],
+      ['123', '妬', 'jealous', '妬む, ねたむ, to envy', 'Woman is jeleaous of a stone']
+    ]],
+  ['7B',
     [
-      ['110', '小', 'little', '小さい, ちいさい, small', 'A STROKE DIVIDED INTO TWO SMALL ONES'],
-      ['111', '少', 'few', '少ない, すくない, few', 'THREE WITH ONE IS STILL JUST A FEW'],
-      ['112', '大', 'large', '大学, だいがく, university', 'PERSON SPREADS ARMS AND LEGS TO LOOK BIG'],
-      ['113', '多', 'many', '多分, たぶん, maybe', 'MANY MOONS, MANY EVENINGS'],
-      ['114', '夕', 'evening', '夕べ, ゆうべ, evening', 'CRESCENT MOON WITH A WISP OF CLOUD INDICATES EVENING'],
-      ['115', '汐', 'eventide', '', 'THE TIDE GOING OUT IN THE EVENING'],
-      ['116', '外', 'outside', '外, そと, outside', 'CRESCENT MOON WITH A CRACK ON THE OUTSIDE?!'],
-      ['117', '名', 'name', '有名, ゆうめい, famous', 'SAY NAME IN EVENING'],
-      ['118', '石', 'stone', '石, いし, stone', 'LARGE STONE AT BASE OF ROCKY CLIFF'],
-      ['119', '肖', 'resemblance', '肖像, しょうぞう, portait', 'LITTLE ONE IS LIKE PARENTS IN BODY AND IN LUCK'],
-      ['120', '硝', 'nitrate', '硝子, ガラス, glass', 'RESEMBLE, STONE'],
-      ['121', '砕', 'smash', '砕く, くだく, to smash', '90 STONES'],
-      ['122', '砂', 'sand', '砂糖, さとう, sugar', 'FEW STONES'],
-      ['123', '妬', 'jealous', '妬む, ねたむ, to envy', 'WOMAN JEALOUS OF A STONE']
-    ],
-  '7B':
+      ['124', '削', 'whittle', '削る, けずる, to whittle down', 'Triceratops with its little moon knife, doing some whittling'],
+      ['125', 'sunlight', 'ray', '光, ひかり, light', 'Radical: sunlight'],
+      ['126', '太', 'fat', '太い, ふとい, fat', 'Radical: fat'],
+      ['127', '器', 'container', '器, うつわ, container', 'Big products go in the container'],
+      ['128', '臭', 'stinking', '臭い, くさい, stinking', 'Oneself has a big stink'],
+      ['129', '嗅', 'sniff', '嗅ぐ, かぐ, to sniff', 'Sniff the stinking mouth'],
+      ['130', '妙', 'exquisite', '妙, みょう, strange', 'Few women are exquisite'],
+      ['131', '省', 'focus', '省く, はぶく, to omit', 'Few eyes can focus'],
+      ['132', '厚', 'thick', '厚い, あつい, thick', 'Kind but thick child hides from sun under cliff'],
+      ['133', '奇', 'strange', '奇妙, きみょう, strange', 'Radical: odd'],
+    ]],
+  ['8A',
     [
-      ['124', '削', 'plane', '削る, けずる, to whittle down', 'THE PLANE IS SO FLAT THAT IT RESEMBELS A KNIFE'],
-      ['125', '光', 'ray', '光, ひかり, light', 'LIGHT SHINES FROM ODD FLAMES OVER PERSON’S FLAT HEAD'],
-      ['126', '太', 'plump', '太い, ふとい, fat', 'FAT IS A BIT MORE THAN JUST BIG'],
-      ['127', '器', 'utensil', '器, うつわ, container', 'FOUR LARGE MOUTHS WOULD NEED AN IMPRESSIVE UTENSIL'],
-      ['128', '臭', 'stinking', '臭い, くさい, stinking', 'ONESELF HAS A LARGE STINK'],
-      ['129', '嗅', 'sniff', '嗅ぐ, かぐ, to sniff', 'DON\'T SNIFF THE STINKING MOUTH'],
-      ['130', '妙', 'exquisite', '妙, みょう, strange', 'FEW WOMEN ARE EXQUISITE'],
-      ['131', '省', 'focus', '省く, はぶく, to omit', 'FEW EYES CAN FOCUS'],
-      ['132', '厚', 'thick', '厚い, あつい, thick', 'KIND BUT THICK CHILD PLAYS DAILY BY THE CLIFF'],
-      ['133', '奇', 'strange', '奇妙, きみょう, strange', 'BIG CAN BE STRANGE'],
-    ],
-  '8A':
+      ['134', '川', 'river', '川, かわ, river', 'Radical: river'],
+      ['135', '州', 'state', '州都, しゅうと, state capital', 'State with only drops of water between rivers'],
+      ['136', '順', 'order', '順, じゅん, sorting', 'Geoduck like putting his things in order at the river'],
+      ['137', '水', 'water', '水道, すいどう, water supply', 'Radcial: water'],
+      ['138', '氷', 'ice', '氷, こおり, ice', 'A drop of water forms an icicle'],
+      ['139', '永', 'eternity', '永久, えいきゅう, eternity', 'Radical: eternity'],
+      ['140', '泉', 'spring', '温泉, おんせん, hot spring', 'White water shoots our from a spring'],
+      ['141', '腺', 'gland', '', 'Gland in body shoots out water like a spring'],
+      ['142', '原', 'original', '原因, げんいん, cause', 'Radical: original'],
+      ['143', '願', 'request', '願い, ねがい, wish', 'Geoduck requests the original'],
+      ['144', '泳', 'swim', '泳ぐ, およぐ, to swim', 'Swimming against a tsunami takes an eternity'],
+      ['145', '沼', 'bog', '沼, ぬま, bog', 'Tsunami can\'t resist the call of a bog'],
+      ['146', '沖', 'open sea', '沖縄, おきなわ, okinawa', 'Tsunami in the middle of the open sea'],
+      ['147', '汎', 'pan-', 'common prefix', 'Mediocre tsunamis are everywhere'],
+      ['148', '江', 'inlet', '江戸, えど, Edo', 'Tsunami destroys the construction at the inlet'],
+      ['149', '汰', 'select', 'ご無沙汰, ごぶさた, neglecting to contact', 'Tsunami will select a fat target'],
+      ['150', '汁', 'soup', '汁, しる, soup', 'Tsunami carries cross into your soup'],
+      ['151', '沙', 'sand', 'ご無沙汰, ごぶさた, neglecting to contact', 'Tsunami leaves behind a few grains of sand'],
+      ['152', '潮', 'tide', '潮, しお, tide', 'Tsunami that comes in the morning due to the moon is just the tide'],
+      ['153', '源', 'origin', '源, みなもと, source', 'The original tsunami was the origin of Japan']
+    ]],
+  ['8B',
     [
-      ['134', '川', 'stream', '川, かわ, river', ' RIVER FLOWS BETWEEN TWO BANKS'],
-      ['135', '州', 'state', '州都, しゅうと, state capital', 'PROVINCE WITH RIVER AND SANDBANK'],
-      ['136', '順', 'obey', '順, じゅん, sorting', 'OBEY THE PAGE ABOUT RIVER SAFETY'],
-      ['137', '水', 'water', '水道, すいどう, water supply', ''],
-      ['138', '氷', 'icicle', '氷, こおり, ice', 'A CRACK IN THE WATER? – THAT MUST MEAN ICE'],
-      ['139', '永', 'eternity', '永久, えいきゅう, eternity', 'ONE DROP OF WATER AT A TIME WILL TAKE AN ETERNITY'],
-      ['140', '泉', 'spring', '温泉, おんせん, hot spring', 'SPRING PRODUCES WHITE WATER'],
-      ['141', '腺', 'gland', '', ' GLAND IN BODY EXUDES LIQUID LIKE A SPRING'],
-      ['142', '原', 'meadow', '原因, げんいん, cause', 'A MEADOW BY THE SMALL WHITE CLIFF'],
-      ['143', '願', 'petition', '願い, ねがい, wish', 'THE PAGE IN THE MEADOW IS A PETITION'],
-      ['144', '泳', 'swim', '泳ぐ, およぐ, to swim', 'TO SPEND AN ETERNITY IN THE WATER, YOU MUST SWIM'],
-      ['145', '沼', 'marsh', '沼, ぬま, bog', 'SEDUCE, WATER'],
-      ['146', '沖', 'open sea', '沖縄, おきなわ, okinawa', 'MIDDLE, WATER'],
-      ['147', '汎', 'pan-', 'common prefix', 'MEDIOCRE WATER IS EVERYWHERE'],
-      ['148', '江', 'creek', '江戸, えど, Edo', 'WATER, CONSTRUCT'],
-      ['149', '汰', 'cleanse', 'ご無沙汰, ごぶさた, neglecting to contact', 'Cleanse the fatties with water'],
-      ['150', '汁', 'soup', '汁, しる, soup', 'TEN DIFFERNT LIQUINDS GO INTO THE SOUP'],
-      ['151', '沙', 'grains of sand', 'ご無沙汰, ごぶさた, neglecting to contact', 'THERE ARE FEW PLACES TO GET WATER IN THE SAND DESERT'],
-      ['152', '潮', 'tide', '潮, しお, tide', 'THE WATER THAT COMES IN THE MORNING IS THE TIDE'],
-      ['153', '源', 'source', '源, みなもと, source', 'THE SOURCE OF WATER IS IN THE MEADOW']
-    ],
-  '8B':
+      ['154', '活', 'lively', '活用, かつよう, practical use', 'Lively tongue create a tsunami of saliva'],
+      ['155', '消', 'extinguish', '消す, けす, to erase', 'Tsunami swept triceratops to the moon and extinguised them'],
+      ['156', '況', 'condition', '状況, じょうきょう, condition', 'Older brother is in no condition to escape the tsunami'],
+      ['157', '河', 'river', '河川, かせん, rivers', 'Lip ring bleeds like tsunami making a river of blood'],
+      ['158', '泊', 'overnight', '泊まる, とまる, to stay over', 'An overnight stay will result in a "tsunami of white"'],
+      ['159', '湖', 'lake', '湖, みずうみ, lake', 'Tsunami during the old moon formed a lake'],
+      ['160', '測', 'measure', '測定, そくてい, measurement', 'Shellfish uses knife to measure tsunami'],
+      ['161', '土', 'dirt', '土, つち, soil', 'Radical: dirt'],
+      ['162', '吐', 'throw up', '吐き気, はきけ, nausea', 'Throw up onto the dirt'],
+      ['163', '圧', 'pressure', '圧力, あつりょく, pressure', 'Dirt under cliff is under pressure'],
+      ['164', '埼', 'cape', '埼玉, さいたま, Saitama (tokyo)', 'A cape is an odd piece of dirt',],
+      ['165', '垣', 'hedge', '垣, かき, hedge', 'At dawn pland one hedge in the dirt'],
+      ['166', '填', 'inlay', '', 'Inlay the truth into the dirt'],
+      ['167', '圭', 'squared jewel', '', 'Radical: pile of dirt'],
+      ['168', '封', 'seal', '封筒, ふうとう, envolope', 'Measure the pile of dirt needed to form a seal'],
+      ['169', '涯', 'horizon', '生涯, しょうがい, ones life', 'Tsunami takes pile of dirt from cliff to horizon']
+    ]],
+  ['8C',
     [
-      ['154', '活', 'lively', '活用, かつよう, practical use', 'A WATERY TONGUE MAKES FOR A LIVELY KISS'],
-      ['155', '消', 'extinguish', '消す, けす, to erase', 'EXTINGUISHERS RESMBLE WATER'],
-      ['156', '況', 'but of course', '状況, じょうきょう, condition', 'BUT OF COURSE THE OLDER BROTHER WETS HIMSELF'],
-      ['157', '河', 'river', '河川, かせん, rivers', 'WATER THAT MAKES CIVILIZATION POSSIBLE ARE RIVERS'],
-      ['158', '泊', 'overnight', '泊まる, とまる, to stay over', 'AN OVERNIGHT STAY WILL PRODUCE A LOT OF "WHITE WATER"'],
-      ['159', '湖', 'lake', '湖, みずうみ, lake', 'OLD MOON SEEN IN WATER OF LAKE'],
-      ['160', '測', 'fathom', '測定, そくてい, measurement', ' MEASURE WATER WITH FATHOM-RULE'],
-      ['161', '土', 'soil', '土, つち, soil', ''],
-      ['162', '吐', 'spit', '吐き気, はきけ, nausea', 'SPIT FRM THE MOUTH ON TO THE GROUD'],
-      ['163', '圧', 'pressure', '圧力, あつりょく, pressure', 'THE GROUND UNDER THE CLIFF IS UNDER A LOT OF PRESSURE'],
-      ['164', '埼', 'cape', '埼玉, さいたま, Saitama (tokyo)', 'A CAPE IS A STRANGE PIECE OF LAND',],
-      ['165', '垣', 'hedge', '垣, かき, hedge', 'THE HEDGE SPANS THE LAND'],
-      ['166', '填', 'inlay', '', 'INLAY THE TRUTH INTO THE LAND'],
-      ['167', '圭', 'squared jewel', '', 'A.K.A IVY'],
-      ['168', '封', 'seal', '封筒, ふうとう, envolope', 'GLUE IVY OVER THE SEAL'],
-      ['169', '涯', 'horizon', '生涯, しょうがい, ones life', 'FROM THE CLIFF COVERED WITH IVY LOOK ACROSS THE WATER AT THE HORIZON']
-    ],
-  '8C':
+      ['170', '寺', 'temple', '寺, てら, temple', 'Radical: temple'],
+      ['171', '時', 'time', '時, とき, time/hour', 'Temple uses sun to tell time'],
+      ['172', '均', 'equal', '均衡, きんこう, equalibrium', 'Equal drops of dirt and water into pool'],
+      ['173', '火', 'fire', '火, ひ, fire', 'Radical: fire'],
+      ['174', '炎', 'flame', '炎, ほのお, flame', 'Two fires have lots of flame'],
+      ['175', '煩', 'Annoy', '煩い, うるさい, noisy', 'Geoduck is annoyed by fire'],
+      ['176', '淡', 'faint', '淡水, たんすい, fresh water', 'Tsunami makes the flame faint'],
+      ['177', '灯', 'lamp', '灯, ひ, lamp', 'Fire in street is a lamp'],
+      ['178', '畑', 'farm', '畑, はたけ, field', 'Fire in the rice paddy is a farm'],
+      ['179', '災', 'disaster', '災難, さいなん, calamity', 'Fire and floods are a disaster'],
+      ['180', '灰', 'ashes', '灰, はい, ashes', 'Fire on the cliff leaves ashes'],
+      ['181', '点', 'point', '点, てん, point', 'Fortune boils down to a sinle point'],
+      ['182', '照', 'illuminate', '照らす, てらす, to illuminate', 'Sun is being called to boil in order to illuminate'],
+      ['183', '魚', 'fish', '魚, さかな, fish', 'Radical: fish'],
+      ['184', '漁', 'fishing', '漁業,ぎょぎょう, fishing industry', 'Fishing for a tsunami of fish']
+    ]],
+  ['9A',
     [
-      ['170', '寺', 'Buddhist temple', '寺, てら, temple', 'HAND OFFERS GROUND TO TEMPLE'],
-      ['171', '時', 'time', '時, とき, time/hour', 'TIME TO SPEND ALL DAY AT THE TEMPLE'],
-      ['172', '均', 'level', '均衡, きんこう, equalibrium', 'WHEN PLACING THE LADLE ON THE SOIL, IT MUST BE LEVEL'],
-      ['173', '火', 'fire', '火, ひ, fire', 'FLAMES OF FIRE'],
-      ['174', '炎', 'inflammation', '炎, ほのお, flame', 'TWO FIRES MAKE A LOT OF FLAMES'],
-      ['175', '煩', 'anxiety', '煩い, うるさい, noisy', 'BURNING THE PAGE CAUSES ANXIETY'],
-      ['176', '淡', 'thin', '淡水, たんすい, fresh water', 'ONLY DRINKING WATER DUE TO INFLAMATION WILL MAKE YOU THIN'],
-      ['177', '灯', 'lamp', '灯, ひ, lamp', 'OLD FASHIONED LAMPS ARE FIRES IN THE STREET'],
-      ['178', '畑', 'farm', '畑, はたけ, field', 'FARMERS BURNING THEIR FIELDS FOR THE NEXT CROP'],
-      ['179', '災', 'disaster', '災難, さいなん, calamity', 'FIRE AND FLOODS ARE A DISASTER'],
-      ['180', '灰', 'ashes', '灰, はい, ashes', 'THE FIRE ON THE CLIFF LEAVES ASHES BELOW'],
-      ['181', '点', 'spot', '点, てん, point', 'FIRE USED IN DIVINATION LEAVES BLACK MARKS'],
-      ['182', '照', 'illuminate', '照らす, てらす, to illuminate', 'THE SHINING BOILING WATER ILLUMINATES'],
-      ['183', '魚', 'fish', '魚, さかな, fish', 'FISH WITH SQUARE BODY AND FIERY TAIL'],
-      ['184', '漁', 'fishing', '漁業,ぎょぎょう, fishing industry', 'FISHING MEANS CATCHING FISH IN WATER']
-    ],
-  '9A':
-    [
-      ['185', '里', 'ri', '里, り, 2.44 miles', 'UNDERGROUND'],
-      ['186', '黒', 'black', '黒い, くろい, black', 'THE UNDERGROUND WATER IS BLACK'],
-      ['187', '墨', 'black ink', '墨, すみ, specialist ink', 'BLACK EARTH MAKES GOOD INK'],
-      ['188', '鯉', 'carp', '鯉, こい, carp', 'THE UNDERGROUND FISH ARE CARP'],
-      ['189', '量', 'quantity', '量, りょう, quantity', 'WHEN LIVING UNDERGROUND YOU SHOULD COUNT THE QUANTITY OF DAWNS THAT YOU SEE'],
-      ['190', '厘', 'rin', '厘, りん, 0.3mm', 'UNDERGROUND THE CLIFF, YOU MUSH HAVE A PRECISE MEASUREMENT'],
-      ['191', '埋', 'bury', '埋める, うめる, to bury', 'THE UNDERGROUND LAND IS WHERE YOU SHOULD BURY'],
-      ['192', '同', 'same', '同じ, おなじ, same', 'SIMILAR HOOPS HAVE THE SAME SINGLE OPENING'],
-      ['193', '洞', 'den', '洞, ほら, cave', 'IN THE DEN ALL MUST SHARE THE SAME WATER'],
-      ['194', '胴', 'trunk', '胴, どう, torso', 'TORSO IS OF SAME FLESH AS BODY'],
-      ['195', '向', 'yonder', '向こう, むこう, opposite side', ''],
-      ['196', '尚', 'esteem', '尚, なお, still', 'THE PERSON OVER YONDER WITH THE FANCY HAIR IS ESTEEMED'],
-    ],
-  '9B':
+      ['185', '里', 'home town', '里, り, 2.44 miles', 'Radical: village'],
+      ['186', '黒', 'black', '黒い, くろい, black', 'Radical: black'],
+      ['187', '墨', 'black ink', '墨, すみ, specialist ink', 'Black dirt makes good ink'],
+      ['188', '鯉', 'carp', '鯉, こい, carp', 'Fish in the village are carp'],
+      ['189', '量', 'quantity', '量, りょう, quantity', 'At dawn village counts quantity of stock'],
+      ['190', '厘', 'rin', '厘, りん, 0.3mm', 'Village under the cliff needs precise measurement'],
+      ['191', '埋', 'bury', '埋める, うめる, to bury', 'The village has been buried in durt'],
+      ['192', '同', 'same', '同じ, おなじ, same', 'Radical: same'],
+      ['193', '洞', 'cave', '洞, ほら, cave', 'Hide in the cave from the same tsunami'],
+      ['194', '胴', 'torso', '胴, どう, torso', 'The moon is the same as your torso, fat boy!'],
+      ['195', '向', 'yonder', '向こう, むこう, opposite side', 'A drop lands on your mustache from yonder'],
+      ['196', '尚', 'furthermore', '尚, なお, still', 'Triceratops will go on furthermore about his mustache'],
+    ]],
+  ['9B',
     [
       ['197', '字', 'character', '字, じ, character', 'CHILD AT HOME READING CHARACTERS'],
       ['198', '守', 'guard', '守り, まもり, protection', 'ATTACHED TO THE HOUSE IS THE GURAD'],
@@ -247,8 +245,8 @@ const heisig_kanji =
       ['204', '寄', 'draw near', '寄る, よる, to approach', 'CAUTIOUSLY DRAW NEAR TO THE STRANGE HOUSE'],
       ['205', '富', 'wealth', '富士山, ふじさん, Mt. Fuji', 'HOUSE AT SINGLE ENTRANCE TO FIELD GROWS WEALTHY'],
       ['206', '貯', 'savings', '貯金, ちょきん, savings', 'SHELLFISH SPENDING ALL HIS SAVINGS ON NAILS FOR HIS HOUSE']
-    ],
-  '10A':
+    ]],
+  ['10A',
     [
       ['207', '木', 'tree', '木, き, tree', ''],
       ['208', '林', 'grove', '林, はやし, woods', 'TWO TALL TREES IN THE GROVE'],
@@ -272,8 +270,8 @@ const heisig_kanji =
       ['226', '暦', 'calendar', '暦, こよみ, calender', 'MARK IN THE CALENDER, THE DAY TO CUT THE TREES FROM THE CLIFF'],
       ['227', '案', 'plan', '案内, あんない, guidance', 'RELAX IN THE TREE UNTIL YOU THINK OF A PLAN'],
       ['228', '燥', 'parch', '燥ぐ, はしゃぐ, to make merry', 'THE FIRE OF THE GOODS AND TREES LEFT EVERYTHING PARCHED']
-    ],
-  '10B':
+    ]],
+  ['10B',
     [
       ['229', '未', 'not yet', '未来, みらい, future', ' GROWTH OF IMMATURE TREE WITH SMALL TIP NOT YET FINISHED '],
       ['230', '昧', 'obscure', '', 'THINGS ARE OBSCURED WHEN IT\'S NOT YET DAY'],
@@ -296,8 +294,8 @@ const heisig_kanji =
       ['247', '暮', 'livelihood', '暮れる, くれる, to get dark', 'EARN A LIVELIHOOD, BY WORKING IN THE GRAVEYARD ALL DAY'],
       ['248', '膜', 'membrane', '膜, まく, membrane', 'THE BODY IN THE GRAVEYARD IS COVERED BY A MEMBRANE'],
       ['249', '苗', 'seedling', '苗, なえ, seedling', 'THE GRASS IN THE FIELD GROWS FROM SEEDLINGS'],
-    ],
-  '11':
+    ]],
+  ['11',
     [
       ['250', '兆', 'portent', '兆し, きざし, omen', 'Forsee'],
       ['251', '桃', 'peach tree', '桃. もも, peach', 'Forsee the tree producing peaches'],
@@ -314,8 +312,8 @@ const heisig_kanji =
       ['262', '告', 'revelation', '告白, こくはく, confession', 'If the cow could talk, it would reveal'],
       ['263', '先', 'before', '先, さき, before', 'BEND TO GO THROUGH UNDER GROWTH – YOU PRECEDE ME!'],
       ['264', '洗', 'wash', '洗濯, せんたく, laundry', 'Wash before the water is all used up']
-    ],
-  '12A':
+    ]],
+  ['12A',
     [
       ['265', '介', 'jammed in', '介護, かいご, nursing', ''],
       ['266', '界', 'world', '界隈, かいわい, neighbourhood', 'The whole world jammed into a field'],
@@ -333,8 +331,8 @@ const heisig_kanji =
       ['278', '旺', 'effulgent', '旺盛, おうせい, lively', 'The king is very effulgent during the day'],
       ['279', '皇', 'emperor', '皇帝, こうてい, emperor', 'The emperor made the king turn white'],
       ['280', '呈', 'display', '', 'The king opens his mouth to display his excellent teeth'],
-    ],
-  '12B':
+    ]],
+  ['12B',
     [
       ['281', '全', 'whole', '全部, ぜんぶ, whole', 'THE KING IS COMPLETE WITH HIS CAP'],
       ['282', '栓', 'plug', '栓, せん, cork', 'A whole tree is needed to plug'],
@@ -350,8 +348,8 @@ const heisig_kanji =
       ['292', '針', 'needle', '針, はり, needle', 'An expensive needle costs 10 gold coins'],
       ['293', '銘', 'inscription', '銘々, めいめい, each', 'Inscribing your name in gold'],
       ['294', '鎮', 'tranquillize', '鎮圧, ちんあつ, suppression', 'So excited by true gold that you need to be tranquillized'],
-    ],
-  '13A':
+    ]],
+  ['13A',
     [
       ['295', '道', 'road-way', '道, みち, road', 'THE HEAD LEADS THE WAY ALONG THE ROAD'],
       ['296', '導', 'guidance', '導く, みちびく, to guide', 'A guide is needed to avoid all the glue on the road'],
@@ -369,8 +367,8 @@ const heisig_kanji =
       ['308', '喩', 'metaphor', '', 'ARROWS POINT TO HOLE IN BODY IN NEED OF COVERING - WHAT A METAPHOR'],
       ['309', '前', 'in front', '前, まえ, front', 'BEFORE CUTTING MEAT, CUT THE HORNS'],
       ['310', '煎', 'roast', '煎餅, せんべい, rice cracker', 'Boiling at the front of the restaurant is a tasty roast']
-    ],
-  '13B':
+    ]],
+  ['13B',
     [
       ['311', '各', 'each', '各, かく, each', 'EACH OF US HAS PUT OUR FOOT IN OUR MOUTH'],
       ['312', '格', 'status', '格好, かっこう, shape', 'EACH TREE HAS A CERTAIN STATUS'],
@@ -382,8 +380,8 @@ const heisig_kanji =
       ['318', '処', 'dispose', '処理, しょり, processing', 'SIT CROSS-LEGGED ON TOILET TO DISPOSE'],
       ['319', '条', 'twig', '条件, じょうけん, condition', 'SITTING CROSS-LEGGED ON A TREE PLAYING WITH A TWIG'],
       ['320', '落', 'fall', '落ちる, おちる, to fall', 'FROM EACH PLANT, LEAVES FALL LIKE WATER DROPLETS'],
-    ],
-  '14A':
+    ]],
+  ['14A',
     [
       ['321', '冗', 'superfluous', '冗談, じょうだん, joke', 'PUTTING A COVER ON A DESK IS SUPERFLUOUS'],
       ['322', '冥', 'Hades', '冥福, めいふく, heavenly bliss', 'THE SUN HAS BEEN COVERED FOR SIX DAYS – HADES IS COMING'],
@@ -398,8 +396,8 @@ const heisig_kanji =
       ['331', '塾', 'cram school', '塾, じゅく, cram school', 'AT CRAM SCHOOL YOU RECEIVE ROUND DIRT'],
       ['332', '熟', 'mellow', '熟, つくづく, deeply', 'RECEIVE ROUND WATER MAKES YOU MELLOW'],
       ['333', '亭', 'pavilion', '亭主, ていしゅ, household head', 'NAIL SUPPORTS TALL PAVILION'],
-    ],
-  '14B':
+    ]],
+  ['14B',
     [
       ['334', '京', 'capital', '京都, きょうと, Kyoto', 'FANCY LANTERN SYMBOLISES THE CAPITAL'],
       ['335', '涼', 'refreshing', '涼しい, すずしい, refreshing', 'THE WATER OF THE CAPITAL IS REFRESHING'],
@@ -413,8 +411,8 @@ const heisig_kanji =
       ['343', '壮', 'robust', '壮大, そうだい, magnificent', 'SAMURAI USES ROBUST TABLE AS SHIELD'],
       ['344', '荘', 'villa', '', 'THE GRASS AT THE VILLA IS ROBUST'],
       ['345', '売', 'sell', '売る, うる, to sell', 'SAMURAI WITH CROOKED LEGS SELLING OVER THE COUNTER']
-    ],
-  '15A':
+    ]],
+  ['15A',
     [
       ['346', '学', 'study', '学校, がっこう, school', 'CHILD LEARNS UNDER ORNATE ROOF'],
       ['347', '覚', 'remember', '覚える, おぼえる, to memorize', 'WHEN AWAKE, REMEMBER TO LOOK AT ORNATE ROOF'],
@@ -427,8 +425,8 @@ const heisig_kanji =
       ['354', '枚', 'sheet of', '枚, まい, counter for sheets', 'TASKMASTER MAKING SHEETS FROM TREES'],
       ['355', '故', 'happenstance', '', 'TASKMASTER NEEDS HAPENSTANCE TO GROW OLD'],
       ['356', '敬', 'awe', '敬語, けいご, polite language', 'TASKMASTER\'S FLOWERY PHRASES INSPIRE AWE']
-    ],
-  '15B':
+    ]],
+  ['15B',
     [
       ['357', '言', 'say', '言葉, ことば, word', ''],
       ['358', '警', 'admonish', '警察, けいさつ, police', 'WARNING: SPEAK WITH AWE'],
@@ -450,8 +448,8 @@ const heisig_kanji =
       ['374', '談', 'discuss', '談話, だんわ, conversation', 'INFLAMMING THE TALK WILL LEAD TO DISCUSSION'],
       ['375', '諾', 'consent', '', 'TALK TO THE YOUNG ABOUT CONSENT'],
       ['376', '諭', 'rebuke', '諭す, さとす, to reason with', 'IN A RUBUKE, TELL HOW TO COVER CUT MEAT'],
-    ],
-  '16':
+    ]],
+  ['16',
     [
       ['377', '式', 'style', '式, しき, style', 'STYLISH THINGS ARE CONSTRUCTED WITH A SET SQUARE'],
       ['378', '試', 'test', '試験, しけん, test', 'SPEAK WITH STYLE AS A TEST OF CHARACTER'],
@@ -472,8 +470,8 @@ const heisig_kanji =
       ['393', '桟', 'scaffold', '桟橋, さんばし, jetty', 'FLOATING TREES MAKE GOOD SCAFFOLDING'],
       ['394', '銭', 'coin', '銭湯, せんとう, public bath', 'FLOATING GOLD COINS'],
       ['395', '浅', 'shallow', '浅い, あさい, shallow', 'FLOATING IN SHALLOW WATER']
-    ],
-  '17A':
+    ]],
+  ['17A',
     [
       ['396', '止', 'stop', '止まる, とまる, to stop', ''],
       ['397', '歩', 'walk', '歩道, ほどう, footpath', 'WHEN WALKING YOU WANT A FEW STOPS'],
@@ -487,8 +485,8 @@ const heisig_kanji =
       ['405', '正', 'correct', '正直, しょうじき, honest', 'CORRECT TO STOP ONCE'],
       ['406', '証', 'evidence', '証明, しょうめい, proof', 'WHEN GIVING EVIDENCE, SPEAK CORRECTLY'],
       ['407', '政', 'politics', '政治, せいじ, polotics', 'TASK MASTER IS CORRECT IN POLOTICS']
-    ],
-  '17B':
+    ]],
+  ['17B',
     [
       ['408', '定', 'determine', '定期, ていき, fixed period', 'CORRECTLY DETERMINE THE ROOF'],
       ['409', '錠', 'lock', '錠, じょう, lock', 'DETERMINE THAT THE LOCK IS MADE OF GOLD'],
@@ -505,8 +503,8 @@ const heisig_kanji =
       ['420', '誕', 'nativity', '誕生日, たんじょうび, birthday', 'PROLONG THE SPEECH AT THE NATIVITY PLAY'],
       ['421', '礎', 'cornerstone', '礎, いしずえ, cornerstone', 'STONE CORRECTLY PLACED IN FOREST IS THE CORNERSTONE'],
       ['422', '婿', 'bridegroom', '婿, むこ, husband', 'THE GROOM IS CORRECT ABOUT THE WOMANS BODY']
-    ],
-  '18A':
+    ]],
+  ['18A',
     [
       ['423', '衣', 'garment', '衣服, いふく, clothing', ''],
       ['424', '裁', 'tailor', '裁判, さいばん, judgement', 'TAILOR 10 CLOAKS FOR THE DRUNKARD'],
@@ -531,8 +529,8 @@ const heisig_kanji =
       ['443', '肺', 'lungs', '肺, はい, lung', 'THE LUNGS IN YOUR BODY HURT AT THE MARKET'],
       ['444', '帯', 'sash', '帯, おび, obi', 'THE SASH IS ATTACHED TO THE APRON'],
       ['445', '滞', 'stagnate', '滞在, たいざい, stay', 'WATER SOACKED INTO THE SASH IS STAGNENT']
-    ],
-  '18B':
+    ]],
+  ['18B',
     [
       ['446', '刺', 'thorn', '刺身, さしみ, sashimi', 'GET PIERCED BY THORN WHEN CUTTING DROOPY TREE BRANCHES'],
       ['447', '制', 'system', '制度, せいど, system', 'CUTTING CLOTH FOR COW REQUIRES A SYSTEM'],
@@ -556,8 +554,8 @@ const heisig_kanji =
       ['465', '競', 'vie', '競技, きょうぎ, contest', 'TWO ELDER BROTHERS COMPETE'],
       ['466', '帝', 'sovereign', '帝, みかど, emperor', 'EMPEROR STANDS WEARING AN APRON'],
       ['467', '諦', 'renunciation', '諦める, あきらめる, to give up', 'THE EMPEROR SAYS YOU MUST GIVE UP']
-    ],
-  '18C':
+    ]],
+  ['18C',
     [
       ['468', '童', 'juvenile', '童話, どうわ, childrens tale', 'IT\'S JUVENILE TO STAND UNDERGROUND'],
       ['469', '瞳', 'pupil', '瞳, ひとみ, pupil', 'THE PUPIL IS THE JOUVENILE PART OF THE EYE'],
@@ -584,8 +582,8 @@ const heisig_kanji =
       ['490', '褐', 'brown', '褐色, かっしょく, dark brown', 'WEAR BROWN CLOCK TO SIESTA'],
       ['491', '喝', 'hoarse', '', 'MOUTH BECOMES HOARSE AT SIESTA'],
       ['492', '葛', 'kudzu', '葛, くず, kudzu', 'GRASS AT SIESTA IS KUDZU'],
-    ],
-  '18D':
+    ]],
+  ['18D',
     [
       ['493', '旨', 'delicious', '旨, むね, principle', 'ALL DAY EATING DELICIOUS FOOD FROM SPOON'],
       ['494', '脂', 'fat', '脂, あぶら, fat', 'DELICIOUS BODY HAS LOTS OF FAT'],
@@ -609,8 +607,8 @@ const heisig_kanji =
       ['512', '資', 'assets', '資源, しげん, resources', 'NEXT SHELLFISH HAS VALUABLE ASSETS'],
       ['513', '姿', 'figure', '姿, すがた, figure', 'THE NEXT WOMAN ALWAYS HAS A BETTER FIGURE'],
       ['514', '諮', 'consult with', '諮問, しもん, consultation', 'SAY TO THE NEXT MOUTH IS CONSULTING']
-    ],
-  '19A':
+    ]],
+  ['19A',
     [
       ['515', '賠', 'compensation', '賠償, ばいしょう, reperations', 'SHELLFISH WANTS REPERATIONS FOR BEING MUZZLED'],
       ['516', '培', 'cultivate', '培養, ばいよう, cultivation', 'TO CULTIVATE THE GROUND, MUST MUZZLE THE LIVESTOCK'],
@@ -626,8 +624,8 @@ const heisig_kanji =
       ['526', '妄', 'delusion', '妄想, もうそう, delusion', 'WOMAN ARE DELUSIONAL UNTIL DEATH'],
       ['527', '荒', 'laid waste', '荒い, あらい, wild', 'RIVER LAID WASTE TO FLWOERS'],
       ['528', '望', 'ambition', '望む, のぞむ, to desire', 'AMBITION LEAD TO THE KING\'S DEAD BODY']
-    ],
-  '19B':
+    ]],
+  ['19B',
     [
       ['529', '方', 'direction', '方, かた, direction', 'as radical -> compass'],
       ['530', '妨', 'disturb', '妨げる, さまたげる , to disturb', 'woman disturbing the compass'],
@@ -648,8 +646,8 @@ const heisig_kanji =
       ['545', '凍', 'frozen', '凍る, こおる, to freeze', 'ICE OF EAST IS FROZEN'],
       ['546', '妊', 'pregnancy', '妊娠, にんしん, pregnancy', 'PREGNANT WOMAN IN THE WOODSHED'],
       ['547', '廷', 'courts', '', 'GO TO THE COURTS TO EXTEND THE WOODSHED']
-    ],
-  '20':
+    ]],
+  ['20',
     [
       ['548', '染', 'dye', '染まる, そまる, to be dyed', 'WATER FROM NINE TREES MAKES DYE'],
       ['549', '燃', 'burn', '燃える, もえる, to burn', 'FIRE IS THE SORT OF THING THAT BURNS'],
@@ -657,8 +655,8 @@ const heisig_kanji =
       ['551', '歳', 'year-end', '歳, さい, years old', 'DRUNKARD STOPS A LITTLE AT YEAR END'],
       ['552', '県', 'prefecture', '県, けん, prefecture', 'KEEP AN EYE ON THE STAND AT THE PREFECTURAL SHOW'],
       ['553', '栃', 'horse chestnut', '栃木県, とちぎけん, Tochigi prefecture', 'THERE ARE TEN THOUSAND CHESTNUT TREES ON THE CLIFF']
-    ],
-  '21A':
+    ]],
+  ['21A',
     [
       ['554', '地', 'ground', '地, ち, earth', 'SCORPION IN THE GROUND'],
       ['555', '池', 'pond', '池, いけ, pond', 'SCORPION FELL INTO THE POND WATER'],
@@ -675,8 +673,8 @@ const heisig_kanji =
       ['566', '妃', 'queen', '妃, ひ, princess', 'WOMAN THINKS HERSELF A QUEEN'],
       ['567', '改', 'reformation', '改善, かいぜん, improvement', 'TASKMASTER REFORMS HIMSELF'],
       ['568', '記', 'scribe', '記憶, きおく, memory', 'SAY TO YOURSELF IS TO SCRIBE']
-    ],
-  '21B':
+    ]],
+  ['21B',
     [
       ['569', '包', 'wrap', '包む, つつむ, to wrap', 'bind, self'],
       ['570', '胞', 'placenta', '胞子, ほうし, spore', 'THE PLACENTA IS WRAPPED IN THE BODY'],
@@ -695,8 +693,8 @@ const heisig_kanji =
       ['583', '腸', 'intestines', '腸, ちょう, guts', 'GETTING A PIGGYBACK WILL HUTS THE BODY\'S INTESTINES'],
       ['584', '場', 'location', '工場, こうじょう, factory', 'PIGGYBACK FROM THE GROUND UP TO THE LOCATION'],
       ['585', '湯', 'hot water', '湯, ゆ, hot water', 'DOING PIGGYBACK, NEED HOT WATER TO RECOVER']
-    ],
-  '21C':
+    ]],
+  ['21C',
     [
       ['586', '羊', 'sheep', '羊, ひつじ, sheep', 'THIN-BODIED SHEEP WITH HORNS AND THREE STRIPES'],
       ['587', '美', 'beauty', '美味しい, おいしい, tasty', 'BIG SHEEP IS BEAUTIFUL'],
@@ -719,8 +717,8 @@ const heisig_kanji =
       ['604', '雑', 'miscellaneous', '雑誌, ざっし, magazine', '9 TURKEYS IN THE TREE'],
       ['605', '雌', 'female', '雌, めす, female animal', 'FEMALE TURKEYS HAVE SPOON SHAPED FOOT'],
       ['606', '準', 'semi-', '準備, じゅんび, preperation', 'TEN TURKEYS IN WATER ARE SEMI COOKED'],
-    ],
-  '21D':
+    ]],
+  ['21D',
     [
       ['607', '奮', 'stirred up', '奮闘, ふんとう, strenuous effort', 'LARGE TURKEY STRRED UP IN THE FIELD'],
       ['608', '奪', 'rob', '奪う, うばう, to steal', 'LARGE TURKEY STEALS GLUE'],
@@ -734,9 +732,9 @@ const heisig_kanji =
       ['616', '習', 'learn', '習う, ならう, to learn', 'LEARN ABOUT WHITE FEATHERS'],
       ['617', '翌', 'the following', '翌日, よくじつ, next day', 'FOLLOW THE STANDING FEATHERS'],
       ['618', '曜', 'weekday', '曜日, ようび, week day', 'TURKEY FEATHERS PROTECT FROM THE SUN'],
-      ['619', '濯', 'laundry', '濯ぐ, すすぐ, to rinse', 'BIRD WASHES WINGS IN WATER'],
-    ],
-  '22A':
+      ['619', '濯', 'laundry', '濯ぐ, すすぐ, to rinse', 'BIRD WASHES WINGS IN WATER']
+    ]],
+  ['22A',
     [
       ['620', '曰', 'sayeth', '曰く, いわく, according to...', ''],
       ['621', '困', 'quandary', '困る, こまる, to be troubled', 'TREE IN DIFFICULTY – TRAPPED IN BOX'],
@@ -756,9 +754,9 @@ const heisig_kanji =
       ['635', '庁', 'government office', '庁舎, ちょうしゃ, government office', 'GOVERNMENT IS JUST NAILS IN A CAVE'],
       ['636', '床', 'bed', '床屋, とこや, barbershop', 'WOODEN BED IN THE CAVE'],
       ['637', '麻', 'hemp', '麻, あさ, cannabis', 'GET HEMP FROM WOODS BY THE CAVE'],
-      ['638', '磨', 'grind', '磨く, みがく, to brush', 'GRIND HEMP ON STONE']
-    ],
-  '22B':
+      ['638', '磨', 'grind', '磨く, みがく, to brush', 'GRIND HEMP ON STONE'], ,
+    ]],
+  ['22B',
     [
       ['639', '心', 'heart', '心, こころ, heart', ''],
       ['640', '忘', 'forget', '忘れる, わすれる, to forget', 'DEAD HEART FORGETS TO LOVE'],
@@ -784,8 +782,8 @@ const heisig_kanji =
       ['660', '恐', 'fear', '恐怖, きょうふ, fear', 'MEDIOCRE HEART IS CONSTRUCTED FROM FEAR'],
       ['661', '惑', 'beguile', '惑星, わくせい, planet', 'DRUNKARD USES MOUTH TO COMPLAIN ABOUT HIS HEART'],
       ['662', '感', 'emotion', '感じる, かんじる, to feel', 'FEELING HEART IN THE MOUTH WHEN FACING A HALBERD']
-    ],
-  '22C':
+    ]],
+  ['22C',
     [
       ['663', '憂', 'melancholy', '憂鬱, ゆううつ, depression', 'SIT CROSS-LEGGED, HEAD AND HEART FULL OF GRIEF'],
       ['664', '寡', 'widow', '寡婦, かふ, widow', 'IN THE HOUSE A DAGGER TO THE HEAD MADE A WIDOW'],
@@ -811,8 +809,8 @@ const heisig_kanji =
       ['684', '添', 'annexed', '添える, そえる, to garnish', 'WITCH\'S HEART ANNEXED BY MOAT'],
       ['685', '必', 'invariably', '必要, ひつよう, necessary', 'LANCE THROUGH THE HEART NECESSARILY HAS CONSEQUENCES'],
       ['686', '泌', 'ooze', '沁み沁み, しみじみ, keenly', 'WATER WILL INVARIABLY OOZE'],
-    ],
-  '23A':
+    ]],
+  ['23A',
     [
       ['687', '手', 'hand', '手, て, hand', ''],
       ['688', '看', 'watch over', '看護師, かんごし, nurse', 'PUT HAND ABOVE EYE TO WATCH BETTER'],
@@ -830,14 +828,14 @@ const heisig_kanji =
       ['700', '抗', 'confront', '抗争, こうそう, rivalry', 'HAND THUMPED ON DESKTOP SHOWS CONFRONTATION'],
       ['701', '批', 'criticism', '批判, ひはん, criticism', 'CRITICISM CAN INVOLVE A HANDY COMPARISON '],
       ['702', '招', 'beckon', '招待, しょうたい, invitation', 'INVITE BY SUMMONING WITH HAND'],
-      ['703', '拓', 'clear the land', '拓殖大学, たくしょくだいが, Takushoku Uni', 'HAND CLEARS STONES FROM LAND'],
+      ['703', '拓', 'clear the land', '拓殖大学, たくしょくだいがく, Takushoku Uni', 'HAND CLEARS STONES FROM LAND'],
       ['704', '拍', 'clap', '拍手, はくしゅ, applause', 'CLAP TILL HANDS TURN WHITE'],
       ['705', '打', 'strike', '打つ, うつ, to hit', 'HAND HITS NAIL'],
       ['706', '拘', 'arrest', '拘束, こうそく, restriction', 'HANDY PHRASE TO AVOID ARREST'],
       ['707', '捨', 'discard', '捨てる, すてる, to throw away', 'FIND DISCARDED HAND IN ONE’S HOUSE!'],
       ['708', '拐', 'kidnap', '誘拐, ゆうかい, abduction', ' KIDNAP WITH SWORD AND HAND OVER MOUTH']
-    ],
-  '23B':
+    ]],
+  ['23B',
     [
       ['709', '摘', 'pinch', '摘む, つまむ, to pinch', 'GET PINCHED AT FUNNY TOWER'],
       ['710', '挑', 'challenge', '挑戦, ちょうせん, challenge', 'RAISED HANDS ARE A SIGN OF CHALLENGE'],
@@ -859,8 +857,8 @@ const heisig_kanji =
       ['726', '掲', 'put up a notice', '掲示, けいじ, notice', 'PUT UP A NOTICE: COVER SPOON FROM SUN WITH HAND'],
       ['727', '掛', 'hang', '掛ける, かける, to hang up (many others)', 'HANG IVY WAND FROM HAND'],
       ['728', '捗', 'make headway', '捗る, はかどる, to make headway', 'WALKING ON HANDS, BUT STILL MAKING HEADWAY']
-    ],
-  '23C':
+    ]],
+  ['23C',
     [
       ['729', '研', 'polish', '研究, けんきゅう, study', 'POLISH STONE WITH TWO FUNNY STICKS'],
       ['730', '戒', 'commandment', '戒告, かいこく, warning', 'TWO-HANDED HALBERD IS A SIGN OF COMMAND'],
@@ -885,8 +883,8 @@ const heisig_kanji =
       ['749', '更', 'grow late', '更に, さらに, furthermore', 'AFTER 10 FIELDS DAY GROWS LATE'],
       ['750', '硬', 'stiff', '硬い, かたい, hard', 'GROW LATE, BECOME STIFF LIKE STONE'],
       ['751', '梗', 'spiny', '梗塞, こうそく, stoppage', 'TREE BECOMES SPINY AS IT GROWS LATE'],
-    ],
-  '23D':
+    ]],
+  ['23D',
     [
       ['752', '又', 'or again', '又, また, again', 'RADICAL: ONE\'S OWN HAND'],
       ['753', '双', 'pair', '双, そう, pair', '‘PAIR OF HANDS’ MEANS BOTH HANDS'],
@@ -904,8 +902,8 @@ const heisig_kanji =
       ['765', '設', 'establishment', '設備, せつび, equipment', 'ESTABLISH WITH WORDS, DESPITE HAMMER IN HAND'],
       ['766', '撃', 'beat', '撃つ, うつ, to shoot a gun', 'ATTACK VEHICLE BY STRIKING WITH HAND'],
       ['767', '殻', 'husk', '殻, から, husk', 'STRIKE SOMEONE SELLING SHELLS FOR A CRUST']
-    ],
-  '23E':
+    ]],
+  ['23E',
     [
       ['768', '支', 'branch', '支払い, しはらい, payment', 'HAND SUPPORTS CROSS-SHAPED BRANCH'],
       ['769', '技', 'skill', '技術, ぎじゅつ, engineering', 'SUPPORT WORK-HANDS SKILLED IN CRAFT'],
@@ -923,8 +921,8 @@ const heisig_kanji =
       ['781', '板', 'plank', '板, いた, plank', 'OPPOSED WOODEN BOARDS'],
       ['782', '返', 'return', '返す, かえす, to return', 'REVERSE MOVEMENT AND RETURN'],
       ['783', '販', 'marketing', '販売, はんばい, sales', 'SHELLFISH IS ANTI MARKETING']
-    ],
-  '23F':
+    ]],
+  ['23F',
     [
       ['784', '爪', 'claw', '爪, つめ, nail', 'THREE TALONS CLAWING'],
       ['785', '妥', 'gentle', '妥当, だとう, valid', 'WOMAN’S CLAWS ARE GENTLE'],
@@ -947,8 +945,8 @@ const heisig_kanji =
       ['802', '鉱', 'mineral', '鉱物, こうぶつ, mineral', 'WIDELY USED METALS ARE MINERALS'],
       ['803', '弁', 'valve', '弁当, べんとう, japanese lunch box', 'OPERATE THE VALUE WITH YOUR NOSE 20 TIMES'],
       ['804', '雄', 'male', '雄, おす, male animal', 'WIDE TURKEYS ARE MALE']
-    ],
-  '23G':
+    ]],
+  ['23G',
     [
       ['805', '台', 'pedestal', '台所, だいどころ, kitchen', 'A NOSE IS A SORT OF PLATFORM FOR A MOUTH '],
       ['806', '怠', 'neglect', '退屈, たいくつ, tedius', 'HEART BELOW PEDESTAL IS NEGLECTED'],
@@ -974,8 +972,8 @@ const heisig_kanji =
       ['826', '流', 'current', '流れ, ながれ, flow', 'INVERTED CHILD BORN IN WATERY FLOW'],
       ['827', '允', 'license', '', 'LICENSE FOR RUNNY NOSE'],
       ['828', '唆', 'tempt', '示唆, しさ, hint', 'RUNNY NOSE, MOUTH AND CROSSED LEGS ARE TEMPTING!?']
-    ],
-  '24A':
+    ]],
+  ['24A',
     [
       ['829', '出', 'exit', '出来る, できる, to be able', 'MOUNTAIN EMERGES ON TOP OF ANOTHER'],
       ['830', '山', 'mountain', '山, やま, mountain', 'MOUTAIN'],
@@ -992,8 +990,8 @@ const heisig_kanji =
       ['841', '崖', 'bluffs', '崖, がけ, cliff', 'IN MOUNTAINS, CLIMBING A CLIFF IS LIKE DOUBLE THE GROUND'],
       ['842', '入', 'enter', '入学, にゅうがく, school admission', 'BEND TO ENTER THROUGH INVERTED V-SHAPED OPENING'],
       ['843', '込', 'crowded', '込む, こむ, to be crowded', 'IT GETS CROWDED WHEN ENTERING THE ROAD']
-    ],
-  '24B':
+    ]],
+  ['24B',
     [
       ['844', '分', 'part', '分, ぶん, part', 'UNDERSTAND THAT ONE CAN DIVIDE BY CUTTING IN TWO'],
       ['845', '貧', 'poverty', '貧しい, まずしい, needy', 'MONEY DIVIDED, SO NOW POOR'],
@@ -1010,8 +1008,8 @@ const heisig_kanji =
       ['856', '裕', 'abundant', '裕福, ゆうふく, wealthy', 'PLENTIFUL RICH CLOTHES, ENOUGH TO FILL A VALLEY'],
       ['857', '鉛', 'lead (metal)', '鉛筆, えんぴつ, pencil', 'METAL TAKEN OUT OF HOLES IS LEAD'],
       ['858', '沿', 'run alongside', '沿岸, えんがん, coast', 'GO ALONGSIDE THE WATER, THROUGH EIGHT OPENINGS']
-    ],
-  '25A':
+    ]],
+  ['25A',
     [
       ['859', '賞', 'prize', '賞, しょう, prize', 'SHELLFISH FINDS PRIZE IN OUTHOUSE'],
       ['860', '党', 'party', '党, とう, politcal party', 'POLITICAL PARTY IS OUTHOUSE ON LEGS'],
@@ -1035,8 +1033,8 @@ const heisig_kanji =
       ['878', '死', 'death', '死ぬ, しぬ, to die', 'PERSON FALLS DEAD, SOON TO BE BARE BONES'],
       ['879', '葬', 'interment', '葬式, そうしき, funeral', 'DEATH FOLLOWED BY BURIAL SURROUNDED BY GRASS'],
       ['880', '瞬', 'wink', '瞬間, しゅんかん, moment', 'IN THE EVENING, PUT A COVER ON THE WELL IN THE BLINK OF AN EYE']
-    ],
-  '25B':
+    ]],
+  ['25B',
     [
       ['881', '耳', 'ear', '耳, みみ, ear', 'POINTED EAR'],
       ['882', '取', 'take', '取る, とる, to take', 'HAND TAKES CONTROL OF EAR'],
@@ -1046,7 +1044,7 @@ const heisig_kanji =
       ['886', '恥', 'shame', '恥ずかしい, はずかしい, embarrasing', 'LISTEN TO HEART IS A SHAME'],
       ['887', '職', 'post', '職業, しょくぎょう, occupation', 'JOB AS LANCER LEAVES NOISE IN EARS'],
       ['888', '聖', 'holy', '聖書, せいしょ, bible', 'HOLY KING’S EAR-HOLE IS SACRED'],
-      ['889', '敢', 'daring', '敢えて, あえて, intentionally', 'DARING HIT ON FUNNY EAR – TRAGIC RESULTS'],
+      ['889', '敢', 'daring', '敢えて, あえて, intentionally', 'DARING HIT ON TASK MASTER\'S EAR'],
       ['890', '聴', 'listen', '聴覚, ちょうかく, sense of hearing', 'EAR IS WORTH TEN EYES WHEN LISTENING TO HEART'],
       ['891', '懐', 'pocket', '懐かしい, なつかしい, beloved', 'FEEL THOSE TEN EYES IN POCKET'],
       ['892', '慢', 'ridicule', '慢性, まんせい, chronic', 'FEEL RIDICULE AS SUN SHINES IN EYE AND CROTCH'],
@@ -1058,8 +1056,8 @@ const heisig_kanji =
       ['898', '濁', 'voiced', '濁る, にごる, to become muddy', ' WATER FULL OF LONG BODIED INSECTS WITH BIG EYES AND LOUD EYES'],
       ['899', '環', 'ring', '環境, かんきょう, environment', 'KING GIVES HIS RING A PATHETIC LOOK'],
       ['900', '還', 'send back', '還元, かんげん, restoration', 'SEND BACK ON THE ROAD WITH A PATHETIC LOOK ']
-    ],
-  '25C':
+    ]],
+  ['25C',
     [
       ['901', '夫', 'husband', '夫, おっと, husband', 'HUSBAND IS A BIG MAN WITH A PIN THROUGH HIS HEAD!?'],
       ['902', '扶', 'aid', '扶養, ふよう, aid', 'HANDY HUSBAND IS A HELP'],
@@ -1082,8 +1080,8 @@ const heisig_kanji =
       ['919', '覧', 'perusal', '展覧会, てんらんかい, exhibition', 'SLAVE PERUSES FOR A GUN'],
       ['920', '巨', 'gigantic', '巨大, きょだい, huge', 'NOT A SLAVE, BUT A GIANT WITH STARING EYE'],
       ['921', '拒', 'repel', '拒否, きょひ, refusal', 'HUGE HAND REPELS']
-    ],
-  '25D':
+    ]],
+  ['25D',
     [
       ['922', '力', 'power', '力, ちから, force', 'Radical: MUSCLE'],
       ['923', '男', 'man', '男, おとこ, man', 'MAN PROVIDES MUSCLE IN FIELD'],
@@ -1101,8 +1099,8 @@ const heisig_kanji =
       ['935', '脇', 'armpit', '脇, わき, armpit', 'ARMPIT OF BODY HAS TRIPLE MUSCLE'],
       ['936', '脅', 'threaten', '脅かす, おどかす, to threaten', 'MUSCLES ABOVE BODY IS THREATENING'],
       ['937', '協', 'co-', '協力, きょうりょく, cooperation', 'THIRTY MUSCLES CO-OPERATING']
-    ],
-  '25E':
+    ]],
+  ['25E',
     [
       ['938', '行', 'going', '行く, いく, to go', 'RADICAL: Move'],
       ['939', '律', 'rhythm', '法律, ほうりつ, law', 'MOVING BRUSH TO A RHYTHM'],
@@ -1124,8 +1122,8 @@ const heisig_kanji =
       ['955', '街', 'boulevard', '街角, まちかど, street corner', 'TWO-WAY BOULEVARD WITH CENTRAL MUD PILE'],
       ['956', '桁', 'girder', '桁, けた, girder', 'GO TO FIND A NUMBER OF WOODEN GIRDERS'],
       ['957', '衡', 'equilibrium', '均衡, きんこう, equilibrium', 'BIG STUMPY HORNS GO INTO EQUILIBRIUM']
-    ],
-  '26A':
+    ]],
+  ['26A',
     [
       ['958', '稿', 'draft', '稿, こう, manuscript', 'DRAFT MANUSCRIPT ABOUT TALL WHEAT'],
       ['959', '稼', 'earnings', '稼ぐ, かせぐ, to earn', ' HOUSE FULL OF WHEAT INDICATES WORK AND MONEY EARNED'],
@@ -1146,8 +1144,8 @@ const heisig_kanji =
       ['974', '穫', 'harvest', '収穫, しゅうかく, harvest', 'HARVESTING WHEAT IS LIKE CATCHING A BIRD IN THE HAND'],
       ['975', '穂', 'ear of a plant', '穂, ほ, ear of plant', 'HEARTENED BY EARS ON TEN FIELDS OF WHEAT'],
       ['976', '稲', 'rice plant', '稲, いね, rice plant', 'CLAW RICE PLANTS ONE DAY']
-    ],
-  '26B':
+    ]],
+  ['26B',
     [
       ['977', '香', 'incense', '香り, かおり, aroma', 'SUN BRINGS OUT FRAGRANCE OF WHEAT PLANTS'],
       ['978', '季', 'seasons', '季節, きせつ, season', 'WHEAT IN SEASON GROW LIKE YOUNG CHILDREN'],
@@ -1164,8 +1162,8 @@ const heisig_kanji =
       ['989', '粘', 'sticky', '粘り, ねばり, viscosity', 'STICKY RICE USED FOR FORTUNE TELLING'],
       ['990', '粒', 'grains', '粒, つぶ, grain', 'RICE WHICH STANDS UP IS COLLECTED FOR GRAINS'],
       ['991', '粧', 'cosmetics', '化粧, けしょう, make-up', 'RICE AND EARTH FROM THE CAVE ARE USED IN COSMETICS'],
-    ],
-  '26C':
+    ]],
+  ['26C',
     [
       ['992', '迷', 'astray', '迷惑, めいわく, trouble', 'RICE GOES ASTRAY ON THE ROAD'],
       ['993', '粋', 'chic', '粋, 粋, chic', '90 PIECES OF RICE IS VERY CHIC'],
@@ -1182,8 +1180,8 @@ const heisig_kanji =
       ['1004', '求', 'request', '求める, もとめる, to want', 'CROSS WATER TO SEEK SPOTTED FUR'],
       ['1005', '球', 'ball', '球, きゅう, sphere', 'KING REQUESTS A BALL'],
       ['1006', '救', 'salvation', '救助, きゅうじょ, aid', 'TASKMASTER REQUESTS SALVATION'],
-    ],
-  '26D':
+    ]],
+  ['26D',
     [
       ['1007', '竹', 'bamboo', '竹, たけ, bamboo', 'RADICAL: BAMBOO'],
       ['1008', '笑', 'laugh', '笑い, わらい, laugh', 'WITCH LAUGHING AT BAMBOO'],
@@ -1201,8 +1199,8 @@ const heisig_kanji =
       ['1020', '簿', 'register', '', 'REGISTER WATER AND BAMBOO WITH THE SPECIALIST'],
       ['1021', '築', 'fabricate', '建築, けんちく, construction', 'FABRICATE MEDIOCORE WOODEN BAMBOO CONSTRUCTION'],
       ['1022', '篭', 'basket', '', 'BAMBOO'],
-    ],
-  '27A':
+    ]],
+  ['27A',
     [
       ['1023', '人', 'person', '人, ひと, person', 'RADICAL: PERSON'],
       ['1024', '佐', 'assistant', '補佐, , aid', 'ASSISTANT IS ON THE LEFT'],
@@ -1226,8 +1224,8 @@ const heisig_kanji =
       ['1042', '俗', 'vulgar', '俗語, ぞくご, colloquialism', 'PERSON BEING VULGAR IN THE VALLEY'],
       ['1043', '信', 'faith', '信号, しんごう, traffic light', 'HAVE FAITH IN THE WORDS A PERSON SAYS'],
       ['1044', '佳', 'excellent', '佳作, かさく, good work', 'PERSON IS EXCELLENT WITH IVY'],
-    ],
-  '27B':
+    ]],
+  ['27B',
     [
       ['1045', '依', 'reliant', '依頼, いらい, request', 'PERSON IS RELIANT ON GARNMENTS'],
       ['1046', '例', 'example', '例えば, たとえば, for example', 'PEOPLE LINE UP IN A FILE FOR EXAMPLE'],
@@ -1251,8 +1249,8 @@ const heisig_kanji =
       ['1064', '侮', 'scorn', '侮辱, ぶじょく, insult', 'DESPISE EVERY PERSON'],
       ['1065', '使', 'use', '使う, つかう, to use', 'PERSON USES OFFICER'],
       ['1066', '便', 'convenience', '便利, べんり, convenient', 'PERSON NEED TO USE CONVENIENCE WHEN IT GROWS LATE']
-    ],
-  '27C':
+    ]],
+  ['27C',
     [
       ['1067', '倍', 'double', '倍, ばい, double', 'PERSON NEEDS DOUBLE MUZZLE'],
       ['1068', '優', 'tenderness', '優しい, やさしい, kind', 'MELANCHOLY PERSON IS TENDER'],
@@ -1274,8 +1272,8 @@ const heisig_kanji =
       ['1084', '花', 'flower', '花, はな, flower', 'GRASS CHANGES TO FLOWERS'],
       ['1085', '貨', 'freight', '貨物, かもつ, cargo', 'SHELLFISH IS CHANGING FREIGHT'],
       ['1086', '傾', 'lean', '傾向, けいこう, tendency', 'CHANGED HEAD IS LEANING'],
-    ],
-  '27D':
+    ]],
+  ['27D',
     [
       ['1087', '何', 'what', '何, なに, what', 'PERSON CAN TO WHAT'],
       ['1088', '荷', 'baggage', '荷物, にもつ, baggage', 'WHAT FLOWERS CAN BE PUT IN LUGGAGE'],
@@ -1294,8 +1292,8 @@ const heisig_kanji =
       ['1101', '挫', 'sprain', '挫折, ざせつ, setback', 'TWO PEOPLE SPRAIN FINGERS IN THE DIRT'],
       ['1102', '卒', 'graduate', '卒業, そつぎょう, graduation', 'TWO PEOPLE SHARING A TOP-HAT GRADUATE'],
       ['1103', '傘', 'umbrella', '傘, かさ, umbrella', 'FOUR PEOPLE UNDER 10 UMBRELLAS'],
-    ],
-  '28':
+    ]],
+  ['28',
     [
       ['1104', '匁', 'monme', '匁, もんめ, 3.75g', 'ARCHAIC UNIT OF WEIGHT'],
       ['1105', '以', 'by means of', '以上, いじょう, more than', 'PERSON PULLING A PLOW'],
@@ -1317,28 +1315,28 @@ const heisig_kanji =
       ['1121', '喚', 'yell', '喚起, かんき, arousal', 'FOUR MEN WITH HORNS YELL'],
       ['1122', '換', 'interchange', '換える, かえる, to replace', 'FOUR MEN WITH HORNS INTERCHANGING HANDS'],
       ['1123', '融', 'dissolve', '融資, ゆうし, finacing loan', 'DISSOLVE ONE INSECT IN MOUTH']
-    ],
-  '29A':
+    ]],
+  ['29A',
     [
-      ['1124', '施', 'alms'],
-      ['1125', '旋', 'rotation'],
-      ['1126', '遊', 'play'],
-      ['1127', '旅', 'trip'],
-      ['1128', '勿', 'not'],
-      ['1129', '物', 'thing'],
-      ['1130', '易', 'easy'],
-      ['1131', '賜', 'grant'],
-      ['1132', '尿', 'urine'],
-      ['1133', '尼', 'nun'],
-      ['1134', '尻', 'buttocks'],
-      ['1135', '泥', 'mud'],
-      ['1136', '塀', 'fence'],
-      ['1137', '履', 'footgear'],
-    ],
-  '29B':
+      ['1124', '施', 'carry out', '施行, しこう, enforcement', 'Aligator goes in the direction of a gun to carry out murder'],
+      ['1125', '旋', 'rotation', '旋律, せんりつ, melody', 'Imagine getting your coat rack to make rotations in a circle just by shooting it with a gun'],
+      ['1126', '遊', 'play', '遊ぶ, あそぶ, to play', 'Child riding a scooter with a gun having a good time. "Come play with me!" they shout'],
+      ['1127', '旅', 'trip', '旅行, りょこう, trip', 'Bad tofu and his gun make you go in direction of a "trip"'],
+      ['1128', '勿', 'must Not', '勿論, もちろん, of course', 'Radical: Wing'],
+      ['1129', '物', 'thing', '本物, ほんもの, real thing', 'Cow with wings is very memerable thing'],
+      ['1130', '易', 'easy', '易しい, やさしい, easy', 'Radical: Easy'],
+      ['1131', '賜', 'grant', '賜る, たまわる, to be given', 'Shellfish easily grants rewards'],
+      ['1132', '尿', 'urine', '尿, にょう, urine', 'It\'s not water on the flag, it\'s urine'],
+      ['1133', '尼', 'nun', '尼僧, にそう, nun', 'Nun is flag bearer in spoon racing contest'],
+      ['1134', '尻', 'butt', '尻尾, しっぽ, tail', 'Nine flags needed to cover that huge butt'],
+      ['1135', '泥', 'mud', '泥棒, どろぼう, theif', 'Due to tsunami, need to dig flag out of mud with spoon'],
+      ['1136', '塀', 'fence', '塀, へい, wall', 'Can you see the fence made of horns and flags through the light of the lantern'],
+      ['1137', '履', 'boots', '履く, はく, to put on shoes', 'Boots are covered in a flag, loitering in the black hole'],
+    ]],
+  ['29B',
     [
       ['1138', '屋', 'roof'],
-      ['1139', '握', 'grip'],
+      ['1139', '握', 'grip', '握る, にぎる, to grip', ''],
       ['1140', '屈', 'yield'],
       ['1141', '掘', 'dig'],
       ['1142', '堀', 'ditch'],
@@ -1347,11 +1345,11 @@ const heisig_kanji =
       ['1145', '裾', 'hem'],
       ['1146', '層', 'stratum'],
       ['1147', '局', 'bureau'],
-      ['1148', '遅', 'slow'],
+      ['1148', '遅', 'slow', '遅い, おそい slow]', ''],
       ['1149', '漏', 'leak'],
       ['1150', '刷', 'printing'],
-    ],
-  '29C':
+    ]],
+  ['29C',
     [
       ['1151', '尺', 'shaku'],
       ['1152', '尽', 'exhaust'],
@@ -1360,7 +1358,7 @@ const heisig_kanji =
       ['1155', '択', 'choose'],
       ['1156', '昼', 'daytime'],
       ['1157', '戸', 'door'],
-      ['1158', '肩', 'shoulder'],
+      ['1158', '肩', 'shoulder', '肩, かた, shoulder', ''],
       ['1159', '房', 'tassel'],
       ['1160', '扇', 'fan'],
       ['1161', '炉', 'hearth'],
@@ -1369,8 +1367,8 @@ const heisig_kanji =
       ['1164', '雇', 'employ'],
       ['1165', '顧', 'look back'],
       ['1166', '啓', 'disclose']
-    ],
-  '30A':
+    ]],
+  ['30A',
     [
       ['1167', '示', 'show'],
       ['1168', '礼', 'salutation'],
@@ -1391,8 +1389,8 @@ const heisig_kanji =
       ['1183', '祭', 'ritual'],
       ['1184', '察', 'guess'],
       ['1185', '擦', 'grate']
-    ],
-  '30B':
+    ]],
+  ['30B',
     [
       ['1186', '由', 'wherefore'],
       ['1187', '抽', 'pluck'],
@@ -1414,14 +1412,14 @@ const heisig_kanji =
       ['1203', '菓', 'confectionary'],
       ['1204', '課', 'chapter'],
       ['1205', '裸', 'naked']
-    ],
-  '31A':
+    ]],
+  ['31A',
     [
       ['1206', '斤', 'ax'],
       ['1207', '析', 'chop'],
       ['1208', '所', 'place'],
       ['1209', '祈', 'pray'],
-      ['1210', '近', 'near'],
+      ['1210', '近', 'near', '近い, ちかい, near', ''],
       ['1211', '折', 'fold'],
       ['1212', '哲', 'philosophy'],
       ['1213', '逝', 'departed'],
@@ -1430,14 +1428,14 @@ const heisig_kanji =
       ['1216', '暫', 'temporarily'],
       ['1217', '漸', 'steadily'],
       ['1218', '断', 'severance'],
-      ['1219', '質', 'substance'],
+      ['1219', '質', 'substance', '品質, ひんしつ, quality', ''],
       ['1220', '斥', 'reject'],
       ['1221', '訴', 'accusation'],
       ['1222', '昨', 'yesterday'],
       ['1223', '詐', 'lie'],
       ['1224', '作', 'make']
-    ],
-  '31B':
+    ]],
+  ['31B',
     [
       ['1225', '雪', 'snow'],
       ['1226', '録', 'record'],
@@ -1447,7 +1445,7 @@ const heisig_kanji =
       ['1230', '穏', 'calm'],
       ['1231', '侵', 'encroach'],
       ['1232', '浸', 'immersed'],
-      ['1233', '寝', 'lie down'],
+      ['1233', '寝', 'lie down', '寝る, ねる, to sleep', ''],
       ['1234', '婦', 'lady'],
       ['1235', '掃', 'sweep'],
       ['1236', '当', 'hit'],
@@ -1456,14 +1454,14 @@ const heisig_kanji =
       ['1239', '浄', 'clean'],
       ['1240', '事', 'matter'],
       ['1241', '唐', 'T\'ang'],
-      ['1242', '糖', 'sugar'],
+      ['1242', '糖', 'sugar', '砂糖, さとう, sugar', ''],
       ['1243', '康', 'sane'],
       ['1244', '逮', 'apprehend'],
       ['1245', '伊', 'Italy'],
       ['1246', '君', 'old boy'],
       ['1247', '群', 'flock']
-    ],
-  '31C':
+    ]],
+  ['31C',
     [
       ['1248', '耐', '-proof'],
       ['1249', '需', 'demand'],
@@ -1482,11 +1480,11 @@ const heisig_kanji =
       ['1262', '料', 'fee'],
       ['1263', '科', 'department'],
       ['1264', '図', 'map'],
-      ['1265', '用', 'utilize'],
+      ['1265', '用', 'utilize', '乱用, らんよう, misuse'],
       ['1266', '庸', 'comfortable'],
       ['1267', '備', 'equip']
-    ],
-  '32A':
+    ]],
+  ['32A',
     [
       ['1268', '昔', 'once upon a time'],
       ['1269', '錯', 'confused'],
@@ -1506,8 +1504,8 @@ const heisig_kanji =
       ['1283', '憤', 'aroused'],
       ['1284', '焼', 'bake'],
       ['1285', '暁', 'daybreak']
-    ],
-  '32B':
+    ]],
+  ['32B',
     [
       ['1286', '半', 'half'],
       ['1287', '伴', 'consort'],
@@ -1515,7 +1513,7 @@ const heisig_kanji =
       ['1289', '判', 'judgment'],
       ['1290', '拳', 'fist'],
       ['1291', '券', 'ticket'],
-      ['1292', '巻', 'scroll'],
+      ['1292', '巻', 'scroll', '巻く, まく, to wind', ''],
       ['1293', '圏', 'sphere'],
       ['1294', '勝', 'victory'],
       ['1295', '藤', 'wisteria'],
@@ -1528,8 +1526,8 @@ const heisig_kanji =
       ['1302', '不', 'negative'],
       ['1303', '否', 'negate'],
       ['1304', '杯', 'cupfuls']
-    ],
-  '33A':
+    ]],
+  ['33A',
     [
       ['1305', '矢', 'dart'],
       ['1306', '矯', 'rectify'],
@@ -1542,15 +1540,15 @@ const heisig_kanji =
       ['1313', '務', 'task'],
       ['1314', '霧', 'fog'],
       ['1315', '班', 'squad'],
-      ['1316', '帰', 'homecoming'],
-    ],
-  '33B':
+      ['1316', '帰', 'homecoming', '帰る, かえる, to return home', ''],
+    ]],
+  ['33B',
     [
       ['1317', '弓', 'bow'],
-      ['1318', '引', 'pull'],
+      ['1318', '引', 'pull', '引く, ひく, to pull', ''],
       ['1319', '弔', 'condolences'],
       ['1320', '弘', 'vast'],
-      ['1321', '強', 'strong'],
+      ['1321', '強', 'strong', '勉強, べんきょう, study', ''],
       ['1322', '弥', 'more and more'],
       ['1323', '弱', 'weak'],
       ['1324', '溺', 'drowning'],
@@ -1566,8 +1564,8 @@ const heisig_kanji =
       ['1334', '汚', 'dirty'],
       ['1335', '与', 'bestow'],
       ['1336', '写', 'copy']
-    ],
-  '34A':
+    ]],
+  ['34A',
     [
       ['1337', '身', 'somebody'],
       ['1338', '射', 'shoot'],
@@ -1575,7 +1573,7 @@ const heisig_kanji =
       ['1340', '老', 'old man'],
       ['1341', '考', 'consider'],
       ['1342', '孝', 'filial piety'],
-      ['1343', '教', 'teach'],
+      ['1343', '教', 'teach', '教える, おしえる, to teach', ''],
       ['1344', '拷', 'torture'],
       ['1345', '者', 'someone'],
       ['1346', '煮', 'boil'],
@@ -1587,11 +1585,11 @@ const heisig_kanji =
       ['1352', '猪', 'boar'],
       ['1353', '渚', 'strand'],
       ['1354', '賭', 'gamble']
-    ],
-  '34B':
+    ]],
+  ['34B',
     [
       ['1355', '峡', 'gorge'],
-      ['1356', '狭', 'cramped'],
+      ['1356', '狭', 'cramped', '狭い, せまい, narrow', ''],
       ['1357', '挟', 'sandwiched'],
       ['1358', '頬', 'cheek'],
       ['1359', '追', 'chase'],
@@ -1606,11 +1604,11 @@ const heisig_kanji =
       ['1368', '交', 'mingle'],
       ['1369', '効', 'merit'],
       ['1370', '較', 'contrast'],
-      ['1371', '校', 'exam']
-    ],
-  '34C':
+      ['1371', '校', 'exam', '学校, がっこう, school', '']
+    ]],
+  ['34C',
     [
-      ['1372', '足', 'leg'],
+      ['1372', '足', 'leg', '足, あし, foot', ''],
       ['1373', '促', 'stimulate'],
       ['1374', '捉', 'nab'],
       ['1375', '距', 'long-distance'],
@@ -1628,15 +1626,15 @@ const heisig_kanji =
       ['1387', '渦', 'whirlpool'],
       ['1388', '鍋', 'pot'],
       ['1389', '過', 'overdo']
-    ],
-  '35A':
+    ]],
+  ['35A',
     [
       ['1390', '阪', 'Heights'],
       ['1391', '阿', 'Africa'],
       ['1392', '際', 'occasion'],
       ['1393', '障', 'hinder'],
       ['1394', '隙', 'chink'],
-      ['1395', '随', 'follow'],
+      ['1395', '随', 'follow', '随分, ずいぶん, very', ''],
       ['1396', '陪', 'auxiliary'],
       ['1397', '陽', 'sunshine'],
       ['1398', '陳', 'line up'],
@@ -1654,8 +1652,8 @@ const heisig_kanji =
       ['1410', '隠', 'conceal'],
       ['1411', '堕', 'degenerate'],
       ['1412', '陥', 'collapse']
-    ],
-  '35B':
+    ]],
+  ['35B',
     [
       ['1413', '穴', 'hole'],
       ['1414', '空', 'empty'],
@@ -1669,14 +1667,14 @@ const heisig_kanji =
       ['1422', '搾', 'squeeze'],
       ['1423', '窯', 'kiln'],
       ['1424', '窮', 'hard up'],
-      ['1425', '探', 'grope'],
+      ['1425', '探', 'grope', '探す, さがす, to look for', ''],
       ['1426', '深', 'deep'],
       ['1427', '丘', 'hill'],
       ['1428', '岳', 'Point'],
       ['1429', '兵', 'soldier'],
       ['1430', '浜', 'seacoast'],
-    ],
-  '36A':
+    ]],
+  ['36A',
     [
       ['1431', '糸', 'thread'],
       ['1432', '織', 'weave'],
@@ -1691,18 +1689,18 @@ const heisig_kanji =
       ['1441', '維', 'fiber'],
       ['1442', '羅', 'gauze'],
       ['1443', '練', 'practice'],
-      ['1444', '緒', 'thong'],
-      ['1445', '続', 'continue'],
+      ['1444', '緒', 'thong', '一緒に, いっしょに, together', ''],
+      ['1445', '続', 'continue', '続く, つづく, to continue', ''],
       ['1446', '絵', 'picture'],
       ['1447', '統', 'overall'],
       ['1448', '絞', 'strangle'],
-    ],
-  '36B':
+    ]],
+  ['36B',
     [
-      ['1449', '給', 'salary'],
+      ['1449', '給', 'salary', '昇給, しょうきゅう, payrise', ''],
       ['1450', '絡', 'entwine'],
-      ['1451', '結', 'tie'],
-      ['1452', '終', 'end'],
+      ['1451', '結', 'tie', '結婚, けっこん, marriage', ''],
+      ['1452', '終', 'end', '終わる, おわる, to end', ''],
       ['1453', '級', 'class'],
       ['1454', '紀', 'chronicle'],
       ['1455', '紅', 'crimson'],
@@ -1715,30 +1713,30 @@ const heisig_kanji =
       ['1462', '約', 'promise'],
       ['1463', '細', 'dainty'],
       ['1464', '累', 'accumulate']
-    ],
-  '36C':
+    ]],
+  ['36C',
     [
       ['1465', '索', 'cord'],
       ['1466', '総', 'general'],
       ['1467', '綿', 'cotton'],
       ['1468', '絹', 'silk'],
-      ['1469', '繰', 'winding'],
+      ['1469', '繰', 'winding', '繰り返す, くりかえす, to repeat', ''],
       ['1470', '継', 'inherit'],
-      ['1471', '緑', 'green'],
+      ['1471', '緑', 'green', '緑, みどり, green', ''],
       ['1472', '縁', 'affinity'],
       ['1473', '網', 'netting'],
       ['1474', '緊', 'tense'],
       ['1475', '紫', 'purple'],
       ['1476', '縛', 'truss'],
       ['1477', '縄', 'straw rope']
-    ],
-  '36D':
+    ]],
+  ['36D',
     [
       ['1478', '幼', 'infancy'],
-      ['1479', '後', 'behind'],
+      ['1479', '後', 'behind', '午後, ごご, pm', ''],
       ['1480', '幽', 'faint'],
       ['1481', '幾', 'how many'],
-      ['1482', '機', 'mechanism'],
+      ['1482', '機', 'mechanism', '飛行機, ひこうき, airplane', ''],
       ['1483', '畿', 'capital suburbs'],
       ['1484', '玄', 'mysterious'],
       ['1485', '畜', 'livestock'],
@@ -1753,8 +1751,8 @@ const heisig_kanji =
       ['1494', '孫', 'grandchild'],
       ['1495', '懸', 'suspend'],
       ['1496', '遜', 'modest'],
-    ],
-  '37A':
+    ]],
+  ['37A',
     [
       ['1497', '却', 'instead'],
       ['1498', '脚', 'shins'],
@@ -1775,8 +1773,8 @@ const heisig_kanji =
       ['1513', '疑', 'doubt'],
       ['1514', '擬', 'mimic'],
       ['1515', '凝', 'congeal']
-    ],
-  '37B':
+    ]],
+  ['37B',
     [
       ['1516', '範', 'pattern'],
       ['1517', '犯', 'crime'],
@@ -1784,7 +1782,7 @@ const heisig_kanji =
       ['1519', '厄', 'unlucky'],
       ['1520', '危', 'dangerous'],
       ['1521', '宛', 'address'],
-      ['1522', '腕', 'arm'],
+      ['1522', '腕', 'arm', '腕, うで, arm', ''],
       ['1523', '苑', 'garden'],
       ['1524', '怨', 'grudge'],
       ['1525', '柳', 'willow'],
@@ -1796,8 +1794,8 @@ const heisig_kanji =
       ['1531', '臼', 'mortar'],
       ['1532', '毀', 'break'],
       ['1533', '興', 'entertain']
-    ],
-  '38A':
+    ]],
+  ['38A',
     [
       ['1534', '酉', 'sign of the bird', '酉, とり, zodic rooster', 'RADICAL: WHISKEY'],
       ['1535', '酒', 'sake', '酒, さけ, sake', 'SAKE IS WATERED DOWN WHISKEY'],
@@ -1820,8 +1818,8 @@ const heisig_kanji =
       ['1552', '鼓', 'drum', '鼓膜, こまく, eardrum', 'SAMURAI USES BEANS AND BRANCHES TO MAKE A DRUM'],
       ['1553', '喜', 'rejoice', '喜ぶ, よろこぶ, to be pleased', 'SAMURI REJOICES TO PUT BEANS IN MOUTH'],
       ['1554', '樹', 'timber-trees', '樹脂, じゅし, resin', 'BEANS ARE GLUED TO TIMBER-TREES']
-    ],
-  '38B':
+    ]],
+  ['38B',
     [
       ['1555', '皿', 'dish'],
       ['1556', '血', 'blood'],
@@ -1846,13 +1844,13 @@ const heisig_kanji =
       ['1575', '退', 'retreat'],
       ['1576', '限', 'limit'],
       ['1577', '眼', 'eyeball']
-    ],
-  '38C':
+    ]],
+  ['38C',
     [
       ['1578', '良', 'good'],
       ['1579', '朗', 'melodious'],
       ['1580', '浪', 'wandering'],
-      ['1581', '娘', 'daughter'],
+      ['1581', '娘', 'daughter', '娘, むすめ, daughter', ''],
       ['1582', '食', 'eat'],
       ['1583', '飯', 'meal'],
       ['1584', '飲', 'drink'],
@@ -1860,25 +1858,25 @@ const heisig_kanji =
       ['1586', '餓', 'starve'],
       ['1587', '飾', 'decorate'],
       ['1588', '餌', 'feed'],
-      ['1589', '館', 'Bldg.'],
+      ['1589', '館', 'Bldg.', '図書館, としょかん, library', ''],
       ['1590', '餅', 'mochi'],
       ['1591', '養', 'foster'],
       ['1592', '飽', 'sated'],
       ['1593', '既', 'previously'],
       ['1594', '概', 'outline'],
       ['1595', '慨', 'rue'],
-    ],
-  '39A':
+    ]],
+  ['39A',
     [
       ['1596', '平', 'even'],
-      ['1597', '呼', 'call'],
+      ['1597', '呼', 'call', '呼ぶ, よぶ, to call', ''],
       ['1598', '坪', 'two-mat area'],
       ['1599', '評', 'evaluate'],
       ['1600', '刈', 'reap'],
       ['1601', '刹', 'moment'],
       ['1602', '希', 'hope'],
       ['1603', '凶', 'villain'],
-      ['1604', '胸', 'bosom'],
+      ['1604', '胸', 'bosom', '胸, むね, chest', ''],
       ['1605', '離', 'detach'],
       ['1606', '璃', 'crystal'],
       ['1607', '殺', 'kill'],
@@ -1890,15 +1888,15 @@ const heisig_kanji =
       ['1613', '辞', 'resign'],
       ['1614', '梓', 'catalpa'],
       ['1615', '宰', 'superintend']
-    ],
-  '39B':
+    ]],
+  ['39B',
     [
       ['1616', '壁', 'wall'],
       ['1617', '璧', 'holed gem'],
       ['1618', '避', 'evade'],
       ['1619', '新', 'new'],
       ['1620', '薪', 'firewood'],
-      ['1621', '親', 'parent'],
+      ['1621', '親', 'parent', '親, おや, parent', ''],
       ['1622', '幸', 'happiness'],
       ['1623', '執', 'tenacious'],
       ['1624', '摯', 'clasp'],
@@ -1914,8 +1912,8 @@ const heisig_kanji =
       ['1634', '熱', 'heat'],
       ['1635', '菱', 'diamond'],
       ['1636', '陵', 'mausoleum'],
-    ],
-  '39C':
+    ]],
+  ['39C',
     [
       ['1637', '亥', 'sign of the hog'],
       ['1638', '核', 'nucleus'],
@@ -1931,8 +1929,8 @@ const heisig_kanji =
       ['1648', '譲', 'defer'],
       ['1649', '壌', 'lot'],
       ['1650', '嬢', 'lass']
-    ],
-  '40A':
+    ]],
+  ['40A',
     [
       ['1651', '毒', 'poison'],
       ['1652', '素', 'elementary'],
@@ -1954,8 +1952,8 @@ const heisig_kanji =
       ['1668', '潔', 'undefiled'],
       ['1669', '契', 'pledge'],
       ['1670', '喫', 'consume']
-    ],
-  '40B':
+    ]],
+  ['40B',
     [
       ['1671', '害', 'harm'],
       ['1672', '轄', 'control'],
@@ -1976,13 +1974,13 @@ const heisig_kanji =
       ['1687', '寿', 'longevity'],
       ['1688', '鋳', 'casting'],
       ['1689', '籍', 'enroll'],
-      ['1690', '春', 'springtime'],
+      ['1690', '春', 'springtime', '春, はる, spring', ''],
       ['1691', '椿', 'camellia'],
       ['1692', '泰', 'peaceful'],
       ['1693', '奏', 'play music'],
       ['1694', '実', 'reality']
-    ],
-  '40C':
+    ]],
+  ['40C',
     [
       ['1695', '奉', 'dedicate'],
       ['1696', '俸', 'stipend'],
@@ -1990,18 +1988,18 @@ const heisig_kanji =
       ['1698', '謹', 'discreet'],
       ['1699', '僅', 'trifle'],
       ['1700', '勤', 'diligence'],
-      ['1701', '漢', 'Sino-'],
+      ['1701', '漢', 'Sino-', '漢字, かんじ, kanji', ''],
       ['1702', '嘆', 'sigh'],
-      ['1703', '難', 'difficult'],
+      ['1703', '難', 'difficult', '難しい, むずかしい, difficult', ''],
       ['1704', '華', 'splendor'],
       ['1705', '垂', 'droop'],
       ['1706', '唾', 'saliva'],
       ['1707', '睡', 'drowsy'],
       ['1708', '錘', 'spindle'],
-      ['1709', '乗', 'ride'],
+      ['1709', '乗', 'ride', '乗る, のる, to ride', ''],
       ['1710', '剰', 'surplus']
-    ],
-  '41A':
+    ]],
+  ['41A',
     [
       ['1711', '今', 'now'],
       ['1712', '含', 'include'],
@@ -2013,15 +2011,15 @@ const heisig_kanji =
       ['1718', '陰', 'shade'],
       ['1719', '予', 'beforehand'],
       ['1720', '序', 'preface'],
-      ['1721', '預', 'deposit'],
+      ['1721', '預', 'deposit', '預ける, あずける, to place in someone\'s care', ''],
       ['1722', '野', 'plains'],
       ['1723', '兼', 'concurrently'],
       ['1724', '嫌', 'dislike'],
       ['1725', '鎌', 'sickle'],
       ['1726', '謙', 'self-effacing'],
       ['1727', '廉', 'bargain']
-    ],
-  '41B':
+    ]],
+  ['41B',
     [
       ['1728', '西', 'west'],
       ['1729', '価', 'value'],
@@ -2037,19 +2035,19 @@ const heisig_kanji =
       ['1739', '煙', 'smoke'],
       ['1740', '南', 'south'],
       ['1741', '楠', 'camphor tree'],
-      ['1742', '献', 'offering'],
-    ],
-  '42A':
+      ['1742', '献', 'offering', '貢献, こうけん, contribution', ''],
+    ]],
+  ['42A',
     [
       ['1743', '門', 'gates'],
-      ['1744', '問', 'question'],
+      ['1744', '問', 'question', '質問, しつもん, question', ''],
       ['1745', '閲', 'review'],
       ['1746', '閥', 'clique'],
       ['1747', '間', 'interval'],
       ['1748', '闇', 'pitch dark'],
       ['1749', '簡', 'simplicity'],
-      ['1750', '開', 'open'],
-      ['1751', '閉', 'closed'],
+      ['1750', '開', 'open', '開ける, あける, to open', ''],
+      ['1751', '閉', 'closed', '閉める, しめる, to shut', ''],
       ['1752', '閣', 'tower'],
       ['1753', '閑', 'leisure'],
       ['1754', '聞', 'hear'],
@@ -2058,15 +2056,15 @@ const heisig_kanji =
       ['1757', '闘', 'fight'],
       ['1758', '倉', 'godown'],
       ['1759', '創', 'genesis']
-    ],
-  '42B':
+    ]],
+  ['42B',
     [
       ['1760', '非', 'un-'],
       ['1761', '俳', 'haiku'],
       ['1762', '排', 'repudiate'],
       ['1763', '悲', 'sad'],
       ['1764', '罪', 'guilt'],
-      ['1765', '輩', 'comrade'],
+      ['1765', '輩', 'comrade', ''],
       ['1766', '扉', 'front door'],
       ['1767', '侯', 'marquis'],
       ['1768', '喉', 'throat'],
@@ -2078,8 +2076,8 @@ const heisig_kanji =
       ['1774', '緯', 'horizontal'],
       ['1775', '衛', 'defense'],
       ['1776', '韓', 'Korea']
-    ],
-  '43A':
+    ]],
+  ['43A',
     [
       ['1777', '干', 'dry'],
       ['1778', '肝', 'liver'],
@@ -2097,8 +2095,8 @@ const heisig_kanji =
       ['1790', '途', 'route'],
       ['1791', '斜', 'diagonal'],
       ['1792', '塗', 'paint']
-    ],
-  '43B':
+    ]],
+  ['43B',
     [
       ['1793', '束', 'bundle'],
       ['1794', '頼', 'trust'],
@@ -2109,22 +2107,22 @@ const heisig_kanji =
       ['1799', '速', 'quick'],
       ['1800', '整', 'organize'],
       ['1801', '剣', 'saber'],
-      ['1802', '険', 'precipitous'],
+      ['1802', '険', 'precipitous', '冒険, ぼうけん, adventure', ''],
       ['1803', '検', 'examination'],
       ['1804', '倹', 'frugal'],
-      ['1805', '重', 'heavy'],
+      ['1805', '重', 'heavy', '重い, おもい, heavy', ''],
       ['1806', '動', 'move'],
       ['1807', '腫', 'tumor'],
       ['1808', '勲', 'meritorious deed'],
-      ['1809', '働', 'work'],
+      ['1809', '働', 'work', '働く, はたらく, to work', ''],
       ['1810', '種', 'species'],
       ['1811', '衝', 'collide'],
       ['1812', '薫', 'fragrant']
 
-    ],
-  '44A':
+    ]],
+  ['44A',
     [
-      ['1813', '病', 'ill'],
+      ['1813', '病', 'ill', '病気, びょうき, illness', ''],
       ['1814', '痴', 'stupid'],
       ['1815', '痘', 'pox'],
       ['1816', '症', 'symptoms'],
@@ -2134,7 +2132,7 @@ const heisig_kanji =
       ['1820', '嫉', 'envy'],
       ['1821', '痢', 'diarrhea'],
       ['1822', '痕', 'scar'],
-      ['1823', '疲', 'tired'],
+      ['1823', '疲', 'tired', '疲れる, つかれる, to get tired', ''],
       ['1824', '疫', 'epidemic'],
       ['1825', '痛', 'pain'],
       ['1826', '癖', 'mannerism'],
@@ -2142,8 +2140,8 @@ const heisig_kanji =
       ['1828', '匠', 'artisan'],
       ['1829', '医', 'doctor'],
       ['1830', '匹', 'equal']
-    ],
-  '44B':
+    ]],
+  ['44B',
     [
       ['1831', '区', 'ward'],
       ['1832', '枢', 'hinge'],
@@ -2160,8 +2158,8 @@ const heisig_kanji =
       ['1843', '瞭', 'obvious'],
       ['1844', '寮', 'dormitory'],
       ['1845', '療', 'heal']
-    ],
-  '45A':
+    ]],
+  ['45A',
     [
       ['1846', '彫', 'carve'],
       ['1847', '形', 'shape'],
@@ -2178,8 +2176,8 @@ const heisig_kanji =
       ['1858', '修', 'discipline'],
       ['1859', '珍', 'rare'],
       ['1860', '診', 'checkup']
-    ],
-  '45B':
+    ]],
+  ['45B',
     [
       ['1861', '文', 'sentence'],
       ['1862', '対', 'vis-a-vis'],
@@ -2192,18 +2190,18 @@ const heisig_kanji =
       ['1869', '斎', 'purification'],
       ['1870', '粛', 'solemn'],
       ['1871', '塁', 'bases'],
-      ['1872', '楽', 'music'],
+      ['1872', '楽', 'music', '楽しむ, たのしむ, to enjoy', ''],
       ['1873', '薬', 'medicine'],
       ['1874', '率', 'ratio'],
       ['1875', '渋', 'astringent'],
       ['1876', '摂', 'vicarious']
-    ],
-  '45C':
+    ]],
+  ['45C',
     [
       ['1877', '央', 'center'],
       ['1878', '英', 'England'],
       ['1879', '映', 'reflect'],
-      ['1880', '赤', 'red'],
+      ['1880', '赤', 'red', '赤い, あかい, red', ''],
       ['1881', '赦', 'pardon'],
       ['1882', '変', 'unusual'],
       ['1883', '跡', 'tracks'],
@@ -2213,12 +2211,12 @@ const heisig_kanji =
       ['1887', '黄', 'yellow'],
       ['1888', '横', 'sideways'],
       ['1889', '把', 'grasp'],
-      ['1890', '色', 'color'],
+      ['1890', '色', 'color', '色, いろ, color', ''],
       ['1891', '絶', 'discontinue'],
       ['1892', '艶', 'glossy'],
       ['1893', '肥', 'fertilizer']
-    ],
-  '46':
+    ]],
+  ['46',
     [
       ['1894', '甘', 'sweet'],
       ['1895', '紺', 'navy blue'],
@@ -2240,8 +2238,8 @@ const heisig_kanji =
       ['1911', '潰', 'defile'],
       ['1912', '舞', 'dance'],
       ['1913', '無', 'nothingness']
-    ],
-  '47A':
+    ]],
+  ['47A',
     [
       ['1914', '組', 'association'],
       ['1915', '粗', 'coarse'],
@@ -2259,15 +2257,15 @@ const heisig_kanji =
       ['1927', '湿', 'damp'],
       ['1928', '顕', 'appear'],
       ['1929', '繊', 'slender'],
-    ],
-  '47B':
+    ]],
+  ['47B',
     [
       ['1930', '霊', 'spirits'],
-      ['1931', '業', 'profession'],
+      ['1931', '業', 'profession', '授業, じゅぎょう, lesson', ''],
       ['1932', '撲', 'slap'],
       ['1933', '僕', 'me'],
       ['1934', '共', 'together'],
-      ['1935', '供', 'submit'],
+      ['1935', '供', 'submit', '子供, こども, child', ''],
       ['1936', '異', 'uncommon'],
       ['1937', '翼', 'wing'],
       ['1938', '戴', 'accept humbly'],
@@ -2278,8 +2276,8 @@ const heisig_kanji =
       ['1943', '恭', 'respect'],
       ['1944', '選', 'elect'],
       ['1945', '殿', 'Mr.'],
-    ],
-  '48':
+    ]],
+  ['48',
     [
       ['1946', '井', 'well'],
       ['1947', '丼', 'donburi'],
@@ -2305,12 +2303,12 @@ const heisig_kanji =
       ['1967', '冊', 'tome'],
       ['1968', '柵', 'palisade'],
       ['1969', '典', 'code'],
-    ],
-  '49A': [
+    ]],
+  ['49A', [
     ['1970', '氏', 'family name'],
     ['1971', '紙', 'paper'],
-    ['1972', '婚', 'marriage'],
-    ['1973', '低', 'lower'],
+    ['1972', '婚', 'marriage', '結婚, けっこん, marriage', ''],
+    ['1973', '低', 'lower', '低い, ひくい, low', ''],
     ['1974', '抵', 'resist'],
     ['1975', '底', 'bottom'],
     ['1976', '民', 'people'],
@@ -2321,14 +2319,14 @@ const heisig_kanji =
     ['1981', '蒲', 'bullrush'],
     ['1982', '舗', 'shop'],
     ['1983', '補', 'supplement'],
-  ],
-  '49B':
+  ]],
+  ['49B',
     [
       ['1984', '邸', 'residence'],
       ['1985', '郭', 'enclosure'],
       ['1986', '郡', 'county'],
       ['1987', '郊', 'outskirts'],
-      ['1988', '部', 'section'],
+      ['1988', '部', 'section', '部屋, へや, room', ''],
       ['1989', '都', 'metropolis'],
       ['1990', '郵', 'mail'],
       ['1991', '邦', 'home country'],
@@ -2337,12 +2335,12 @@ const heisig_kanji =
       ['1994', '響', 'echo'],
       ['1995', '郎', 'son'],
       ['1996', '廊', 'corridor']
-    ],
-  '50A':
+    ]],
+  ['50A',
     [
       ['1997', '盾', 'shield'],
       ['1998', '循', 'sequential'],
-      ['1999', '派', 'faction'],
+      ['1999', '派', 'faction', '立派, りっぱ, splendid', ''],
       ['2000', '脈', 'vein'],
       ['2001', '衆', 'masses'],
       ['2002', '逓', 'parcel post'],
@@ -2355,8 +2353,8 @@ const heisig_kanji =
       ['2009', '詞', 'parts of speech'],
       ['2010', '飼', 'domesticate'],
       ['2011', '嗣', 'heir']
-    ],
-  '50B':
+    ]],
+  ['50B',
     [
       ['2012', '舟', 'boat'],
       ['2013', '舶', 'liner'],
@@ -2371,8 +2369,8 @@ const heisig_kanji =
       ['2022', '瓜', 'melon'],
       ['2023', '弧', 'arc'],
       ['2024', '孤', 'orphan']
-    ],
-  '51A':
+    ]],
+  ['51A',
     [
       ['2025', '繭', 'cocoon', '', 'INSECT THREADS DOUBLE COCOON UNDER GRASS'],
       ['2026', '益', 'benefit', '益々, ますます, more and more', 'BENEFITS OF SERVING ANIMAL HORNS ON A PLATE'],
@@ -2390,8 +2388,8 @@ const heisig_kanji =
       ['2038', '衷', 'inmost', '折衷, せっちゅう, compramise', 'INSIDE THE CENTER OF PATHETIC CLOTHING'],
       ['2039', '面', 'mask', '面倒くさい, めんどくさい, troublesome', 'FACE-MASK WITH BIG EYE IN THE MIDDLE AND A FLAT TOP'],
       ['2040', '麺', 'noodles', '麺, めん, noodle', 'NOODLES MASK BARLEY']
-    ],
-  '51B':
+    ]],
+  ['51B',
     [
       ['2041', '革', 'leather', '革, かわ, leather', 'SPLAYED OUT ANIMAL PROVIDES LEATHER'],
       ['2042', '靴', 'shoes', '靴, くつ, shoe', 'CHANGE LEATHER INTO SHOE'],
@@ -2405,8 +2403,8 @@ const heisig_kanji =
       ['2050', '承', 'acquiesce', '承知, しょうち, knowledge', 'AGREE ABOUT A BRISTLY WATER-BABY'],
       ['2051', '函', 'bin', '', 'SPARKLER IN A BOX'],
       ['2052', '極', 'poles', '北極, ほっきょく, north pole', 'EXTREMELY HOOKED HAND IN OPENING BETWEEN TWO WOODEN POLES'],
-    ],
-  '52A':
+    ]],
+  ['52A',
     [
       ['2053', '牙', 'tusk', '象牙, ぞうげ, tusk', 'RADICAL: TUSK'],
       ['2054', '芽', 'bud', '芽, め, bud', 'TUSK WRAPPED IN FLOWER BUDS'],
@@ -2420,8 +2418,8 @@ const heisig_kanji =
       ['2062', '毛', 'fur', '毛, け, fur', 'RADICAL: FUR'],
       ['2063', '耗', 'decrease', '消耗, しょうもう, exhaustion', 'DECREASE AMOUNT OF FUR ON CHRISTMAS TREE'],
       ['2064', '尾', 'tail', '尻尾, しっぽ, tail', 'TAIL IS LIKE A FLAG OF FUR'],
-    ],
-  '52B':
+    ]],
+  ['52B',
     [
       ['2065', '宅', 'home', '宅, たく, house', 'LOCK OF HAIR STORED AT HOME'],
       ['2066', '託', 'consign', '託す, たくす, to entrust', 'CONSIGN THE LOCK OF HAIR'],
@@ -2435,8 +2433,8 @@ const heisig_kanji =
       ['2074', '髪', 'hair of the head', '髪, かみ, head hair', 'GET FRIEND TO SHAPE YOUR HAIR'],
       ['2075', '展', 'unfold', '展覧会, てんらんかい, exhibition', 'UNFOLD THE FLAG AND GARNMENT'],
       ['2076', '喪', 'miss', '喪失, そうしつ, loss', 'MISSING TWO BOXES OF GARNMENTS'],
-    ],
-  '53A':
+    ]],
+  ['53A',
     [
       ['2077', '巣', 'nest', '巣, す, nest', 'OWL MAKES NEST IN FRUIT TREE'],
       ['2078', '単', 'simple', '単語, たんご, vocabulary', 'OWL SIMPLY NEEDS 10 FIELDS'],
@@ -2452,8 +2450,8 @@ const heisig_kanji =
       ['2088', '挙', 'raise', '挙式, きょしき, ceremony', 'RAISE TOOL IN HAND TO OWL'],
       ['2089', '誉', 'reputation', '名誉, めいよ, honor', 'TALK TO OWL ABOUT IT\'S REPUTAION TO USE TOOL'],
       ['2090', '猟', 'game hunting', '猟, りょう, hunting', 'OWL IS USED FOR HUNTING ANIMALS']
-    ],
-  '53B':
+    ]],
+  ['53B',
     [
       ['2091', '鳥', 'bird', '鳥, とり, bird', 'RADICAL: BIRD'],
       ['2092', '鳴', 'chirp', '鳴く, なく, to chirp', 'CHIRP FROM THE BIRD\'S MOUTH'],
@@ -2473,8 +2471,8 @@ const heisig_kanji =
       ['2106', '遇', 'interview', '', 'INTERVIEW THE INSECT IN THE FIELD ABOUT THE ROAD'],
       ['2107', '愚', 'foolish', '愚か, おろか, foolish', 'INSECT IN FIELD HAS BEEN FOOLISH WITH HIS HEART'],
       ['2108', '隅', 'corner', '隅, すみ, corner', 'THE CORNER IS THE PINICLE OF THE INSECT\'S FIELD']
-    ],
-  '53C':
+    ]],
+  ['53C',
     [
       ['2109', '逆', 'inverted', '逆らう, さからう, to oppose', 'MOUNTAIN GOAT GOING WRONG WAY ALONG THE ROAD'],
       ['2110', '塑', 'model', '', 'MOUNTAIN GOAT HAS A MODEL OF THE MOON'],
@@ -2499,8 +2497,8 @@ const heisig_kanji =
       ['2129', '勉', 'exertion', '勉強, べんきょう, study', 'EXERTION IS AN EXCHUSE FOR USING MUSCLE'],
       ['2130', '象', 'elephant', '象, ぞう, elephant', 'RADICAL: ELEPHANT'],
       ['2131', '像', 'statue', '想像, そうぞう, imagination', 'PERSON MAKES STATUE OF ELEPHANT']
-    ],
-  '54A':
+    ]],
+  ['54A',
     [
       ['2132', '馬', 'horse', '馬, うま, horse', 'RADICAL: HORSE'],
       ['2133', '駒', 'pony', '駒, こま, shogi piece', 'HORSE SAYS NICE PHRASES TO PONY'],
@@ -2515,8 +2513,8 @@ const heisig_kanji =
       ['2142', '篤', 'fervent', '危篤, きとく, verge of death', 'HORSE IS PASSIONATE ABOUT BAMBOO'],
       ['2143', '罵', 'insult', '罵る, ののしる, to insult', 'INSULT THE HORSE WITH SIDEWAYS EYES'],
       ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'HORES\'S BODY IS INFLATING']
-    ],
-  '54B':
+    ]],
+  ['54B',
     [
       ['2145', '虎', 'tiger', '虎, とら, tiger', 'RADICAL: TIGER'],
       ['2146', '虜', 'captive', '', 'MAN HOLD TIGER CAPTIVE'],
@@ -2535,8 +2533,8 @@ const heisig_kanji =
       ['2159', '熊', 'bear', '熊本県, くまもとけん, Kumamoto Prefecture', 'BEAR HAS THE ABILITY TO MAKE CAMP FIRE'],
       ['2160', '能', 'ability', '能力, のうりょく, ability', 'ABILITY TO BALANCE TWO SPOONS ON ELBOW'],
       ['2161', '態', 'attitude', '態と, わざと, intentionally', 'ABILITY TO CONTROL YOUR HEART WILL AFFECT YOUR ATTITUDE']
-    ],
-  '55':
+    ]],
+  ['55',
     [
       ['2162', '寅', 'sign of the tiger', '寅, とら, zodiac tiger', 'RADICAL: ZODIAC TIGER'],
       ['2163', '演', 'performance', '演説, えんぜつ, speech', 'ZODIAC TIGER PERFORMS BY THE WATER'],
@@ -2558,8 +2556,8 @@ const heisig_kanji =
       ['2179', '魅', 'fascination', '魅力, みりょく, charm', 'NOT YET FASCINATED ABOUT GHOSTS'],
       ['2180', '塊', 'clod', '塊, かたまり, lump', 'GHOST MAKES A LUMP OF SOIL'],
       ['2181', '襲', 'attack', '襲撃, しゅうげき, surprise attack', 'TRADITIONAL DRAGON ATTACKS PILE OF GARNMENTS']
-    ],
-  '56':
+    ]],
+  ['56',
     [
       ['2182', '嚇', 'upbraid', '威嚇, いかく, threat', 'UPBRAID SOMEONE SPEAKING DOUBLE RED'],
       ['2183', '朕', 'majestic plural', '', 'CALF BODY IS MAJESTIC'],
@@ -2579,12 +2577,13 @@ const heisig_kanji =
       ['2197', '丑', 'sign of the cow', '丑, うし, ZODIAC OX', 'ZODIAC OX'],
       ['2198', '羞', 'humiliate', '', 'HUMILIATE THE COW COVERED IN WOOL'],
       ['2199', '卯', 'sign of the hare', '卯, う, zodiac rabbit', 'ZODIAC RABBIT'],
-      ['2200', '巳', 'sign of the snake', '巳, み, zodiac snake', 'ZODIAC SNAKE']
-    ],
-	'57':
+      ['2200', '巳', 'sign of the snake', '巳, み, zodiac snake', 'ZODIAC SNAKE'],
+	  ['2200', '巳', 'sign of the snake', '巳, み, zodiac snake', 'ZODIAC SNAKE']
+    ]],
+	['57',
 	[
 	  ['2201', '噛', 'bite', '噛む, to bite, かむ', 'TEETH IN MOUTH ARE FOR BITING']
-	]
-};
+	]]
+]);
 
-export default heisig_kanji;
+export default heisig_kanji_map;

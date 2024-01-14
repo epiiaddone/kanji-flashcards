@@ -1,4 +1,4 @@
-import heisig_kanji from '../data/kanji-data';
+import heisig_kanji from '../data/wk-kanji-data';
 import DontKnow from './DontKnow';
 import { useThemeContext } from '../context/theme_context';
 import { useLessonContext } from '../context/lesson_context';

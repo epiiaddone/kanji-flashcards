@@ -1,5 +1,5 @@
 import { useLessonContext } from '../context/lesson_context';
-import heisig_kanji from '../data/kanji-data';
+import heisig_kanji from '../data/wk-kanji-data';
 
 export default function KanjiDisplay() {
     const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji, practiseQuestion } = useLessonContext();

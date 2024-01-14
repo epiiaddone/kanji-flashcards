@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useReducer } from 'react';
 
 import lesson_reducer from '../reducers/lesson_reducer';
 
-import heisig_kanji from '../data/kanji-data';
+import heisig_kanji from '../data/wk-kanji-data';
 import shuffleArray from '../utils/shuffleArray';
 
 import {

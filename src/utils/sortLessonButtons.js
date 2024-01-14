@@ -1,5 +1,5 @@
 import { BUTTON_ORDER_VALUES } from "../context/lesson_context";
-import heisig_kanji_map from "../data/kanji-data-map";
+import heisig_kanji_map from "../data/wk-kanji-data-map";
 
 export function getSortedLessons(buttonOrder) {
 
