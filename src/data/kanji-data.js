@@ -435,7 +435,7 @@ const heisig_kanji =
       ['359', '計', 'plot', '計画, けいかく, plan', 'SAY THE PLOT 10 TIMES'],
       ['360', '詮', 'elucidate', '', 'SAY THE WHOLE THING WHEN EXPLAINING'],
       ['361', '獄', 'prison', '獄中, ごくちゅう, during imprisonment', 'WORDS IN DOG FIGHT LEAD TO PRISON'],
-      ['362', '訂', 'revise', '', 'REVISE BY TALKING OUT LOAD ON THE STREET'],
+      ['362', '訂', 'revise', '訂正, ていせい, correction', 'REVISE BY TALKING OUT LOAD ON THE STREET'],
       ['363', '訃', 'obituary', '', 'TALK ABOUT THE WAND IN THE WIZARD\'S OBITURARY'],
       ['364', '討', 'chastise', '討論, とうろん, debate', 'CHASTISE FOR USING ELBOW INSTEAD OF WORDS'],
       ['365', '訓', 'instruction', '訓練, くんれん, training', 'SAY THE INSTRUCTIONS TO CROSS THE RIVER'],

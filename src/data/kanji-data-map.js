@@ -424,7 +424,7 @@ const heisig_kanji_map = new Map([
       ['352', '攻', 'aggression', '攻撃, こうげき, attack', 'TASKMASTER CRAFTING AN ATTACK'],
       ['353', '敗', 'failure', '敗者, はいしゃ, loser', 'SHELL FISH HAS FAILED THE TASKMASTER'],
       ['354', '枚', 'sheet of', '枚, まい, counter for sheets', 'TASKMASTER MAKING SHEETS FROM TREES'],
-      ['355', '故', 'happenstance', '', 'TASKMASTER NEEDS HAPENSTANCE TO GROW OLD'],
+      ['355', '故', 'happenstance', '故障, こしょう, fault', 'TASKMASTER NEEDS HAPENSTANCE TO GROW OLD'],
       ['356', '敬', 'awe', '敬語, けいご, polite language', 'TASKMASTER\'S FLOWERY PHRASES INSPIRE AWE']
     ]],
   ['15B',
@@ -434,7 +434,7 @@ const heisig_kanji_map = new Map([
       ['359', '計', 'plot', '計画, けいかく, plan', 'SAY THE PLOT 10 TIMES'],
       ['360', '詮', 'elucidate', '', 'SAY THE WHOLE THING WHEN EXPLAINING'],
       ['361', '獄', 'prison', '獄中, ごくちゅう, during imprisonment', 'WORDS IN DOG FIGHT LEAD TO PRISON'],
-      ['362', '訂', 'revise', '', 'REVISE BY TALKING OUT LOAD ON THE STREET'],
+      ['362', '訂', 'revise', '訂正, ていせい, correction', 'REVISE BY TALKING OUT LOAD ON THE STREET'],
       ['363', '訃', 'obituary', '', 'TALK ABOUT THE WAND IN THE WIZARD\'S OBITURARY'],
       ['364', '討', 'chastise', '討論, とうろん, debate', 'CHASTISE FOR USING ELBOW INSTEAD OF WORDS'],
       ['365', '訓', 'instruction', '訓練, くんれん, training', 'SAY THE INSTRUCTIONS TO CROSS THE RIVER'],
