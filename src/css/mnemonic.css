@@ -1,0 +1,14 @@
+.mnemonic-item {
+    color: black;
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+}
+
+
+.mnemonic-kanji {
+    background-color: var(--kanji-light);
+}
+
+.mnemonic-radical {
+    background-color: var(--radical-light);
+}

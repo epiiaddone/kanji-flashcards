@@ -20,6 +20,11 @@
   --score-20-color: rgb(180, 30, 10);
   --score-10-color: rgb(200, 10, 10);
   --score-0-color: rgb(220, 0, 10);
+  --radical: #00AAFF;
+  --radical-light: #88D7FF;
+  --kanji: #FF00AA;
+  --kanji-dark: #DD0093;
+  --kanji-light: #F6C;
 }
 
 body {
