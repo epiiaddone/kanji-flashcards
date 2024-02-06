@@ -1,4 +1,4 @@
-const wk_kanji_data = {
+const full_kanji_data = {
     440: {
         "slug": "一",
         "level": 1,

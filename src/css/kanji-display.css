@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   color: white;
-  background-color: var(--app-game-color);
+  background-color: var(--kanji);
   text-align: center;
   border-radius: 10px;
   box-shadow: var(--content-box-shadow);

@@ -13,6 +13,7 @@ import './css/kanji-display.css';
 import './css/kanji-info.css';
 import './css/lesson-select.css';
 import './css/score.css';
+import './css/mnemonic.css';
 
 // this order is import as overwrite colors
 import './css/theme-toggle.css';
@@ -25,7 +26,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <LessonProvider>
-          <Game/>
+        <Game />
       </LessonProvider>
     </ThemeProvider>
   </React.StrictMode>

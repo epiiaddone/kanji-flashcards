@@ -1644,7 +1644,7 @@ const heisig_kanji_map = new Map([
       ['1401', '院', 'Institution', '病院, びょういん, hospital', 'Building that has a roof from it\'s origin is an institution'],
       ['1402', '陣', 'camp', '陣, じん, army base', 'Building full of cars is army base'],
       ['1403', '隊', 'regiment', '軍隊, ぐんたい, army', 'Building full of horny pigs makes a squad'],
-      ['1404', '墜', 'crash', '墜落, ついらく, falling' 'Regiment falls into a dirt with a crash'],
+      ['1404', '墜', 'crash', '墜落, ついらく, falling', 'Regiment falls into a dirt with a crash'],
       ['1405', '降', 'descend', '降りる, おりる, to get off', 'In winter all  cows descend into buildings '],
       ['1406', '階', 'story', '階段, かいだん, stairs', 'Look at the building and compare all the white floors'],
       ['1407', '陛', 'highness', '陛下, へいか, your majesty', 'Comparing buildings to dirt is what her highness does'],
@@ -1657,7 +1657,7 @@ const heisig_kanji_map = new Map([
   ['35B',
     [
       ['1413', '穴', 'hole', '穴熊, あなぐま, Bear in the hole', 'Radical: hole'],
-      ['1414', '空', 'empty', '空港, くうこう, airport' , 'Radical: sky'],
+      ['1414', '空', 'empty', '空港, くうこう, airport', 'Radical: sky'],
       ['1415', '控', 'abstain', '控える, ひかえる, to abstain', 'Raise fingers in sky to show that you abstain'],
       ['1416', '突', 'stab', '突然, とつぜん, suddenly', 'A big hole is created when you stab someone'],
       ['1417', '究', 'research', '究明, きゅうめい, investigation', 'Nine holes are needed for research'],
@@ -1694,7 +1694,7 @@ const heisig_kanji_map = new Map([
       ['1445', '続', 'continue', '続く, つづく, to continue', ''],
       ['1446', '絵', 'drawing', '絵文字, えもじ, emoji', 'Threads meeting on paper will make a drawing'],
       ['1447', '統', 'unite', '伝統, でんとう, tradition', 'Allocate all thread and they will unite'],
-      ['1448', '絞', 'strangle' '絞める, しめる, to strangle', 'When threads get mixed they will strangle you'],
+      ['1448', '絞', 'strangle', '絞める, しめる, to strangle', 'When threads get mixed they will strangle you'],
     ]],
   ['36B',
     [
