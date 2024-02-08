@@ -95,15 +95,16 @@ export default function KanjiDisplay() {
                         <Radicals radicalIds={kanjiComponentIds} />
                     </div>
                 </div>
-            </div>
-            <div className="kanji-info__word">
-                <div className="kanji-info__title">Example Word</div>
-                <div className="kanji-info__word--text">
-                    <div className="kanji-info__word--kanji">成功</div>
-                    <div>せいこう</div>
-                    <div>Success</div>
+                <div className="kanji-info__word">
+                    <div className="kanji-info__title">Example Word</div>
+                    <div className="kanji-info__word--text">
+                        <div className="kanji-info__word--kanji">成功</div>
+                        <div>せいこう</div>
+                        <div>Success</div>
+                    </div>
                 </div>
             </div>
+
             <div className="kanji-info__mnemonic">
                 <div className="kanji-info__title">Mnemonic</div>
                 <Mnemonic mnemonicString={kanjiMnemonic} />
