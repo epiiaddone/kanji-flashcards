@@ -1484,7 +1484,8 @@ const heisig_kanji =
       ['1264', '図', 'diagram', '図, ず, diagram', 'In your mouth is a diagram to find the ice treasure'],
       ['1265', '用', 'task', '乱用, らんよう, misuse', 'Radcial: task'],
       ['1266', '庸', 'common', '凡庸, ぼんよう, mediocre', 'Under a canopy is a brush and a task to complete. This is common.'],
-      ['1267', '備', 'provide', '備蓄, びちく, emergency stores', 'Leader has a task to provide flowers to put on a cliff']
+      ['1267', '備', 'provide', '備蓄, びちく, emergency stores', 'Leader has a task to provide flowers to put on a cliff'],
+      ['10001', '噛', 'bite', '噛む, to bite, かむ', 'Teeth in mouth are for biting']
     ],
   '32A':
     [
@@ -2581,10 +2582,6 @@ const heisig_kanji =
       ['2199', '卯', 'zodiac rabbit', '卯, う, zodiac rabbit', 'Zodiac rabbit'],
       ['2200', '巳', 'zodiac snake', '巳, み, zodiac snake', 'Radical: snake']
     ],
-  '57':
-    [
-      ['2201', '噛', 'bite', '噛む, to bite, かむ', 'Teeth in mouth are for biting']
-    ]
 };
 
 export default heisig_kanji;

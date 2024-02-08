@@ -1,4 +1,4 @@
-const full_kanji_data = {
+export const wk_api_kanji_data = {
     440: {
         "slug": "一",
         "level": 1,

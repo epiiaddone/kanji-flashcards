@@ -1,6 +1,12 @@
 export const Mnemonic = ({ mnemonicString }) => {
     //console.log("mnemonicString:", mnemonicString)
 
+    if (!mnemonicString) {
+        return (
+            <div className="mnemonic">Coming Soon!</div>
+        )
+    }
+
     const stringSplit = mnemonicString.split('*');
     //console.log(stringSplit);
 

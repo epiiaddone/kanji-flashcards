@@ -14,6 +14,8 @@ import './css/kanji-info.css';
 import './css/lesson-select.css';
 import './css/score.css';
 import './css/mnemonic.css';
+import './css/radicals.css';
+import './css/meanings.css';
 
 // this order is import as overwrite colors
 import './css/theme-toggle.css';

@@ -1,7 +1,11 @@
 import { useLessonContext } from '../context/lesson_context';
-import { radicalData } from '../data/radical-data';
 import heisig_kanji from '../data/wk-kanji-data';
+import { KanjiLocation } from '../utils/kanjiLocation';
 import { Mnemonic } from './Mnemonic';
+import { wk_api_kanji_data } from '../data/wk_api_kanji_data';
+import { Radicals } from './Radicals';
+import { wk_api_missing_kanji_data } from '../data/wk_api_missing_kanji_data';
+import { Meanings } from './Meanings';
 
 export default function KanjiDisplay() {
     const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji, practiseQuestion } = useLessonContext();
@@ -10,27 +14,45 @@ export default function KanjiDisplay() {
 
     let kanjiId;
     let kanjiCharacter;
-    let kanjiMeaning;
-    let kanjiExample;
+    let kanjiMeanings;
     let kanjiMnemonic;
+    let kanjiComponentIds;
+    let kanjiExampleID;
+    let kanjiExample;
+    let kanjiLevel;
+    let kanji_location = KanjiLocation.INCOMPLETE;
 
     if (practiseMode) {
         kanjiId = heisig_kanji[lesson][practiseQuestion][0];
         kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
-        kanjiMeaning = heisig_kanji[lesson][practiseQuestion][2];
-        kanjiExample = heisig_kanji[lesson][practiseQuestion][3];
-        kanjiMnemonic = heisig_kanji[lesson][practiseQuestion][4];
     } else {
         kanjiId = heisig_kanji[lesson][currentQuestion][0];
         kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
-        kanjiMeaning = heisig_kanji[lesson][currentQuestion][2];
-        kanjiExample = heisig_kanji[lesson][currentQuestion][3];
-        kanjiMnemonic = heisig_kanji[lesson][currentQuestion][4];
     }
 
-    const mnemonicString = `A *R[person]R* puts a *R[lid]R* on their *R[cross]R* after they *K[graduate]K*. It’s a symbolic gesture, putting the lid over the cross, but it’s just what you do when you graduate around these parts.`;
 
-    const component_subject_ids = [2, 4, 56];
+    for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
+        if (kanji.slug === kanjiCharacter) {
+            kanji_location = KanjiLocation.WK;
+            kanjiMeanings = kanji.meanings;
+            kanjiMnemonic = kanji.meaning_mnemonic;
+            kanjiComponentIds = kanji.component_subject_ids;
+            kanjiExampleID = kanji.amalgamation_subject_ids[0];
+            kanjiLevel = kanji.level;
+            break;
+        }
+    }
+
+    if (kanji_location === KanjiLocation.INCOMPLETE) {
+        if (wk_api_missing_kanji_data[kanjiCharacter]) {
+            kanji_location = KanjiLocation.WK_MISSING;
+            const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
+            kanjiMeanings = kanjiData.meanings;
+            kanjiComponentIds = kanjiData.component_subject_ids;
+            kanjiExample = kanjiData.example_word;
+            kanjiMnemonic = kanjiData.meaning_mnemonic;
+        }
+    }
 
 
     if (!isShowInfo) return (
@@ -52,35 +74,25 @@ export default function KanjiDisplay() {
                     </div>
                     <div>
                         <div className="kanji-info__title">Meanings</div>
-                        <div className="kanji-info__meaning">
-                            {kanjiMeaning}
-                        </div>
+                        <Meanings meaningsArray={kanjiMeanings} />
                     </div>
                 </div>
                 <div>
                     <div className="kanji-info__links">
-                        <a target="_blank" href={"https://jisho.org/search/" + kanjiCharacter}>jisho</a>
-                        <a target="_blank" href={"https://www.wanikani.com/kanji/" + kanjiCharacter}>WK Level:<span>4</span></a>
+                        <a
+                            target="_blank"
+                            href={"https://jisho.org/search/" + kanjiCharacter}
+                        >jisho</a>
+                        {kanjiLevel &&
+                            <a
+                                target="_blank"
+                                href={"https://www.wanikani.com/kanji/" + kanjiCharacter}
+                            >WK Level:<span> {kanjiLevel}</span></a>
+                        }
                     </div>
                     <div className="kanji-info__radicals">
                         <div className="kanji-info__title">Radicals</div>
-                        <div className="kanji-info__radicals--list">
-                            {component_subject_ids.map(radicalID => {
-                                return (
-                                    <div
-                                        className="radical"
-                                        key={radicalID}
-                                    >
-                                        <div className="radical--characters">
-                                            {radicalData[radicalID].characters === 'null' ?
-                                                <img className="radical--image" src={radicalData[radicalID].image} />
-                                                : radicalData[radicalID].characters}
-                                        </div>
-                                        <div className="radical--slug">{radicalData[radicalID].slug}</div>
-                                    </div>
-                                )
-                            })}
-                        </div>
+                        <Radicals radicalIds={kanjiComponentIds} />
                     </div>
                 </div>
             </div>
@@ -94,7 +106,7 @@ export default function KanjiDisplay() {
             </div>
             <div className="kanji-info__mnemonic">
                 <div className="kanji-info__title">Mnemonic</div>
-                {<Mnemonic mnemonicString={mnemonicString} />}
+                <Mnemonic mnemonicString={kanjiMnemonic} />
             </div>
             <button
                 className="kanji-info__next-question"

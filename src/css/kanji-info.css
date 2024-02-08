@@ -54,13 +54,7 @@
   margin: 0.3rem;
 }
 
-.kanji-info__radicals--list {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .kanji-info__word--text {
   display: flex;
@@ -80,6 +74,8 @@
   margin-right: auto;
   text-align: center;
 }
+
+
 
 @media (min-width:600px) {
   .kanji-info__character {
