@@ -77,6 +77,27 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[dog]R* uses *R[mouth]R* to *K[sniff]K* him*R[self]R*`,
         "example_word": '嗅ぐ, かぐ, to sniff',
     },
+    '填': {
+        "heisig_id": 166,
+        "component_subject_ids": [17,],
+        "meanings": ["inlay"],
+        "meaning_mnemonic": `*K[Inlay]K* *R[reality]R* into the *R[dirt]R*`,
+        "example_word": '',
+    },
+    '圭': {
+        "heisig_id": 167,
+        "component_subject_ids": [17],
+        "meanings": ["squared jewel"],
+        "meaning_mnemonic": `The *K[squared jewel]K* is in fact just a pile of *R[dirt]R*`,
+        "example_word": '',
+    },
+    '腎': {
+        "heisig_id": 916,
+        "component_subject_ids": [43, 30, 323],
+        "meanings": ["kidney"],
+        "meaning_mnemonic": `*R[servant]R* uses *R[stool]R* to put *K[kidney]K* on the *R[moon]R*`,
+        "example_word": '腎臓, じんぞう, kidney',
+    },
     '嚇': {
         "heisig_id": 2182,
         "component_subject_ids": [16, 92],

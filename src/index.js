@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import Game from './components/Game';
 import { ThemeProvider } from './context/theme_context';
 import { LessonProvider } from './context/lesson_context';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { LandingPage } from './pages/LandingPage';
+import { GamePage } from './pages/GamePage';
+import { ErrorPage } from './pages/ErrorPage';
 
 import './index.css';
 import './css/answer-buttons.css';
@@ -24,12 +26,19 @@ import './css/highlight.css';
 import './css/score-colors.css';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
       <LessonProvider>
-        <Game />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="game" element={<GamePage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </BrowserRouter>
       </LessonProvider>
     </ThemeProvider>
   </React.StrictMode>

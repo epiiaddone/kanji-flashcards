@@ -1,6 +1,5 @@
 
 import {
-    OPEN_LESSON_SELECT,
     LOAD_GAME,
     LESSON_SELECTED,
     CORRECT_ANSWER,
@@ -21,7 +20,6 @@ const lesson_reducer = (state, action) => {
         return {
             ...state,
             lesson: action.payload,
-            isLessonSelectOpen: false
         }
     }
 
@@ -31,17 +29,6 @@ const lesson_reducer = (state, action) => {
             ...state,
             questionOrder: tempArray1,
             answerOrder: tempArray2
-        }
-    }
-
-    if (action.type === OPEN_LESSON_SELECT) {
-        return {
-            ...state,
-            isLessonSelectOpen: true,
-            isGameOver: false,
-            buttonOrder: BUTTON_ORDER_VALUES[0],
-            practiseMode: false,
-            practiseKanji: [],
         }
     }
 

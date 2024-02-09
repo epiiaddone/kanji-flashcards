@@ -43,6 +43,10 @@ div {
   box-sizing: border-box;
 }
 
+a {
+  all: unset;
+}
+
 .game {
   position: relative;
 }

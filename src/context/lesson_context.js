@@ -7,7 +7,6 @@ import shuffleArray from '../utils/shuffleArray';
 
 import {
   LOAD_GAME,
-  OPEN_LESSON_SELECT,
   LESSON_SELECTED,
   CORRECT_ANSWER,
   INCORRECT_ANSWER,
@@ -29,7 +28,6 @@ const initialState = {
   answersActive: true,
   correctPercent: 0,
   isGameOver: false,
-  isLessonSelectOpen: false,
   lesson: '1',
   questionOrder: [0],
   answerOrder: [0],
@@ -65,14 +63,10 @@ export const LessonProvider = ({ children }) => {
     dispatch({ type: LOAD_GAME, payload: { tempArray1, tempArray2 } })
   }, [state.lesson])
 
-  const openLessonSelect = () => {
-    dispatch({ type: OPEN_LESSON_SELECT });
-    dispatch({ type: RESET });
-  }
 
-  const selectLesson = (e) => {
-    const selectedLesson = e.target.getAttribute('data-lesson')
-    dispatch({ type: LESSON_SELECTED, payload: selectedLesson })
+  const selectLesson = (lesson) => {
+    console.log("selectLesson:", lesson);
+    dispatch({ type: LESSON_SELECTED, payload: lesson })
   }
 
   let currentQuestion = state.questionOrder[state.questionNumber - 1];
@@ -133,12 +127,6 @@ export const LessonProvider = ({ children }) => {
     }
   }
 
-
-  const selectNext = () => {
-    dispatch({ type: OPEN_LESSON_SELECT })
-    dispatch({ type: RESET });
-  }
-
   const setButtonOrder = (e) => {
     const selectedOrder = e.target.getAttribute('data-order');
     dispatch({ type: SET_BUTTON_ORDER, payload: selectedOrder })
@@ -151,8 +139,6 @@ export const LessonProvider = ({ children }) => {
         currentQuestion,
         verifyAnswer,
         dontKnowClick,
-        selectNext,
-        openLessonSelect,
         selectLesson,
         nextQuestion,
         setButtonOrder,
