@@ -1,0 +1,11 @@
+.example-word {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.example-word--kanji {
+    font-size: 2rem;
+}

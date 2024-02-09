@@ -6,11 +6,23 @@ import { wk_api_kanji_data } from '../data/wk_api_kanji_data';
 import { Radicals } from './Radicals';
 import { wk_api_missing_kanji_data } from '../data/wk_api_missing_kanji_data';
 import { Meanings } from './Meanings';
+import { fetchVocab } from '../api/fetchVocab';
+import { ExampleWord } from './ExampleWord';
+import { useEffect, useState } from 'react';
 
 export default function KanjiDisplay() {
-    const { lesson, currentQuestion, isShowInfo, nextQuestion, practiseMode, practiseKanji, practiseQuestion } = useLessonContext();
+    const { lesson,
+        currentQuestion,
+        isShowInfo,
+        nextQuestion,
+        practiseMode,
+        practiseKanji,
+        practiseQuestion,
+        questionNumber } = useLessonContext();
 
-    if (lesson === 'none') return;
+    //this is state because it's passed as props
+    //and we want rerender when api data returns
+    const [kanjiExample, setKanjiExample] = useState('');
 
     let kanjiId;
     let kanjiCharacter;
@@ -18,41 +30,57 @@ export default function KanjiDisplay() {
     let kanjiMnemonic;
     let kanjiComponentIds;
     let kanjiExampleID;
-    let kanjiExample;
     let kanjiLevel;
     let kanji_location = KanjiLocation.INCOMPLETE;
 
-    if (practiseMode) {
-        kanjiId = heisig_kanji[lesson][practiseQuestion][0];
-        kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
-    } else {
-        kanjiId = heisig_kanji[lesson][currentQuestion][0];
-        kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
-    }
+    if (lesson != "none") {
+        if (practiseMode) {
+            kanjiId = heisig_kanji[lesson][practiseQuestion][0];
+            kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
+        } else {
+            kanjiId = heisig_kanji[lesson][currentQuestion][0];
+            kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
+        }
 
 
-    for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
-        if (kanji.slug === kanjiCharacter) {
-            kanji_location = KanjiLocation.WK;
-            kanjiMeanings = kanji.meanings;
-            kanjiMnemonic = kanji.meaning_mnemonic;
-            kanjiComponentIds = kanji.component_subject_ids;
-            kanjiExampleID = kanji.amalgamation_subject_ids[0];
-            kanjiLevel = kanji.level;
-            break;
+        for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
+            if (kanji.slug === kanjiCharacter) {
+                kanji_location = KanjiLocation.WK;
+                kanjiMeanings = kanji.meanings;
+                kanjiMnemonic = kanji.meaning_mnemonic;
+                kanjiComponentIds = kanji.component_subject_ids;
+                kanjiExampleID = kanji.amalgamation_subject_ids[0];
+                kanjiLevel = kanji.level;
+                break;
+            }
+        }
+
+        if (kanji_location === KanjiLocation.INCOMPLETE) {
+            if (wk_api_missing_kanji_data[kanjiCharacter]) {
+                kanji_location = KanjiLocation.WK_MISSING;
+                const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
+                kanjiMeanings = kanjiData.meanings;
+                kanjiComponentIds = kanjiData.component_subject_ids;
+                setKanjiExample(kanjiData.example_word);
+                kanjiMnemonic = kanjiData.meaning_mnemonic;
+            }
         }
     }
 
-    if (kanji_location === KanjiLocation.INCOMPLETE) {
-        if (wk_api_missing_kanji_data[kanjiCharacter]) {
-            kanji_location = KanjiLocation.WK_MISSING;
-            const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
-            kanjiMeanings = kanjiData.meanings;
-            kanjiComponentIds = kanjiData.component_subject_ids;
-            kanjiExample = kanjiData.example_word;
-            kanjiMnemonic = kanjiData.meaning_mnemonic;
+    const getApiVocab = async (vocabID) => {
+        if (!vocabID || lesson === "none") return;
+        const { error, vocabData } = await fetchVocab(vocabID);
+        if (!error) {
+            let temp = vocabData.characters + ", " + vocabData.reading + ", " + vocabData.meaning
+            setKanjiExample(temp);
         }
+        console.log("getApiVocab:", kanjiExample)
     }
+
+    useEffect(() => {
+        getApiVocab(kanjiExampleID)
+    }, [questionNumber, practiseQuestion, lesson])
+
 
 
     if (!isShowInfo) return (
@@ -97,11 +125,7 @@ export default function KanjiDisplay() {
                 </div>
                 <div className="kanji-info__word">
                     <div className="kanji-info__title">Example Word</div>
-                    <div className="kanji-info__word--text">
-                        <div className="kanji-info__word--kanji">成功</div>
-                        <div>せいこう</div>
-                        <div>Success</div>
-                    </div>
+                    <ExampleWord exampleWordString={kanjiExample} />
                 </div>
             </div>
 

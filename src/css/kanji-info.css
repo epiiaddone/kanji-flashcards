@@ -57,19 +57,6 @@
 }
 
 
-
-.kanji-info__word--text {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.kanji-info__word--kanji {
-  font-size: 2rem;
-}
-
 .kanji-info__mnemonic {
   width: 90%;
   margin-left: auto;

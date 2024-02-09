@@ -16,6 +16,7 @@ import './css/score.css';
 import './css/mnemonic.css';
 import './css/radicals.css';
 import './css/meanings.css';
+import './css/example-word.css';
 
 // this order is import as overwrite colors
 import './css/theme-toggle.css';
