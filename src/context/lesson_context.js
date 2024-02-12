@@ -46,7 +46,7 @@ export const LessonProvider = ({ children }) => {
   const [state, dispatch] = useReducer(lesson_reducer, initialState);
 
   useEffect(() => {
-    if (state.lesson === 'none') return;
+    if (!state.lesson) return;
     const tempArray1 = [];
     const tempArray2 = [];
     let counter = 0;
@@ -66,6 +66,7 @@ export const LessonProvider = ({ children }) => {
 
   const selectLesson = (lesson) => {
     console.log("selectLesson:", lesson);
+    dispatch({ type: RESET })
     dispatch({ type: LESSON_SELECTED, payload: lesson })
   }
 
@@ -132,6 +133,10 @@ export const LessonProvider = ({ children }) => {
     dispatch({ type: SET_BUTTON_ORDER, payload: selectedOrder })
   }
 
+  const gameOverClicked = () => {
+    dispatch({ type: RESET })
+  }
+
   return (
     <LessonContext.Provider
       value={{
@@ -142,6 +147,7 @@ export const LessonProvider = ({ children }) => {
         selectLesson,
         nextQuestion,
         setButtonOrder,
+        gameOverClicked
       }}
     >
       {children}

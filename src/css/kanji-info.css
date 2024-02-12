@@ -28,6 +28,8 @@
 
 .kanji-info__links a {
   color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .kanji-info__next-question {

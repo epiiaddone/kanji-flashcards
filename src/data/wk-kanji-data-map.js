@@ -1867,6 +1867,7 @@ const heisig_kanji_map = new Map([
       ['1593', '既', 'previously'],
       ['1594', '概', 'outline'],
       ['1595', '慨', 'rue'],
+	  ['10002', '狼', 'wolf']
     ]],
   ['39A',
     [

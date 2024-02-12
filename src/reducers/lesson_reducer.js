@@ -35,7 +35,7 @@ const lesson_reducer = (state, action) => {
     if (action.type === RESET) {
         return {
             ...state,
-            lesson: 'none',
+            lesson: '',
             questionOrder: [0],
             answerOrder: [0],
             correctCount: 0,
@@ -49,6 +49,7 @@ const lesson_reducer = (state, action) => {
             practiseMode: false,
             practiseKanji: [],
             practiseQuestion: null,
+            isGameOver: false,
         }
     }
 

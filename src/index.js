@@ -10,7 +10,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import './index.css';
 import './css/answer-buttons.css';
 import './css/game-over.css';
-import './css/header.css';
+import './css/game-header.css';
 import './css/kanji-display.css';
 import './css/kanji-info.css';
 import './css/lesson-select.css';
@@ -19,6 +19,9 @@ import './css/mnemonic.css';
 import './css/radicals.css';
 import './css/meanings.css';
 import './css/example-word.css';
+import './css/banner.css';
+import './css/landing-header.css';
+import './css/game-page.css';
 
 // this order is import as overwrite colors
 import './css/theme-toggle.css';

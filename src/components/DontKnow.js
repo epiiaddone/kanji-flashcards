@@ -1,13 +1,11 @@
 import { useLessonContext } from "../context/lesson_context";
 
-export default function DontKnow(){
+export default function DontKnow() {
 
-    const {lesson, dontKnowClick, answersActive} = useLessonContext();
+    const { dontKnowClick, answersActive } = useLessonContext();
 
     const modifiedOnDontKnowClick = answersActive ? dontKnowClick : null;
-
-    if(lesson ==='none') return(<></>);
-    else return(
+    return (
         <div className="dont-know" onClick={modifiedOnDontKnowClick}>Don't Know</div>
     )
 }

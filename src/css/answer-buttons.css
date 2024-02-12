@@ -1,43 +1,48 @@
+.answer-buttons {
+  margin-top: 1rem;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.answer-buttons>div {
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: var(--content-box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  min-width: 3rem;
+  text-transform: capitalize;
+}
+
+@media (min-width:500px) {
+  .answer-buttons>div {
+    min-height: 3rem;
+    min-width: 6rem;
+  }
+}
+
+@media (min-width:1100px) {
+  .answer-buttons>div {
+    min-width: 8rem;
+    min-height: 4rem;
+  }
+}
 
 
-.answer-buttons{
-    margin-top:1rem;
-    width:90%;
-    margin-right: auto;
-    margin-left:auto;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .answer-buttons > div{
-    border-radius:4px;
-    text-align: center;
-    width: 6.5rem;
-    height: 3rem;
-    margin: 0.25rem;
-    box-shadow: var(--content-box-shadow);
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    cursor:pointer;
-    padding:0.1rem;
-  }
-  
-  @media (min-width:1100px){
-    .answer-buttons > div{
-      width:8rem;
-      height:4rem;
-    }
-  }
-  
-  
-  .answer-buttons > div.dont-know{
-    background-color: var(--dont-know-color);
-  }
-  
-  
-  .answer-buttons__card{
-    background-color: var(--app-button-background-color);
-  }
+.answer-buttons>div.dont-know {
+  background-color: var(--dont-know-color);
+}
+
+
+.answer-buttons__card {
+  background-color: var(--app-button-background-color);
+}

@@ -1,0 +1,30 @@
+.game-header {
+  --header-top-padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-header--buttons {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.game-header--exit-button {
+  background-color: var(--app-button-background-color);
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.game-header__align {
+  margin-top: 0.4rem;
+}

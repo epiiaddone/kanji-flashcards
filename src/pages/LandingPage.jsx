@@ -1,8 +1,14 @@
+import Banner from "../components/Banner"
+import { LandingHeader } from "../components/LandingHeader"
 import LessonSelect from "../components/LessonSelect"
 
 export const LandingPage = () => {
 
     return (
-        <LessonSelect />
+        <>
+            <LandingHeader />
+            <Banner />
+            <LessonSelect />
+        </>
     )
 }

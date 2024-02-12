@@ -1,0 +1,11 @@
+.banner {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.banner a {
+    text-decoration: underline;
+    cursor: pointer;
+}

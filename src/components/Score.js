@@ -15,7 +15,7 @@ export default function Score() {
     if (highlight === 'dont-know') highlightClassName = 'highlight-dont-know';
 
     return (
-        <div className={highlightClassName + " score header__align"}>
+        <div className={highlightClassName + " score game-header__align"}>
             <div className="score--correct"><mark>✓</mark> {correctCount}</div>
             <div className="score--false"><mark>✘</mark> {falseCount}</div>
             <div className="score--remaining">Left: {questionsRemaining}</div>

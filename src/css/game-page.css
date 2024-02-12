@@ -1,0 +1,8 @@
+.game-page {
+    min-height: 100dvh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-background-color);
+}

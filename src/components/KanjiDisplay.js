@@ -33,42 +33,42 @@ export default function KanjiDisplay() {
     let kanjiLevel;
     let kanji_location = KanjiLocation.INCOMPLETE;
 
-    if (lesson != "none") {
-        if (practiseMode) {
-            kanjiId = heisig_kanji[lesson][practiseQuestion][0];
-            kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
-        } else {
-            kanjiId = heisig_kanji[lesson][currentQuestion][0];
-            kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
-        }
+
+    if (practiseMode) {
+        kanjiId = heisig_kanji[lesson][practiseQuestion][0];
+        kanjiCharacter = heisig_kanji[lesson][practiseQuestion][1];
+    } else {
+        kanjiId = heisig_kanji[lesson][currentQuestion][0];
+        kanjiCharacter = heisig_kanji[lesson][currentQuestion][1];
+    }
 
 
-        for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
-            if (kanji.slug === kanjiCharacter) {
-                kanji_location = KanjiLocation.WK;
-                kanjiMeanings = kanji.meanings;
-                kanjiMnemonic = kanji.meaning_mnemonic;
-                kanjiComponentIds = kanji.component_subject_ids;
-                kanjiExampleID = kanji.amalgamation_subject_ids[0];
-                kanjiLevel = kanji.level;
-                break;
-            }
-        }
-
-        if (kanji_location === KanjiLocation.INCOMPLETE) {
-            if (wk_api_missing_kanji_data[kanjiCharacter]) {
-                kanji_location = KanjiLocation.WK_MISSING;
-                const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
-                kanjiMeanings = kanjiData.meanings;
-                kanjiComponentIds = kanjiData.component_subject_ids;
-                setKanjiExample(kanjiData.example_word);
-                kanjiMnemonic = kanjiData.meaning_mnemonic;
-            }
+    for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
+        if (kanji.slug === kanjiCharacter) {
+            kanji_location = KanjiLocation.WK;
+            kanjiMeanings = kanji.meanings;
+            kanjiMnemonic = kanji.meaning_mnemonic;
+            kanjiComponentIds = kanji.component_subject_ids;
+            kanjiExampleID = kanji.amalgamation_subject_ids[0];
+            kanjiLevel = kanji.level;
+            break;
         }
     }
 
+    if (kanji_location === KanjiLocation.INCOMPLETE) {
+        if (wk_api_missing_kanji_data[kanjiCharacter]) {
+            kanji_location = KanjiLocation.WK_MISSING;
+            const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
+            kanjiMeanings = kanjiData.meanings;
+            kanjiComponentIds = kanjiData.component_subject_ids;
+            setKanjiExample(kanjiData.example_word);
+            kanjiMnemonic = kanjiData.meaning_mnemonic;
+        }
+    }
+
+
     const getApiVocab = async (vocabID) => {
-        if (!vocabID || lesson === "none") return;
+        if (!vocabID || !lesson) return;
         const { error, vocabData } = await fetchVocab(vocabID);
         if (!error) {
             let temp = vocabData.characters + ", " + vocabData.reading + ", " + vocabData.meaning
