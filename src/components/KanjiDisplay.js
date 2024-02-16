@@ -11,6 +11,7 @@ import { ExampleWord } from './ExampleWord';
 import { useEffect, useState } from 'react';
 
 export default function KanjiDisplay() {
+    console.log("inside KanjiDisplay")
     const { lesson,
         currentQuestion,
         isShowInfo,
@@ -61,26 +62,30 @@ export default function KanjiDisplay() {
             const kanjiData = wk_api_missing_kanji_data[kanjiCharacter];
             kanjiMeanings = kanjiData.meanings;
             kanjiComponentIds = kanjiData.component_subject_ids;
-            setKanjiExample(kanjiData.example_word);
             kanjiMnemonic = kanjiData.meaning_mnemonic;
+            //this was causing infinite rerender
+            if (kanjiData.example_word != kanjiExample) setKanjiExample(kanjiData.example_word);
         }
-    }
-
-
-    const getApiVocab = async (vocabID) => {
-        if (!vocabID || !lesson) return;
-        const { error, vocabData } = await fetchVocab(vocabID);
-        if (!error) {
-            let temp = vocabData.characters + ", " + vocabData.reading + ", " + vocabData.meaning
-            setKanjiExample(temp);
-        }
-        console.log("getApiVocab:", kanjiExample)
     }
 
     useEffect(() => {
-        getApiVocab(kanjiExampleID)
-    }, [questionNumber, practiseQuestion, lesson])
+        const abortController = new AbortController();
 
+        const getApiVocab = async (vocabID) => {
+            if (!vocabID || !lesson) return;
+            const { error, vocabData } = await fetchVocab(vocabID, abortController);
+            if (!error) {
+                let temp = vocabData.characters + ", " + vocabData.reading + ", " + vocabData.meaning
+                setKanjiExample(temp);
+            }
+            console.log("getApiVocab, vocab is:", kanjiExample)
+        }
+
+        getApiVocab(kanjiExampleID);
+        return () => {
+            abortController.abort();
+        };
+    }, [questionNumber, practiseQuestion])
 
 
     if (!isShowInfo) return (
@@ -135,7 +140,11 @@ export default function KanjiDisplay() {
             </div>
             <button
                 className="kanji-info__next-question"
-                onClick={nextQuestion}
+                onClick={() => {
+                    setKanjiExample('')
+                    nextQuestion()
+                }
+                }
             >Next Question
             </button>
         </div>

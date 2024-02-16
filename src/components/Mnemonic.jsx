@@ -1,4 +1,5 @@
 export const Mnemonic = ({ mnemonicString }) => {
+    console.log("inside Mnemonic");
     //console.log("mnemonicString:", mnemonicString)
 
     if (!mnemonicString) {

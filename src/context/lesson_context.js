@@ -17,6 +17,7 @@ import {
   SET_BUTTON_ORDER,
   ENTER_PRACTISE_MODE
 } from '../actions';
+import { wk_api_kanji_data } from '../data/wk_api_kanji_data';
 
 export const BUTTON_ORDER_VALUES = ['Numerical Order', 'Lowest Score', 'Oldest Review'];
 
@@ -28,9 +29,9 @@ const initialState = {
   answersActive: true,
   correctPercent: 0,
   isGameOver: false,
-  lesson: '1',
-  questionOrder: [0],
-  answerOrder: [0],
+  lesson: '',
+  questionOrder: null,
+  answerOrder: null,
   isShowInfo: false,
   highlightAnswerId: null,
   buttonOrder: BUTTON_ORDER_VALUES[0],
@@ -45,15 +46,18 @@ export const LessonProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(lesson_reducer, initialState);
 
-  useEffect(() => {
-    if (!state.lesson) return;
+  const selectLesson = (lesson) => {
+    console.log("selectLesson:", lesson);
+    //are these state updates being batched??
+    dispatch({ type: RESET })
+    dispatch({ type: LESSON_SELECTED, payload: lesson })
+
     const tempArray1 = [];
     const tempArray2 = [];
     let counter = 0;
 
-    // console.log('in use effect');
-
-    heisig_kanji[state.lesson].map(item => {
+    //state.lesson not yet updated, so use method argument
+    heisig_kanji[lesson].map(item => {
       tempArray1.push(counter);
       tempArray2.push(counter++);
     });
@@ -61,16 +65,9 @@ export const LessonProvider = ({ children }) => {
     shuffleArray(tempArray1);
     shuffleArray(tempArray2);
     dispatch({ type: LOAD_GAME, payload: { tempArray1, tempArray2 } })
-  }, [state.lesson])
-
-
-  const selectLesson = (lesson) => {
-    console.log("selectLesson:", lesson);
-    dispatch({ type: RESET })
-    dispatch({ type: LESSON_SELECTED, payload: lesson })
   }
 
-  let currentQuestion = state.questionOrder[state.questionNumber - 1];
+  let currentQuestion = state.questionOrder ? state.questionOrder[state.questionNumber - 1] : null;
 
   const gameOver = () => {
     const newCorrectPercent = state.questionNumber > 1 ?
@@ -85,11 +82,29 @@ export const LessonProvider = ({ children }) => {
 
 
   const verifyAnswer = (e) => {
-    const clickedAnswerId = e.target.getAttribute('data-id')
+    const clickedAnswerId = e.target.getAttribute('data-id');
+    const clickedAnswerMeaning = e.target.getAttribute('data-meaning');
+    const clickedAnswerCharacters = e.target.getAttribute('data-characters');
+    const answerId = state.practiseMode ?
+      heisig_kanji[state.lesson][state.practiseQuestion][0]
+      : heisig_kanji[state.lesson][currentQuestion][0]
 
-    let isClickedCorrect;
-    if (state.practiseMode) isClickedCorrect = heisig_kanji[state.lesson][state.practiseQuestion][0] === clickedAnswerId;
-    else isClickedCorrect = heisig_kanji[state.lesson][currentQuestion][0] === clickedAnswerId;
+    const answerCharacters = state.practiseMode ?
+      heisig_kanji[state.lesson][state.practiseQuestion][1]
+      : heisig_kanji[state.lesson][currentQuestion][1]
+
+
+    let isClickedCorrect = false;
+
+    // if clicked answer button corresponding to question
+    if (answerId == clickedAnswerId) isClickedCorrect = true;
+
+    //for duplicate meanings in same lesson
+    //if answer button has same meaning as question
+    for (const [key, kanji] of Object.entries(wk_api_kanji_data)) {
+      if (kanji.slug === answerCharacters
+        && kanji.meanings[0] === clickedAnswerMeaning) isClickedCorrect = true;
+    }
 
     if (isClickedCorrect) {
       dispatch({ type: CORRECT_ANSWER, payload: { clickedAnswerId: clickedAnswerId, currentQuestion: currentQuestion } })
@@ -123,6 +138,7 @@ export const LessonProvider = ({ children }) => {
       } else if (isLastQuestion) {
         gameOver();
       } else {
+        console.log("nextQuestion has dispatched: NEXT_QUESTION")
         dispatch({ type: NEXT_QUESTION })
       }
     }

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useThemeContext } from "../context/theme_context";
 
 export const GamePage = () => {
+    console.log("inside GamePage");
     const { isDarkTheme } = useThemeContext();
     const { lesson } = useLessonContext();
 

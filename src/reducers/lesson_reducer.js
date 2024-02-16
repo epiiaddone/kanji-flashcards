@@ -12,8 +12,6 @@ import {
     ENTER_PRACTISE_MODE
 } from '../actions';
 
-import { BUTTON_ORDER_VALUES } from '../context/lesson_context';
-
 const lesson_reducer = (state, action) => {
 
     if (action.type === LESSON_SELECTED) {
@@ -36,8 +34,8 @@ const lesson_reducer = (state, action) => {
         return {
             ...state,
             lesson: '',
-            questionOrder: [0],
-            answerOrder: [0],
+            questionOrder: null,
+            answerOrder: null,
             correctCount: 0,
             falseCount: 0,
             questionNumber: 1,
@@ -122,7 +120,7 @@ const lesson_reducer = (state, action) => {
     }
 
     if (action.type === NEXT_QUESTION) {
-        //console.log('NEXT_QUESTION RUN')
+        console.log('NEXT_QUESTION RUN')
         if (state.practiseMode) {
             return {
                 ...state,

@@ -325,13 +325,13 @@ const heisig_kanji_map = new Map([
       ['271', '王', 'king', '王, おう, king', 'Radical: king'],
       ['272', '玉', 'ball', '玉, たま, ball', 'King has dropped his ball'],
       ['273', '宝', 'treasure', '宝, たから, treasure', 'Ball of treasure on the roof'],
-      ['274', '珠', 'pearl', '', 'King has vermillion pearls'],
+      ['274', '珠', 'pearl', '真珠, しんじゅ, pearl', 'King has vermillion pearls'],
       ['275', '現', 'present time', '現在, げんざい, present time', 'The king only sees the present time'],
       ['276', '玩', 'toy', '玩具, おもちゃ, toy', 'The king begins with a toy'],
       ['277', '狂', 'lunatic', '狂う, くるう, to get mad', 'Animal king is a lunatic'],
       ['278', '旺', 'effulgent', '旺盛, おうせい, lively', 'The sun makes the king look effulgent'],
       ['279', '皇', 'emperor', '皇帝, こうてい, emperor', 'King dressed in white is emperor'],
-      ['280', '呈', 'present', '', 'The king opens his mouth to present his excellent teeth'],
+      ['280', '呈', 'present', '贈呈, ぞうてい, presentation', 'The king opens his mouth to present his excellent teeth'],
     ]],
   ['12B',
     [
@@ -408,9 +408,9 @@ const heisig_kanji_map = new Map([
       ['339', '周', 'circumference', '周り, まわり, circumference', 'Radical: circumference'],
       ['340', '週', 'week', '週, しゅう, week', 'Travel the circumference by scooter will take a week'],
       ['341', '士', 'samurai', '士官, しかん, military officer', 'Radical: samurai'],
-      ['342', '吉', 'good luck', '', 'Radical: good luck'],
+      ['342', '吉', 'good luck', '吉, きち, omen', 'Radical: good luck'],
       ['343', '壮', 'robust', '壮大, そうだい, magnificent', 'Samurai is so robust that he can punch through icicle'],
-      ['344', '荘', 'villa', '', 'Robust flowers are needed at the villa'],
+      ['344', '荘', 'villa', '別荘, べっそう, holiday house', 'Robust flowers are needed at the villa'],
       ['345', '売', 'sell', '売る, うる, to sell', 'Radical: sell']
     ]],
   ['15A',
@@ -1867,7 +1867,7 @@ const heisig_kanji_map = new Map([
       ['1593', '既', 'previously'],
       ['1594', '概', 'outline'],
       ['1595', '慨', 'rue'],
-	  ['10002', '狼', 'wolf']
+      ['10002', '狼', 'wolf']
     ]],
   ['39A',
     [

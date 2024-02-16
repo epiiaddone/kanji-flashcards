@@ -1,6 +1,7 @@
 import { radicalData } from "../data/radical-data"
 
 export const Radicals = ({ radicalIds }) => {
+    console.log("inside Radicals");
 
     if (!radicalIds) {
         return (

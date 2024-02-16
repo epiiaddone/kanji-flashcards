@@ -1,12 +1,11 @@
 
 
-export const fetchVocab = async (vocabID) => {
-    console.log("inside fetchVocab, vocabID", vocabID);
+export const fetchVocab = async (vocabID, abortController) => {
+    console.log("inside fetchVocab, vocabID:", vocabID);
 
 
     let error;
     let vocabData = {};
-    let vocabString;
 
 
     var apiToken = '3b0f568a-0904-4b3d-887d-08e5da44da9e';
@@ -25,7 +24,7 @@ export const fetchVocab = async (vocabID) => {
         });
 
     try {
-        const fetchPromise = await fetch(apiEndpoint);
+        const fetchPromise = await fetch(apiEndpoint, { signal: abortController.signal });
         const response = await fetchPromise.json();
 
         vocabData["characters"] = response.data.characters;
@@ -36,7 +35,10 @@ export const fetchVocab = async (vocabID) => {
         console.log(vocabData);
 
     } catch (e) {
-        console.log("error getting vocab:", e)
+        if (e.name === 'AbortError') console.log("aborted fetch");
+        else {
+            console.log("error getting vocab:", e)
+        }
         error = e;
     }
 
