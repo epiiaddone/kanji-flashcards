@@ -11,6 +11,12 @@ export const ExampleWord = ({ exampleWordString }) => {
         )
     }
 
+    if (exampleWordString === 'N/A') {
+        return (
+            <div className="example-missing">N/A</div>
+        )
+    }
+
     const vocabComponents = exampleWordString.split(",");
 
     return (

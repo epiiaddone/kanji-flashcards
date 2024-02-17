@@ -9,3 +9,7 @@
 .example-word--kanji {
     font-size: 2rem;
 }
+
+.example-missing {
+    font-size: 1rem;
+}
