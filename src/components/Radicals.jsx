@@ -20,7 +20,7 @@ export const Radicals = ({ radicalIds }) => {
                             key={radicalID}
                         >
                             <div className="radical--characters">
-                                {radicalData[radicalID].characters === 'null' ?
+                                {radicalData[radicalID]?.characters === 'null' ?
                                     <img className="radical--image" src={radicalData[radicalID].image} />
                                     : radicalData[radicalID].characters}
                             </div>

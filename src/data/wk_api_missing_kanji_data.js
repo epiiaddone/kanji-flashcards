@@ -168,6 +168,13 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `In *R[mouth]R* goes: *R[hat]R*, *R[moon]R* and little *R[flood]R*, what a *K[metaphor]K*`,
         "example_word": 'N/A',
     },
+    '喩': {
+        "heisig_id": 257,
+        "component_subject_ids": [144, 90, 46],
+        "meanings": ["reed"],
+        "meaning_mnemonic": `*R[Animal]R* hides from the *R[fire]R* in the *R[flower]R* *K[reed]K*`,
+        "example_word": '荻, おぎ, Amur',
+    },
     '詮': {
         "heisig_id": 360,
         "component_subject_ids": [117, 8764, 48],
@@ -245,18 +252,25 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[samurai]R* puts *R[spoon]R* on *R[forehead]R* to count to *K[one (in documents)]K*`,
         "example_word": 'N/A',
     },
+    '乞': {
+        "heisig_id": 501,
+        "component_subject_ids": [8762, 324],
+        "meanings": ["beg"],
+        "meaning_mnemonic": `When there is a *R[gun]R* to your *R[nose]R* you should *K[beg]K*`,
+        "example_word": '乞食, こじき, beggar',
+    },
     '韻': {
         "heisig_id": 520,
-        "component_subject_ids": [55, 22, 349],
+        "component_subject_ids": [197, 349],
         "meanings": ["rhyme"],
-        "meaning_mnemonic": `*R[samurai]R* puts *R[spoon]R* on *R[forehead]R* to count to *K[one (in documents)]K*`,
+        "meaning_mnemonic": `The *R[member]R* is *R[sound]R*ing out a *K[rhyme]K*`,
         "example_word": 'N/A',
     },
     '曽': {
         "heisig_id": 540,
-        "component_subject_ids": [529],
+        "component_subject_ids": [259],
         "meanings": ["mask"],
-        "meaning_mnemonic": `The *R[mask]R* radical is the same as the *K[spoon]K* kanji`,
+        "meaning_mnemonic": `The *R[mask]R* radical is the same as the *K[mask]K* kanji`,
         "example_word": 'N/A',
     },
     '蚕': {
