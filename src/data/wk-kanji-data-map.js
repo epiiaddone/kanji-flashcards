@@ -1345,7 +1345,7 @@ const heisig_kanji_map = new Map([
       ['1144', '据', 'install', '据える, すえる, to install', 'Fingers are alive and install things'],
       ['1145', '裾', 'hem', '裾, すそ, hem', 'Live spirits live on the hem'],
       ['1146', '層', 'layer', '一層, いっそう, much more', 'Behind the flag is a mask, which is another layer'],
-      ['1147', '局', 'bureau', '', 'Flag on top of a caped mouth is the enterance to the bureau'],
+      ['1147', '局', 'bureau', '支局', 'Flag on top of a caped mouth is the enterance to the bureau'],
       ['1148', '遅', 'slow', '遅い, おそい slow', 'Sheep carrying a flag on a scooter must go slow'],
       ['1149', '漏', 'leak', '漏出, ろうしゅつ, leak', 'Tsunami rips flag down causing rain to leak in'],
       ['1150', '刷', 'printing', '印刷, いんさつ, printing', 'Knife to cut flag and towel, just like priting'],
@@ -1431,7 +1431,7 @@ const heisig_kanji_map = new Map([
       ['1218', '断', 'cut off', '判断, はんだん, judgment', 'Lion harvesting rice uses an axe to cut off the grain'],
       ['1219', '質', 'quality', '品質, ひんしつ, quality', 'Shellfish inspects axes for quality'],
       ['1220', '斥', 'reject', '', 'Reject the axe that has a drop of blood'],
-      ['1221', '訴', 'Sue', '', 'If you say that your axe has drops of blood, you will be sued'],
+      ['1221', '訴', 'Sue', '訴訟', 'If you say that your axe has drops of blood, you will be sued'],
       ['1222', '昨', 'previous', '昨年, さくねん, last year', 'Sun holds the key to the previous world'],
       ['1223', '詐', 'lie', '詐欺, さぎ, fraud', 'The key to speaking is to lie'],
       ['1224', '作', 'make', '作る, つくる, to make', 'The key to being a leader is to make all the keys']
@@ -1457,7 +1457,7 @@ const heisig_kanji_map = new Map([
       ['1241', '唐', 'sudden', '唐突, とうとつ, abrupt', 'Under the canopy, thinking with a brush in your mouth, sudden thoughts pop to mind'],
       ['1242', '糖', 'sugar', '砂糖, さとう, sugar', 'Rice suddenly becomes sugar'],
       ['1243', '康', 'peace', '健康, けんこう, health', 'Under a canopy wolvering peacefully drinking water'],
-      ['1244', '逮', 'apprehend', '', 'Wolverine on scooter steals water. Apprehend him!'],
+      ['1244', '逮', 'apprehend', '逮捕', 'Wolverine on scooter steals water. Apprehend him!'],
       ['1245', '伊', 'Italy', '伊達, だて, flamboyance', 'Leader and wolvering take a slide to Italy'],
       ['1246', '君', 'old boy', '君, きみ, you', 'Radical: buddy'],
       ['1247', '群', 'flock', '群集, ぐんしゅう, crowd', 'Your sheep buddy is part of a flock']
@@ -1532,7 +1532,7 @@ const heisig_kanji_map = new Map([
   ['33A',
     [
       ['1305', '矢', 'dart', '矢, や, arrow', 'Radical: arrow'],
-      ['1306', '矯', 'correct', '', 'Arrow from heaven hits you in the mouth to correct your mustache'],
+      ['1306', '矯', 'correct', '矯正', 'Arrow from heaven hits you in the mouth to correct your mustache'],
       ['1307', '族', 'tribe', '家族, かぞく, family', 'In your direction with a gun and an arrow is a tribe'],
       ['1308', '知', 'know', '恥知らず, はじしらず, shameless person', 'An arrow to the mouth will stop you saying what you know'],
       ['1309', '智', 'wisdom', '智, ち, wisdom', 'Knowledge of the sun makes you wise'],

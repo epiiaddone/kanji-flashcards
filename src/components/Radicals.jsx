@@ -1,4 +1,5 @@
 import { radicalData } from "../data/radical-data"
+import { RadicalSvg } from "./RadicalSvg";
 
 export const Radicals = ({ radicalIds }) => {
     console.log("inside Radicals");
@@ -8,7 +9,6 @@ export const Radicals = ({ radicalIds }) => {
             <div className="radicals" >Coming Soon!</div>
         )
     }
-
 
     return (
         <div className="radicals" >
@@ -21,7 +21,7 @@ export const Radicals = ({ radicalIds }) => {
                         >
                             <div className="radical--characters">
                                 {radicalData[radicalID]?.characters === 'null' ?
-                                    <img className="radical--image" src={radicalData[radicalID].image} />
+                                    <RadicalSvg radicalSlug={radicalData[radicalID].slug} />
                                     : radicalData[radicalID].characters}
                             </div>
                             <div className="radical--slug">{radicalData[radicalID].slug}</div>
