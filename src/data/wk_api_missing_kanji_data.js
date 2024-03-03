@@ -578,7 +578,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1053,
         "component_subject_ids": [75, 66, 60],
         "meanings": ["emulate"],
-        "meaning_mnemonic": `*In *R[winter]R* the R[Leader]R* *K[emulates]K* the correct *R[direction]R*`,
+        "meaning_mnemonic": `*In *R[winter]R* the *R[Leader]R* *K[emulates]K* the correct *R[direction]R*`,
         "example_word": '倣う, ならう, to imitate',
     },
     '畝': {
@@ -601,6 +601,27 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["sprain"],
         "meaning_mnemonic": `Two *R[people]R* *K[sprain]K* their *R[fingers]R* lifting *R[dirt]R*`,
         "example_word": '挫折, ざせつ, setback',
+    },
+    '匁': {
+        "heisig_id": 1104,
+        "component_subject_ids": [173, 5],
+        "meanings": ["monme"],
+        "meaning_mnemonic": `*R[wing]R* that is broken by a *R[slide]R* is used as a unit of measurement called a *K{monme]K*`,
+        "example_word": '匁, もんめ, 3.75g',
+    },
+    '瓦': {
+        "heisig_id": 1108,
+        "component_subject_ids": [1, 307, 3],
+        "meanings": ["tile"],
+        "meaning_mnemonic": `*K[tiles]K* are like *R[ten thousand]R* *R[drops]R* on the *R[ground]R*`,
+        "example_word": '瓦, かわら, roof tile',
+    },
+    '膳': {
+        "heisig_id": 1113,
+        "component_subject_ids": [43, 10001],
+        "meanings": ["dining tray"],
+        "meaning_mnemonic": `*R[morally good]R* use for *R[moon]R* is as *K[dining tray]K*`,
+        "example_word": '膳, ぜん, dining table',
     },
     '蔽': {
         "heisig_id": 1119,
@@ -741,6 +762,13 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["ground-breaking"],
         "meaning_mnemonic": `*R[Badger]R* looking for *R[roots]R* in the *R[dirt]R* is *K[ground-breaking]K*`,
         "example_word": 'N/A',
+    },
+    '罵': {
+        "heisig_id": 2143,
+        "component_subject_ids": [163, 165],
+        "meanings": ["insult"],
+        "meaning_mnemonic": `*R[Horse]R* trapped in a *R[net]R* subject to *K[insult]K*`,
+        "example_word": '罵る, ののしる, to insult',
     },
     '虞': {
         "heisig_id": 2150,

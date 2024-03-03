@@ -2460,5 +2460,10 @@ export const radicalData = {
         'level': 28,
         'characters': '前'
     },
+    10001: {
+        'slug': 'morally good',
+        'level': 100,
+        'characters': '善'
+    }
 
 }
