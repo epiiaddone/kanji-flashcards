@@ -583,7 +583,7 @@ export const wk_api_missing_kanji_data = {
     },
     '畝': {
         "heisig_id": 1093,
-        "component_subject_ids": [75, 66, 60],
+        "component_subject_ids": [10003, 51, 8],
         "meanings": ["furrow"],
         "meaning_mnemonic": `Spend a *R[long time]R* *K[furrowing]K* the *R[rice paddy]R* with a *R[lid]R*`,
         "example_word": '畝り, うねり, undulation',
@@ -606,7 +606,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1104,
         "component_subject_ids": [173, 5],
         "meanings": ["monme"],
-        "meaning_mnemonic": `*R[wing]R* that is broken by a *R[slide]R* is used as a unit of measurement called a *K{monme]K*`,
+        "meaning_mnemonic": `*R[wing]R* that is broken by a *R[slide]R* is used as a unit of measurement called a *K[monme]K*`,
         "example_word": '匁, もんめ, 3.75g',
     },
     '瓦': {
@@ -629,6 +629,13 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["cover"],
         "meaning_mnemonic": `*R[Penguin]R* uses *R[flowers]R* as a *K[cover]K*`,
         "example_word": 'N/A',
+    },
+    '賜': {
+        "heisig_id": 1131,
+        "component_subject_ids": [94, 172],
+        "meanings": ["grant"],
+        "meaning_mnemonic": `*R[Shellfish]R* *R[easily]R* *K[grants]K* rewards`,
+        "example_word": '賜る, たまわる, to be given',
     },
     '斥': {
         "heisig_id": 1220,
@@ -756,12 +763,26 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `Make *K[model]K* *R[barracks]R* in *R[moon]R* light from *R[dirt]R*`,
         "example_word": 'N/A',
     },
+    '遡': {
+        "heisig_id": 2111,
+        "component_subject_ids": [315, 43, 114],
+        "meanings": ["go upstream"],
+        "meaning_mnemonic": `*R[Barracks]R* and *R[moon]R* on *R[scooter]R* trying to *K[go upstream]K*`,
+        "example_word": '遡る, さかのぼる, to go upstream',
+    },
     '墾': {
         "heisig_id": 2124,
         "component_subject_ids": [412, 196, 17],
         "meanings": ["ground-breaking"],
         "meaning_mnemonic": `*R[Badger]R* looking for *R[roots]R* in the *R[dirt]R* is *K[ground-breaking]K*`,
         "example_word": 'N/A',
+    },
+    '貌': {
+        "heisig_id": 2125,
+        "component_subject_ids": [412, 52, 28],
+        "meanings": ["face"],
+        "meaning_mnemonic": `*R[Badger]R* with *R[white]R* *R[legs]R* has a strange *K[face]K*`,
+        "example_word": '全貌, ぜんぼう, whole story',
     },
     '罵': {
         "heisig_id": 2143,
@@ -776,6 +797,13 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["uneasiness"],
         "meaning_mnemonic": `*R[Catapult]R* launching *R[tigers]R* is a cause of *K[uneasiness]K*`,
         "example_word": 'N/A',
+    },
+    '麓': {
+        "heisig_id": 2155,
+        "component_subject_ids": [23, 10002],
+        "meanings": ["foot of a mountain"],
+        "meaning_mnemonic": `*R[Deer]R* lives in *R[trees]R* at *K[foot of mountain]K*`,
+        "example_word": '麓, ふもと, foot of mountain',
     },
     '寅': {
         "heisig_id": 2162,

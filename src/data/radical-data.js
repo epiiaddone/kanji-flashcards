@@ -2464,6 +2464,15 @@ export const radicalData = {
         'slug': 'morally good',
         'level': 100,
         'characters': '善'
+    },
+    10002: {
+        'slug': 'deer',
+        'level': 100,
+        'characters': '鹿'
+    },
+    10003: {
+        'slug': 'long time',
+        'level': 100,
+        'characters': '久'
     }
-
 }
