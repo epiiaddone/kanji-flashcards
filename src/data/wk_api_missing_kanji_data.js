@@ -353,7 +353,7 @@ export const wk_api_missing_kanji_data = {
     '咽': {
         "heisig_id": 628,
         "component_subject_ids": [16],
-        "meanings": ["weld"],
+        "meanings": ["windpipe"],
         "meaning_mnemonic": `*R[Mouth]R* *R[causes]R* air to get into *K[windpipe]K*`,
         "example_word": '咽喉, いんこう, throat',
     },
@@ -637,6 +637,13 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[Shellfish]R* *R[easily]R* *K[grants]K* rewards`,
         "example_word": '賜る, たまわる, to be given',
     },
+    '裾': {
+        "heisig_id": 1145,
+        "component_subject_ids": [80, 37, 69],
+        "meanings": ["hem"],
+        "meaning_mnemonic": `*R[spirits]R* use *R[old]R* *R[flag]R* to make *K[hem]K*`,
+        "example_word": '裾, すそ, hem',
+    },
     '斥': {
         "heisig_id": 1220,
         "component_subject_ids": [115, 3],
@@ -728,12 +735,33 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[insect]R* wrapped in *R[thread]R* like a *R[towel]R* in the *R[flowers]R* is a *K[cocoon]K*`,
         "example_word": 'N/A',
     },
+    '衷': {
+        "heisig_id": 2038,
+        "component_subject_ids": [8770, 15, 16],
+        "meanings": ["inmost"],
+        "meaning_mnemonic": `*R[Kick]R* a *R[cross]R* into someone\'s *R[mouth]R* and it goes to the *K[inmost]K* part of their body`,
+        "example_word": '折衷, せっちゅう, compramise',
+    },
     '函': {
         "heisig_id": 2051,
         "component_subject_ids": [127, 8788, 6, 1],
         "meanings": ["box (archaic)"],
         "meaning_mnemonic": `Use a *R[barb]R* to lower the *R[explosive]R* in to a *R[box]R* below *R[ground]R*. This is the what ancient *K[boxes]K* were used for.`,
         "example_word": '函館, はこだて, Hakodate (city in Hokkaido)',
+    },
+    '耗': {
+        "heisig_id": 2063,
+        "component_subject_ids": [23, 67],
+        "meanings": ["decrease"],
+        "meaning_mnemonic": `Amount of *R[fur]R* on christmas *R[tree]R* has *K[decreased]K*`,
+        "example_word": '消耗, しょうもう, exhaustion',
+    },
+    '畏': {
+        "heisig_id": 2069,
+        "component_subject_ids": [51, 8770],
+        "meanings": ["zodiac dragon"],
+        "meaning_mnemonic": `*K[Apprehensive]K* to *R[kick]R* in *R[rice paddy]R*`,
+        "example_word": '畏まりました, かしこまりました, certainly (teineigo)',
     },
     '脹': {
         "heisig_id": 2073,
