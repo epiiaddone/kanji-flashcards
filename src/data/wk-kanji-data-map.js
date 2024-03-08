@@ -2346,7 +2346,7 @@ const heisig_kanji_map = new Map([
       ['1999', '派', 'faction', '立派, りっぱ, splendid', ''],
       ['2000', '脈', 'vein'],
       ['2001', '衆', 'masses'],
-      ['2002', '逓', 'parcel post'],
+      ['2002', '逓', 'sending'],
       ['2003', '段', 'grade'],
       ['2004', '鍛', 'forge'],
       ['2005', '后', 'empress'],
