@@ -189,6 +189,13 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[previous]R* to *R[gold]R* there was *K[pig iron]K*`,
         "example_word": 'N/A',
     },
+    '辻': {
+        "heisig_id": 297,
+        "component_subject_ids": [114, 15],
+        "meanings": ["crossing"],
+        "meaning_mnemonic": `*R[Scooter]R* moving in a *R[cross]R* is a *K[crossing]K*`,
+        "example_word": '辻褄, つじつま, coherence',
+    },
     '喩': {
         "heisig_id": 308,
         "component_subject_ids": [16, 8764, 43, 273],
@@ -716,10 +723,38 @@ export const wk_api_missing_kanji_data = {
     },
     '弘': {
         "heisig_id": 1320,
-        "component_subject_ids": [2, 140],
+        "component_subject_ids": [36, 140],
         "meanings": ["huge"],
         "meaning_mnemonic": `In *R[private]R* you wish your *R[bow]R* was *K[huge]K*`,
         "example_word": 'N/A',
+    },
+    '溺': {
+        "heisig_id": 1324,
+        "component_subject_ids": [103, 10006],
+        "meanings": ["drown"],
+        "meaning_mnemonic": `In the *R[tsunami]R* the *R[weak]R* *K[drown]K*`,
+        "example_word": '溺れる, おぼれる, to nearly drown',
+    },
+    '顎': {
+        "heisig_id": 1333,
+        "component_subject_ids": [16, 8766, 184],
+        "meanings": ["jaw"],
+        "meaning_mnemonic": `*R[Geoduck]R* and *R[beggar]R* hitting each other in the *R[mouth]R*. They end up with sore *K[jaws]K*`,
+        "example_word": '顎, あご, jaw',
+    },
+    '猪': {
+        "heisig_id": 1352,
+        "component_subject_ids": [144, 203],
+        "meanings": ["boar"],
+        "meaning_mnemonic": `*R[Someone]R* saw an *R[animal]R*, that was a *K[boar]K*`,
+        "example_word": '猪, いのしし, wild boar',
+    },
+    '渚': {
+        "heisig_id": 1353,
+        "component_subject_ids": [103, 203],
+        "meanings": ["shore"],
+        "meaning_mnemonic": `*R[Tsunami]R* hits *R[someone]R* who is on the *K[shore]K*`,
+        "example_word": '渚, なぎさ, beach',
     },
     '踪': {
         "heisig_id": 1382,
@@ -774,7 +809,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 2011,
         "component_subject_ids": [266, 16, 226],
         "meanings": ["heir"],
-        "meaning_mnemonic": `*R[director]R* will stick *R[bookehelf]R* into *R[mouth]R* of his *K[heir]K*`,
+        "meaning_mnemonic": `*R[director]R* will stick *R[bookshelf]R* into *R[mouth]R* of his *K[heir]K*`,
         "example_word": 'N/A',
     },
     '舷': {

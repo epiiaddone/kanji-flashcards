@@ -2485,4 +2485,9 @@ export const radicalData = {
         'level': 100,
         'characters': '曹'
     },
+    10006: {
+        'slug': 'weak',
+        'level': 100,
+        'characters': '弱'
+    },
 }
