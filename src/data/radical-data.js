@@ -2490,4 +2490,14 @@ export const radicalData = {
         'level': 100,
         'characters': '弱'
     },
+    10007: {
+        'slug': 'government',
+        'level': 100,
+        'characters': '官'
+    },
+    10008: {
+        'slug': 'mortar',
+        'level': 100,
+        'characters': '臼'
+    },
 }
