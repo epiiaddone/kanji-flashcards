@@ -1915,6 +1915,8 @@ const heisig_kanji_map = new Map([
       ['1634', '熱', 'heat'],
       ['1635', '菱', 'diamond'],
       ['1636', '陵', 'mausoleum'],
+      ['10004', '凌', 'endure'],
+      ['10005', '綾', 'design']
     ]],
   ['39C',
     [
@@ -2515,7 +2517,8 @@ const heisig_kanji_map = new Map([
       ['2141', '驚', 'surprised', '驚く, おどろく, to be surprised', 'Horse reciting a poem in winter is surprising'],
       ['2142', '篤', 'deliberate', '危篤, きとく, verge of death', 'Making a horse out of bamboo is deliberate'],
       ['2143', '罵', 'insult', '罵る, ののしる, to insult', 'Insult horse trapped in a net'],
-      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'Gladiator talking to moon about the inflating price of horses']
+      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'Gladiator talking to moon about the inflating price of horses'],
+      ['10002', '駿', 'speed', '', '']
     ]],
   ['54B',
     [

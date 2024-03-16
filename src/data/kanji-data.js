@@ -2514,7 +2514,8 @@ const heisig_kanji =
       ['2141', '驚', 'wonder', '驚く, おどろく, to be surprised', 'WONDER OF THE AWESOME HORSE'],
       ['2142', '篤', 'fervent', '危篤, きとく, verge of death', 'HORSE IS PASSIONATE ABOUT BAMBOO'],
       ['2143', '罵', 'insult', '罵る, ののしる, to insult', 'INSULT THE HORSE WITH SIDEWAYS EYES'],
-      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'HORES\'S BODY IS INFLATING']
+      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'HORES\'S BODY IS INFLATING'],
+	  ['','駿', 'speed', '', '']
     ],
   '54B':
     [

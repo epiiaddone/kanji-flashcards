@@ -788,7 +788,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1518,
         "component_subject_ids": [103, 158],
         "meanings": ["widespread"],
-        "meaning_mnemonic": `Due to the *R[tsunami]R* *R[snakes]R* are *K[widespread]K*`,
+        "meaning_mnemonic": `Due to the *R[tsunami]R*, *R[snakes]R* are *K[widespread]K*`,
         "example_word": '氾濫, はんらん, overflowing',
     },
     '苑': {
@@ -816,7 +816,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1532,
         "component_subject_ids": [17, 160, 10008],
         "meanings": ["break"],
-        "meaning_mnemonic": `Place the *R[mortar]R* on the *R[dirt]R* then use the *R[weapon]R* to *k[break]K* it`,
+        "meaning_mnemonic": `Place the *R[mortar]R* on the *R[dirt]R* then use the *R[weapon]R* to *K[break]K* it`,
         "example_word": '毀損, きそん, damage',
     },
     '痘': {

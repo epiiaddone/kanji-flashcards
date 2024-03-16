@@ -1916,6 +1916,8 @@ const heisig_kanji =
       ['1634', '熱', 'heat'],
       ['1635', '菱', 'diamond'],
       ['1636', '陵', 'mausoleum'],
+      ['10004', '凌', 'endure'],
+      ['10005', '綾', 'design']
     ],
   '39C':
     [
@@ -2453,7 +2455,7 @@ const heisig_kanji =
       ['2087', '鎖', 'chain', '鎖, くさり, chain', 'Shellfish gives gold chain to his triceratops'],
       ['2088', '挙', 'raise', '挙式, きょしき, ceremony', 'Grass on the ground so raise fins in your hand'],
       ['2089', '誉', 'honor', '名誉, めいよ, honor', 'Grass and fins on the ground say you have no honor'],
-      ['2090', '猟', 'game hunting', '猟, りょう, hunting', 'Task is to hunt animal in grass']
+      ['2090', '猟', 'game hunting', '猟, りょう, hunting', 'Task is to hunt animal in grass'],
     ],
   '53B':
     [
@@ -2516,7 +2518,8 @@ const heisig_kanji =
       ['2141', '驚', 'surprised', '驚く, おどろく, to be surprised', 'Horse reciting a poem in winter is surprising'],
       ['2142', '篤', 'deliberate', '危篤, きとく, verge of death', 'Making a horse out of bamboo is deliberate'],
       ['2143', '罵', 'insult', '罵る, ののしる, to insult', 'Insult horse trapped in a net'],
-      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'Gladiator talking to moon about the inflating price of horses']
+      ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'Gladiator talking to moon about the inflating price of horses'],
+      ['10003', '駿', 'speed', '', '']
     ],
   '54B':
     [
