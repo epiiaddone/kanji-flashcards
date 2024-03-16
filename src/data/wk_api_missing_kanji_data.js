@@ -819,6 +819,27 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `Place the *R[mortar]R* on the *R[dirt]R* then use the *R[weapon]R* to *K[break]K* it`,
         "example_word": '毀損, きそん, damage',
     },
+    '薪': {
+        "heisig_id": 1620,
+        "component_subject_ids": [90, 10009],
+        "meanings": ["firewood"],
+        "meaning_mnemonic": `*R[New]R* *R[flowers]R* are used as *K[firewood]K*`,
+        "example_word": '薪, まき, firewood',
+    },
+    '摯': {
+        "heisig_id": 1624,
+        "component_subject_ids": [178, 223, 41],
+        "meanings": ["clasp"],
+        "meaning_mnemonic": `A *R[spicy]R* *R[circle]R* in your *R[hand]R* is a *K[clasp]K*`,
+        "example_word": 'N/A',
+    },
+    '菱': {
+        "heisig_id": 1635,
+        "component_subject_ids": [90, 426],
+        "meanings": ["rhombus"],
+        "meaning_mnemonic": `When *R[flowers]R* get *R[frostbite]R* they become *K[rhombus]K* shaped`,
+        "example_word": 'N/A',
+    },
     '痘': {
         "heisig_id": 1815,
         "component_subject_ids": [187, 181],

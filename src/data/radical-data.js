@@ -2500,4 +2500,9 @@ export const radicalData = {
         'level': 100,
         'characters': '臼'
     },
+    10009: {
+        'slug': 'new',
+        'level': 100,
+        'characters': '新'
+    },
 }
