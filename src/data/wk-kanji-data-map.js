@@ -2518,7 +2518,7 @@ const heisig_kanji_map = new Map([
       ['2142', '篤', 'deliberate', '危篤, きとく, verge of death', 'Making a horse out of bamboo is deliberate'],
       ['2143', '罵', 'insult', '罵る, ののしる, to insult', 'Insult horse trapped in a net'],
       ['2144', '騰', 'inflation', '騰貴, とうき, price rise', 'Gladiator talking to moon about the inflating price of horses'],
-      ['10002', '駿', 'speed', '', '']
+      ['10003', '駿', 'speed', '', '']
     ]],
   ['54B',
     [

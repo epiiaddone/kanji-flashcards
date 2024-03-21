@@ -819,6 +819,13 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `Place the *R[mortar]R* on the *R[dirt]R* then use the *R[weapon]R* to *K[break]K* it`,
         "example_word": '毀損, きそん, damage',
     },
+    '酉': {
+        "heisig_id": 1534,
+        "component_subject_ids": [182],
+        "meanings": ["zodic rooster"],
+        "meaning_mnemonic": `The *K[zodiac rooster]K* had drunken so much *R[alcohol]R* that he could only manage 10th place in the swimming race`,
+        "example_word": 'N/A',
+    },
     '薪': {
         "heisig_id": 1620,
         "component_subject_ids": [90, 10009],
@@ -839,6 +846,27 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["rhombus"],
         "meaning_mnemonic": `When *R[flowers]R* get *R[frostbite]R* they become *K[rhombus]K* shaped`,
         "example_word": 'N/A',
+    },
+    '亥': {
+        "heisig_id": 1637,
+        "component_subject_ids": [351],
+        "meanings": ["zodiac hog"],
+        "meaning_mnemonic": `Just imagine *R[slicing]R* into a fat juicy *K[zodiac hog]K*`,
+        "example_word": 'N/A',
+    },
+    '骸': {
+        "heisig_id": 1641,
+        "component_subject_ids": [385, 351],
+        "meanings": ["corpse"],
+        "meaning_mnemonic": `The *R[bones]R* have been *R[sliced]R* on this *K[corpse]K*. He must have died in battle`,
+        "example_word": '骸骨, がいこつ, skeleton',
+    },
+    '塞': {
+        "heisig_id": 1646,
+        "component_subject_ids": [78, 140, 161],
+        "meanings": ["block up"],
+        "meaning_mnemonic": `In *R[spring]R* take some *R[dirt]R* get on the *R[roof]R* and *k[block up]K* and leaks`,
+        "example_word": '塞ぐ, ふさぐ, to block up',
     },
     '痘': {
         "heisig_id": 1815,
@@ -867,6 +895,20 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["scar"],
         "meaning_mnemonic": `The *R[sick]R* *R[roots]R* are coverd in *K[scars]K*`,
         "example_word": '痕跡, こんせき, trace',
+    },
+    '彦': {
+        "heisig_id": 1852,
+        "component_subject_ids": [38, 55, 116],
+        "meanings": ["lad"],
+        "meaning_mnemonic": `*R[standing]R* on the *R[cliff]R* focusing on his *R[hair]R* is the *K[lad]K*`,
+        "example_word": 'N/A',
+    },
+    '潰': {
+        "heisig_id": 1911,
+        "component_subject_ids": [103, 358],
+        "meanings": ["smash"],
+        "meaning_mnemonic": `In the *R[tsunami]R* all your *R[valuables]R* get *K[smashed]K*`,
+        "example_word": '潰す, つぶす, to smash',
     },
     '蒲': {
         "heisig_id": 1981,
