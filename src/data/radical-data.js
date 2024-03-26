@@ -2505,4 +2505,9 @@ export const radicalData = {
         'level': 100,
         'characters': '新'
     },
+    10010: {
+        'slug': 'all',
+        'level': 100,
+        'characters': '皆'
+    },
 }

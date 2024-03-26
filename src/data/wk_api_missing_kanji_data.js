@@ -252,6 +252,13 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `The *R[trees]* in the *R[city]R* are *K[persimmon]K*`,
         "example_word": '柿, かき, persimmon',
     },
+    '沃': {
+        "heisig_id": 459,
+        "component_subject_ids": [103, 40],
+        "meanings": ["irrigate"],
+        "meaning_mnemonic": `*R[Tsunami]R* from *R[heaven]R* *K[irrigates]K*`,
+        "example_word": 'N/A',
+    },
     '嬌': {
         "heisig_id": 461,
         "component_subject_ids": [19, 16, 121, 40],
@@ -275,16 +282,16 @@ export const wk_api_missing_kanji_data = {
     },
     '楷': {
         "heisig_id": 485,
-        "component_subject_ids": [23, 161, 52],
+        "component_subject_ids": [23, 10010],
         "meanings": ["block letters"],
-        "meaning_mnemonic": `*R[compare]R* the *R[white]R* *K[block letters]K* on the *R[tree]R*`,
+        "meaning_mnemonic": `The writing on the *R[trees]R* is *R[all]R* *K[block letters]K*`,
         "example_word": '楷書, かいしょ, block letters',
     },
     '諧': {
         "heisig_id": 486,
-        "component_subject_ids": [117, 161, 52],
+        "component_subject_ids": [117, 10010],
         "meanings": ["harmony"],
-        "meaning_mnemonic": `*R[say]R* and *R[compare]R* *R[white]R* things will lead to *K[harmony]K*`,
+        "meaning_mnemonic": `*R[say]R* to *R[all]R* will lead to *K[harmony]K*`,
         "example_word": 'N/A',
     },
     '謁': {
@@ -863,9 +870,9 @@ export const wk_api_missing_kanji_data = {
     },
     '塞': {
         "heisig_id": 1646,
-        "component_subject_ids": [78, 140, 161],
+        "component_subject_ids": [78, 8779, 17],
         "meanings": ["block up"],
-        "meaning_mnemonic": `In *R[spring]R* take some *R[dirt]R* get on the *R[roof]R* and *k[block up]K* and leaks`,
+        "meaning_mnemonic": `In *R[spring]R* take some *R[dirt]R* get on the *R[roof]R* and *K[block up]K* the leaks`,
         "example_word": '塞ぐ, ふさぐ, to block up',
     },
     '痘': {
@@ -902,6 +909,13 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["lad"],
         "meaning_mnemonic": `*R[standing]R* on the *R[cliff]R* focusing on his *R[hair]R* is the *K[lad]K*`,
         "example_word": 'N/A',
+    },
+    '斑': {
+        "heisig_id": 1865,
+        "component_subject_ids": [48, 42],
+        "meanings": ["speckled"],
+        "meaning_mnemonic": `The two *R[king's]R* *R[writing]R* is *K[speckled]K* `,
+        "example_word": '斑, むら, unevenness',
     },
     '潰': {
         "heisig_id": 1911,
@@ -1120,6 +1134,26 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `The *R[snake]R* radical is the same as the *K[zodiac snake]K* kanji`,
         "example_word": '巳, み, zodiac snake',
     },
-
+    '剃': {
+        "heisig_id": 10006,
+        "component_subject_ids": [202, 128],
+        "meanings": ["shave"],
+        "meaning_mnemonic": `The *R[younger brother]R* is using the *R[knife]R* to *K[shave]K*`,
+        "example_word": '剃る, そる, to shave',
+    },
+    '姪': {
+        "heisig_id": 10008,
+        "component_subject_ids": [19, 274],
+        "meanings": ["niece"],
+        "meaning_mnemonic": `The *R[woman]R* who looks like a *R[mole]R* is your *K[niece]K*`,
+        "example_word": '姪, めい, niece',
+    },
+    '甥': {
+        "heisig_id": 10009,
+        "component_subject_ids": [210, 243],
+        "meanings": ["nephew"],
+        "meaning_mnemonic": `The only *R[man]R*'s *R[life}R* that you are interested in is you *K[nephew]K*'s`,
+        "example_word": '甥, おい, nephew',
+    },
 }
 

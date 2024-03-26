@@ -554,7 +554,9 @@ const heisig_kanji_map = new Map([
       ['464', '章', 'chapter', '章, しょう, chapter', 'Radical: chapter'],
       ['465', '競', 'compete', '競技, きょうぎ, contest', 'Two older brothers standing to compete'],
       ['466', '帝', 'sovereign', '帝, みかど, emperor', 'The sovereign leader stands wearing a towel'],
-      ['467', '諦', 'give up', '諦める, あきらめる, to give up', 'Sovereign leader says that you must give up']
+      ['467', '諦', 'give up', '諦める, あきらめる, to give up', 'Sovereign leader says that you must give up'],
+      ['10007', '濡', 'wet', '', '']
+
     ]],
   ['18C',
     [
@@ -972,7 +974,8 @@ const heisig_kanji_map = new Map([
       ['825', '硫', 'sulfur', '硫黄, いおう, sulfur', 'Stone in the trash from the river smells like sulfur'],
       ['826', '流', 'stream', '流れ, ながれ, flow', 'Tsunami pushes trash from river into stream'],
       ['827', '允', 'license', '', 'Legs must be kept private, unless you have license'],
-      ['828', '唆', 'investigate', '示唆, しさ, hint', 'Spider is using mouth to investigate']
+      ['828', '唆', 'investigate', '示唆, しさ, hint', 'Spider is using mouth to investigate'],
+      ['10008', '姪', 'niece', '', ''],
     ]],
   ['24A',
     [
@@ -1565,7 +1568,8 @@ const heisig_kanji_map = new Map([
       ['1333', '顎', 'chin', '顎, あご, jaw', 'Beggar rests his double chin on a page'],
       ['1334', '汚', 'dirty', '汚染, おせん, pollution', 'Tsunami hits two prisons making them both dirty'],
       ['1335', '与', 'give', '賞与金, しょうよきん, bonus', 'Beggar is on the ground, so you give'],
-      ['1336', '写', 'copy', '写真, しゃしん, photo', 'Beggar has forehead on ground, so you copy him']
+      ['1336', '写', 'copy', '写真, しゃしん, photo', 'Beggar has forehead on ground, so you copy him'],
+      ['10006', '剃', 'shave', '剃る, そる, to shave', ''],
     ]],
   ['34A',
     [
@@ -1983,7 +1987,8 @@ const heisig_kanji_map = new Map([
       ['1691', '椿', 'camellia'],
       ['1692', '泰', 'peaceful'],
       ['1693', '奏', 'play music'],
-      ['1694', '実', 'reality']
+      ['1694', '実', 'reality'],
+      ['10009', '甥', 'nephew'],
     ]],
   ['40C',
     [

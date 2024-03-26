@@ -555,7 +555,8 @@ const heisig_kanji =
       ['464', '章', 'chapter', '章, しょう, chapter', 'Radical: chapter'],
       ['465', '競', 'compete', '競技, きょうぎ, contest', 'Two older brothers standing to compete'],
       ['466', '帝', 'sovereign', '帝, みかど, emperor', 'The sovereign leader stands wearing a towel'],
-      ['467', '諦', 'give up', '諦める, あきらめる, to give up', 'Sovereign leader says that you must give up']
+      ['467', '諦', 'give up', '諦める, あきらめる, to give up', 'Sovereign leader says that you must give up'],
+      ['10007', '濡', 'wet', '', '']
     ],
   '18C':
     [
@@ -1566,7 +1567,8 @@ const heisig_kanji =
       ['1333', '顎', 'chin', '顎, あご, jaw', 'Beggar rests his double chin on a page'],
       ['1334', '汚', 'dirty', '汚染, おせん, pollution', 'Tsunami hits two prisons making them both dirty'],
       ['1335', '与', 'give', '賞与金, しょうよきん, bonus', 'Beggar is on the ground, so you give'],
-      ['1336', '写', 'copy', '写真, しゃしん, photo', 'Beggar has forehead on ground, so you copy him']
+      ['1336', '写', 'copy', '写真, しゃしん, photo', 'Beggar has forehead on ground, so you copy him'],
+      ['10006', '剃', 'shave', '剃る, そる, to shave', '']
     ],
   '34A':
     [
