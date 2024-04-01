@@ -2510,4 +2510,34 @@ export const radicalData = {
         'level': 100,
         'characters': '皆'
     },
+    10011: {
+        'slug': 'love',
+        'level': 100,
+        'characters': '愛'
+    },
+    10012: {
+        'slug': 'rapidly',
+        'level': 100,
+        'characters': '疾'
+    },
+    10013: {
+        'slug': 'hard',
+        'level': 100,
+        'characters': '固'
+    },
+    10014: {
+        'slug': 'zodiac ox',
+        'level': 100,
+        'characters': '丑'
+    },
+    10015: {
+        'slug': 'revered',
+        'level': 100,
+        'characters': '尊'
+    },
+    10016: {
+        'slug': 'plentiful',
+        'level': 100,
+        'characters': '豊'
+    },
 }

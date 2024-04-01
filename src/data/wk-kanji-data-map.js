@@ -1823,7 +1823,8 @@ const heisig_kanji_map = new Map([
       ['1551', '豊', 'plentiful', '豊富, ほうふ, abundant', 'Musical beans make farts plentiful'],
       ['1552', '鼓', 'drum', '鼓膜, こまく, eardrum', 'Beat drum with a branch'],
       ['1553', '喜', 'rejoice', '喜ぶ, よろこぶ, to be pleased', 'Radical: rejoice'],
-      ['1554', '樹', 'wood', '樹脂, じゅし, resin', 'Measure trees to find wood for drums']
+      ['1554', '樹', 'wood', '樹脂, じゅし, resin', 'Measure trees to find wood for drums'],
+      ['10010', '噂', 'rumor']
     ]],
   ['38B',
     [
@@ -2543,7 +2544,8 @@ const heisig_kanji_map = new Map([
       ['2158', '麗', 'lovely', '', 'Radical: lovely'],
       ['2159', '熊', 'bear', '熊本県, くまもとけん, Kumamoto Prefecture', 'Bear has the ability to boil things'],
       ['2160', '能', 'ability', '能力, のうりょく, ability', 'Radical: ability'],
-      ['2161', '態', 'appearance', '態と, わざと, intentionally', 'You have the ability to control your heart\'s appearance']
+      ['2161', '態', 'appearance', '態と, わざと, intentionally', 'You have the ability to control your heart\'s appearance'],
+      ['10011', '嘘', 'lie']
     ]],
   ['55',
     [

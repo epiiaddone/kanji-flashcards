@@ -974,7 +974,9 @@ const heisig_kanji =
       ['825', '硫', 'sulfur', '硫黄, いおう, sulfur', 'Stone in the trash from the river smells like sulfur'],
       ['826', '流', 'stream', '流れ, ながれ, flow', 'Tsunami pushes trash from river into stream'],
       ['827', '允', 'license', '', 'Legs must be kept private, unless you have license'],
-      ['828', '唆', 'investigate', '示唆, しさ, hint', 'Spider is using mouth to investigate']
+      ['828', '唆', 'investigate', '示唆, しさ, hint', 'Spider is using mouth to investigate'],
+      ['10008', '姪', 'niece', '', ''],
+
     ],
   '24A':
     [
@@ -1822,7 +1824,8 @@ const heisig_kanji =
       ['1551', '豊', 'plentiful', '豊富, ほうふ, abundant', 'Musical beans make farts plentiful'],
       ['1552', '鼓', 'drum', '鼓膜, こまく, eardrum', 'Beat drum with a branch'],
       ['1553', '喜', 'rejoice', '喜ぶ, よろこぶ, to be pleased', 'Radical: rejoice'],
-      ['1554', '樹', 'wood', '樹脂, じゅし, resin', 'Measure trees to find wood for drums']
+      ['1554', '樹', 'wood', '樹脂, じゅし, resin', 'Measure trees to find wood for drums'],
+      ['10010', '噂', 'rumor']
     ],
   '38B':
     [
@@ -1986,7 +1989,8 @@ const heisig_kanji =
       ['1691', '椿', 'camellia'],
       ['1692', '泰', 'peaceful'],
       ['1693', '奏', 'play music'],
-      ['1694', '実', 'reality']
+      ['1694', '実', 'reality'],
+      ['10009', '甥', 'nephew'],
     ],
   '40C':
     [
@@ -2541,7 +2545,8 @@ const heisig_kanji =
       ['2158', '麗', 'lovely', '', 'Radical: lovely'],
       ['2159', '熊', 'bear', '熊本県, くまもとけん, Kumamoto Prefecture', 'Bear has the ability to boil things'],
       ['2160', '能', 'ability', '能力, のうりょく, ability', 'Radical: ability'],
-      ['2161', '態', 'appearance', '態と, わざと, intentionally', 'You have the ability to control your heart\'s appearance']
+      ['2161', '態', 'appearance', '態と, わざと, intentionally', 'You have the ability to control your heart\'s appearance'],
+      ['10011', '嘘', 'lie']
     ],
   '55':
     [

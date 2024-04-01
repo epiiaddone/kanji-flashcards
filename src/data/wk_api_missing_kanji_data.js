@@ -478,9 +478,9 @@ export const wk_api_missing_kanji_data = {
     },
     '曖': {
         "heisig_id": 797,
-        "component_subject_ids": [22],
+        "component_subject_ids": [22, 10011],
         "meanings": ["unclear"],
-        "meaning_mnemonic": `Unclear about *R[sun]R* *R[loving]R*`,
+        "meaning_mnemonic": `*K[Unclear]K* about *R[sun]R* *R[loving]R*`,
         "example_word": '曖昧, あいまい, vague',
     },
     '勾': {
@@ -891,9 +891,9 @@ export const wk_api_missing_kanji_data = {
     },
     '嫉': {
         "heisig_id": 1820,
-        "component_subject_ids": [19, 187, 72],
+        "component_subject_ids": [19, 10012],
         "meanings": ["envy"],
-        "meaning_mnemonic": `*R[woman]R* has become *R[sick]R* with *K[envy]K* over fancy *R[arrow]R*`,
+        "meaning_mnemonic": `*R[woman]R* *R[rapidly]R* becomes *K[envious]K*`,
         "example_word": '嫉妬, しっと, envy',
     },
     '痕': {
@@ -914,8 +914,15 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1865,
         "component_subject_ids": [48, 42],
         "meanings": ["speckled"],
-        "meaning_mnemonic": `The two *R[king's]R* *R[writing]R* is *K[speckled]K* `,
+        "meaning_mnemonic": `The two *R[king's]R* *R[writing]R* is *K[speckled]K*`,
         "example_word": '斑, むら, unevenness',
+    },
+    '艶': {
+        "heisig_id": 1892,
+        "component_subject_ids": [10016, 110],
+        "meanings": ["glossy"],
+        "meaning_mnemonic": `*R[Plentiful]R* *R[colors]R* make a nice *K[gloss]K*`,
+        "example_word": '艶, つや, gloss',
     },
     '潰': {
         "heisig_id": 1911,
@@ -1087,16 +1094,16 @@ export const wk_api_missing_kanji_data = {
     },
     '箇': {
         "heisig_id": 2185,
-        "component_subject_ids": [85, 69, 16],
+        "component_subject_ids": [85, 10013],
         "meanings": ["item"],
-        "meaning_mnemonic": `*K[Item]K*s of *R[bamboo]R* go in the *R[old]R* *R[mouth]R*`,
+        "meaning_mnemonic": `*R[Hard]R* *[bamboo]R* is used to make *K[items]K*`,
         "example_word": '箇所, かしょ, place',
     },
     '遵': {
         "heisig_id": 2187,
-        "component_subject_ids": [74, 114, 182],
+        "component_subject_ids": [74, 10015],
         "meanings": ["abide by"],
-        "meaning_mnemonic": `You must *R[measure]R* the amount of *R[alcohol]R* you drink before you go on your *R[scooter]R* in order to *K[abide by]K* the law`,
+        "meaning_mnemonic": `The *R[revered]R* on *R[scooters]R* must *K[abide by]K* the law`,
         "example_word": '遵守, じゅんしゅ, abiding by',
     },
     '璽': {
@@ -1115,9 +1122,9 @@ export const wk_api_missing_kanji_data = {
     },
     '羞': {
         "heisig_id": 2198,
-        "component_subject_ids": [136, 105],
+        "component_subject_ids": [136, 10014],
         "meanings": ["humiliate"],
-        "meaning_mnemonic": `The *R[sheep]R* was *K[humilate]K*d by two *R[wolverine]R*s`,
+        "meaning_mnemonic": `The *R[sheep]R* was *K[humilate]K*d by the *R[zodiac ox]R*`,
         "example_word": 'N/A',
     },
     '卯': {
