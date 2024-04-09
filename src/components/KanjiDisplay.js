@@ -64,7 +64,7 @@ export default function KanjiDisplay() {
             kanjiComponentIds = kanjiData.component_subject_ids;
             kanjiMnemonic = kanjiData.meaning_mnemonic;
             //this was causing infinite rerender
-            if (kanjiData.example_word != kanjiExample) setKanjiExample(kanjiData.example_word);
+            if (kanjiData.example_word !== kanjiExample) setKanjiExample(kanjiData.example_word);
         }
     }
 
@@ -114,11 +114,13 @@ export default function KanjiDisplay() {
                     <div className="kanji-info__links">
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href={"https://jisho.org/search/" + kanjiCharacter}
                         >jisho</a>
                         {kanjiLevel &&
                             <a
                                 target="_blank"
+                                rel="noreferrer"
                                 href={"https://www.wanikani.com/kanji/" + kanjiCharacter}
                             >WK Level:<span> {kanjiLevel}</span></a>
                         }

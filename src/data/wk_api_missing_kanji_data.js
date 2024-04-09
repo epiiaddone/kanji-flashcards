@@ -788,7 +788,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1382,
         "component_subject_ids": [78, 95, 207],
         "meanings": ["trail"],
-        "meaning_mnemonic": `From the *R[roof]R* look for the *R[foot]R* steps left by the *R[jackhammer]R* man\'s *K[trail]K*`,
+        "meaning_mnemonic": `From the *R[roof]R* look for the *R[foot]R* steps left by the *R[jackhammer]R* man's *K[trail]K*`,
         "example_word": 'N/A',
     },
     '氾': {
@@ -1012,7 +1012,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 2038,
         "component_subject_ids": [8770, 15, 16],
         "meanings": ["inmost"],
-        "meaning_mnemonic": `*R[Kick]R* a *R[cross]R* into someone\'s *R[mouth]R* and it goes to the *K[inmost]K* part of their body`,
+        "meaning_mnemonic": `*R[Kick]R* a *R[cross]R* into someone's *R[mouth]R* and it goes to the *K[inmost]K* part of their body`,
         "example_word": '折衷, せっちゅう, compramise',
     },
     '函': {

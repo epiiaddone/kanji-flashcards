@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 
 import lesson_reducer from '../reducers/lesson_reducer';
 
@@ -84,7 +84,6 @@ export const LessonProvider = ({ children }) => {
   const verifyAnswer = (e) => {
     const clickedAnswerId = e.target.getAttribute('data-id');
     const clickedAnswerMeaning = e.target.getAttribute('data-meaning');
-    const clickedAnswerCharacters = e.target.getAttribute('data-characters');
     const answerId = state.practiseMode ?
       heisig_kanji[state.lesson][state.practiseQuestion][0]
       : heisig_kanji[state.lesson][currentQuestion][0]
@@ -97,7 +96,7 @@ export const LessonProvider = ({ children }) => {
     let isClickedCorrect = false;
 
     // if clicked answer button corresponding to question
-    if (answerId == clickedAnswerId) isClickedCorrect = true;
+    if (answerId === clickedAnswerId) isClickedCorrect = true;
 
     //for duplicate meanings in same lesson
     //if answer button has same meaning as question

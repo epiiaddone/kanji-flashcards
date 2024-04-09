@@ -82,7 +82,7 @@ const lesson_reducer = (state, action) => {
                 answersActive: false,
                 isShowInfo: true,
                 highlightAnswerId: action.payload.clickedAnswerId,
-                practiseKanji: [...state.practiseKanji.filter(kanji => kanji != state.practiseQuestion)],
+                practiseKanji: [...state.practiseKanji.filter(kanji => kanji !== state.practiseQuestion)],
 
             }
         } else {

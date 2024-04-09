@@ -527,7 +527,7 @@ const heisig_kanji =
       ['438', '幌', 'canopy', '', 'Towel is canopy to hide from sun\'s rays'],
       ['439', '錦', 'brocade', '錦, にしき, brocade', 'Gold and white towel used as brocade'],
       ['440', '市', 'city', '市民, しみん, citizen', 'Radical: city'],
-      ['441', '柿', 'persimmon', '柿, かき, persimmon', 'There\’s a persimmon tree in the city'],
+      ['441', '柿', 'persimmon', '柿, かき, persimmon', `There's a persimmon tree in the city`],
       ['442', '姉', 'older sister', '姉, あね, older sister', 'The woman in the city is the older sister'],
       ['443', '肺', 'lung', '肺, はい, lung', 'Go to moon city for lung health'],
       ['444', '帯', 'belt', '帯, おび, obi', 'Radical: belt'],
@@ -1738,7 +1738,7 @@ const heisig_kanji =
       ['1474', '緊', 'tense'],
       ['1475', '紫', 'purple'],
       ['1476', '縛', 'truss'],
-      ['1477', '縄', 'straw rope']
+      ['1477', '縄', 'straw rope'],
       ['10014', '攣', 'crooked', '攣縮', '']
     ],
   '36D':

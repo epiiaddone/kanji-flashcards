@@ -77,6 +77,7 @@ export const RadicalSvg = ({ radicalSlug }) => {
         case "viking": imageSrc = vikingImage; break;
         case "yurt": imageSrc = yurtImage; break;
         case "zombie": imageSrc = zombieImage; break;
+        default: imageSrc = "";
     }
-    return <img className="radical--image" src={imageSrc} />
+    return <img className="radical--image" src={imageSrc} alt="radical" />
 }
