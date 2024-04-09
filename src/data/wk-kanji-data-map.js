@@ -245,7 +245,8 @@ const heisig_kanji_map = new Map([
       ['203', '宴', 'banquet', '宴会, えんかい, banquet', 'Woman under the roof, protected from the sun, having a banquet'],
       ['204', '寄', 'approach', '寄る, よる, to approach', 'Approach the odd roof'],
       ['205', '富', 'rich', '富士山, ふじさん, Mt. Fuji', 'The rich have scarecrow on their roof'],
-      ['206', '貯', 'savings', '貯金, ちょきん, savings', 'Shellfish drops his savings from the roof onto the street']
+      ['206', '貯', 'savings', '貯金, ちょきん, savings', 'Shellfish drops his savings from the roof onto the street'],
+      ['10012', '喧', 'noisy']
     ]],
   ['10A',
     [
@@ -657,7 +658,8 @@ const heisig_kanji_map = new Map([
       ['550', '賓', 'VIP', '賓客, ひんきゃく, V.I.P.', 'Between roof and ground there are a few VIP shellfish'],
       ['551', '歳', 'years old', '歳, さい, years old', 'Stop a drunkard going down a slide with a jackhammer, ask him how many years old he is'],
       ['552', '県', 'prefecture', '県, けん, prefecture', 'Radical: prefecture'],
-      ['553', '栃', 'horse chestnut', '栃木県, とちぎけん, Tochigi prefecture', '10,000 horse chestnut tress on a cliff']
+      ['553', '栃', 'horse chestnut', '栃木県, とちぎけん, Tochigi prefecture', '10,000 horse chestnut tress on a cliff'],
+      ['10013', '嘩', 'rowdy']
     ]],
   ['21A',
     [
@@ -860,6 +862,7 @@ const heisig_kanji_map = new Map([
       ['726', '掲', 'display', '掲示, けいじ, notice', 'Display your fingers at the siesta'],
       ['727', '掛', 'hang', '掛ける, かける, to hang up (many others)', 'Dirt on fingers and toes leads to hanging'],
       ['728', '捗', 'make headway', '捗る, はかどる, to make headway', 'Stop walking on fingers to make headway']
+
     ]],
   ['23C',
     [
@@ -1734,7 +1737,8 @@ const heisig_kanji_map = new Map([
       ['1474', '緊', 'tense', '緊張, きんちょう, tension',],
       ['1475', '紫', 'purple'],
       ['1476', '縛', 'truss'],
-      ['1477', '縄', 'straw rope']
+      ['1477', '縄', 'straw rope'],
+      ['10014', '攣', 'crooked', '攣縮', '']
     ]],
   ['36D',
     [
@@ -2014,7 +2018,7 @@ const heisig_kanji_map = new Map([
     [
       ['1711', '今', 'now'],
       ['1712', '含', 'include'],
-      ['1713', '貪', 'covet'],
+      ['1713', '貪', 'covet', '貪欲, どんよく, greedy', ''],
       ['1714', '吟', 'versify'],
       ['1715', '念', 'wish'],
       ['1716', '捻', 'wrench'],
@@ -2112,9 +2116,9 @@ const heisig_kanji_map = new Map([
       ['1793', '束', 'bundle'],
       ['1794', '頼', 'trust'],
       ['1795', '瀬', 'rapids'],
-      ['1796', '勅', 'imperial order'],
+      ['1796', '勅', 'imperial order', 'N/A', ''],
       ['1797', '疎', 'alienate'],
-      ['1798', '辣', 'bitter'],
+      ['1798', '辣', 'bitter', 'N/A', '*R[bundle]R* of *R[spices]R* is *K[bitter]K*'],
       ['1799', '速', 'quick'],
       ['1800', '整', 'organize'],
       ['1801', '剣', 'saber'],
@@ -2123,12 +2127,12 @@ const heisig_kanji_map = new Map([
       ['1804', '倹', 'frugal'],
       ['1805', '重', 'heavy', '重い, おもい, heavy', ''],
       ['1806', '動', 'move'],
-      ['1807', '腫', 'tumor'],
+      ['1807', '腫', 'tumor', '腫瘍, しゅよう, tumor', ''],
       ['1808', '勲', 'meritorious deed'],
       ['1809', '働', 'work', '働く, はたらく, to work', ''],
       ['1810', '種', 'species'],
       ['1811', '衝', 'collide'],
-      ['1812', '薫', 'fragrant']
+      ['1812', '薫', 'fragrant', 'N/A', '']
 
     ]],
   ['44A',
@@ -2224,7 +2228,7 @@ const heisig_kanji_map = new Map([
       ['1889', '把', 'grasp'],
       ['1890', '色', 'color', '色, いろ, color', ''],
       ['1891', '絶', 'discontinue'],
-      ['1892', '艶', 'glossy'],
+      ['1892', '艶', 'glossy', '艶, つや, gloss'],
       ['1893', '肥', 'fertilizer']
     ]],
   ['46',

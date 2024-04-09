@@ -2540,4 +2540,9 @@ export const radicalData = {
         'level': 100,
         'characters': '豊'
     },
+    10017: {
+        'slug': 'wish',
+        'level': 100,
+        'characters': '念'
+    },
 }

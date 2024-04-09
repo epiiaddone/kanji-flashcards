@@ -246,7 +246,8 @@ const heisig_kanji =
       ['203', '宴', 'banquet', '宴会, えんかい, banquet', 'Woman under the roof, protected from the sun, having a banquet'],
       ['204', '寄', 'approach', '寄る, よる, to approach', 'Approach the odd roof'],
       ['205', '富', 'rich', '富士山, ふじさん, Mt. Fuji', 'The rich have scarecrow on their roof'],
-      ['206', '貯', 'savings', '貯金, ちょきん, savings', 'Shellfish drops his savings from the roof onto the street']
+      ['206', '貯', 'savings', '貯金, ちょきん, savings', 'Shellfish drops his savings from the roof onto the street'],
+      ['10012', '喧', 'noisy']
     ],
   '10A':
     [
@@ -657,7 +658,8 @@ const heisig_kanji =
       ['550', '賓', 'VIP', '賓客, ひんきゃく, V.I.P.', 'Between roof and ground there are a few VIP shellfish'],
       ['551', '歳', 'years old', '歳, さい, years old', 'Stop a drunkard going down a slide with a jackhammer, ask him how many years old he is'],
       ['552', '県', 'prefecture', '県, けん, prefecture', 'Radical: prefecture'],
-      ['553', '栃', 'horse chestnut', '栃木県, とちぎけん, Tochigi prefecture', '10,000 horse chestnut tress on a cliff']
+      ['553', '栃', 'horse chestnut', '栃木県, とちぎけん, Tochigi prefecture', '10,000 horse chestnut tress on a cliff'],
+      ['10013', '嘩', 'rowdy']
     ],
   '21A':
     [
@@ -859,7 +861,8 @@ const heisig_kanji =
       ['725', '接', 'adjoin', '接する, せっする, to touch', 'Stand with a woman and you fingers adjoin'],
       ['726', '掲', 'display', '掲示, けいじ, notice', 'Display your fingers at the siesta'],
       ['727', '掛', 'hang', '掛ける, かける, to hang up (many others)', 'Dirt on fingers and toes leads to hanging'],
-      ['728', '捗', 'make headway', '捗る, はかどる, to make headway', 'Stop walking on fingers to make headway']
+      ['728', '捗', 'make headway', '捗る, はかどる, to make headway', 'Stop walking on fingers to make headway'],
+
     ],
   '23C':
     [
@@ -1736,6 +1739,7 @@ const heisig_kanji =
       ['1475', '紫', 'purple'],
       ['1476', '縛', 'truss'],
       ['1477', '縄', 'straw rope']
+      ['10014', '攣', 'crooked', '攣縮', '']
     ],
   '36D':
     [

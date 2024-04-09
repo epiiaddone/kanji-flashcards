@@ -875,6 +875,48 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `In *R[spring]R* take some *R[dirt]R* get on the *R[roof]R* and *K[block up]K* the leaks`,
         "example_word": '塞ぐ, ふさぐ, to block up',
     },
+    '貪': {
+        "heisig_id": 1713,
+        "component_subject_ids": [238, 94],
+        "meanings": ["covet"],
+        "meaning_mnemonic": `*R[now]R* the *R[shellfish]R* is *K[covetous]K*`,
+        "example_word": '貪欲, どんよく, greedy',
+    },
+    '捻': {
+        "heisig_id": 1716,
+        "component_subject_ids": [63, 100017],
+        "meanings": ["twist"],
+        "meaning_mnemonic": `*R[fingers]R* are *R[wishing]R* that they can *K[twist]K*`,
+        "example_word": '捻る, ひねる, to twist',
+    },
+    '勅': {
+        "heisig_id": 1796,
+        "component_subject_ids": [63, 100017],
+        "meanings": ["imperial order"],
+        "meaning_mnemonic": `*R[buldle]R* of *R[power]R* is an *K[imperial order]K*`,
+        "example_word": 'N/A',
+    },
+    '辣': {
+        "heisig_id": 1798,
+        "component_subject_ids": [178, 219],
+        "meanings": ["bitter"],
+        "meaning_mnemonic": `*R[bundle]R* of *R[spices]R* is *K[bitter]K*`,
+        "example_word": 'N/A',
+    },
+    '腫': {
+        "heisig_id": 1807,
+        "component_subject_ids": [188, 43],
+        "meanings": ["tumor"],
+        "meaning_mnemonic": `*R[heavy]R* *R[moon]R* is actually a *K[tumor]K*`,
+        "example_word": '腫瘍, しゅよう, tumor',
+    },
+    '薫': {
+        "heisig_id": 1812,
+        "component_subject_ids": [188, 131, 90],
+        "meanings": ["fragrant"],
+        "meaning_mnemonic": `*R[Heavy]R* *R[flowers]R* are *R[boiled]R* to make *K[fragrance]K*`,
+        "example_word": 'N/A',
+    },
     '痘': {
         "heisig_id": 1815,
         "component_subject_ids": [187, 181],
@@ -1161,6 +1203,13 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["nephew"],
         "meaning_mnemonic": `The only *R[man]R*'s *R[life}R* that you are interested in is you *K[nephew]K*'s`,
         "example_word": '甥, おい, nephew',
+    },
+    '攣': {
+        "heisig_id": 10014,
+        "component_subject_ids": [2, 86, 117],
+        "meanings": ["crooked"],
+        "meaning_mnemonic": `*R[say]R* that you have to *R[thread]R* the *R[hand]R* twice because it's *K[crooked]K*`,
+        "example_word": '攣縮, れんしゅく, spasm',
     },
 }
 
