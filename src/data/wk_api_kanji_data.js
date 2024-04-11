@@ -2629,7 +2629,7 @@ export const wk_api_kanji_data = {
         "component_subject_ids": [86, 52, 45],
         "amalgamation_subject_ids": [3196, 3218, 4379, 4500, 4630, 5800, 7270, 8016, 8182],
         "meanings": ["Line"],
-        "meaning_mnemonic": `If someone falls overboard while you're *R[white]R* *R[water ]R*R[afting, you can use a long piece of *R[thread]R* as a life *K[line]K*. Sure it might be thin, but a line of thread is better than nothing. Throw them a line and drag them back aboard! Those white water rapids are vicious.`
+        "meaning_mnemonic": `If someone falls overboard while you're *R[white]R* *R[water]R *R[rafting], you can use a long piece of *R[thread]R* as a life *K[line]K*. Sure it might be thin, but a line of thread is better than nothing. Throw them a line and drag them back aboard! Those white water rapids are vicious.`
     },
     768: {
         "slug": "横",

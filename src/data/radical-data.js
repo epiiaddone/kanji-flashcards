@@ -2545,4 +2545,9 @@ export const radicalData = {
         'level': 100,
         'characters': '念'
     },
+    10018: {
+        'slug': 'yield',
+        'level': 100,
+        'characters': '屈'
+    },
 }
