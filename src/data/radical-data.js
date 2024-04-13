@@ -2550,4 +2550,24 @@ export const radicalData = {
         'level': 100,
         'characters': '屈'
     },
+    10019: {
+        'slug': 'determine',
+        'level': 100,
+        'characters': '定'
+    },
+    10020: {
+        'slug': 'star',
+        'level': 100,
+        'characters': '星'
+    },
+    10021: {
+        'slug': 'dangle',
+        'level': 100,
+        'characters': '垂'
+    },
+    10022: {
+        'slug': 'chestnut',
+        'level': 100,
+        'characters': '栗'
+    },
 }
