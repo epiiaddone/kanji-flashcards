@@ -950,7 +950,8 @@ const heisig_kanji =
       ['801', '拡', 'extend', '拡大, かくだい, expansion', 'Widen fingers when you extend them'],
       ['802', '鉱', 'mineral', '鉱物, こうぶつ, mineral', 'Gold is a widely used mineral'],
       ['803', '弁', 'dialect', '弁当, べんとう, japanese lunch box', '20 dialects in a private dialect'],
-      ['804', '雄', 'male', '雄, おす, male animal', 'Male narwahl wants turkey']
+      ['804', '雄', 'male', '雄, おす, male animal', 'Male narwahl wants turkey'],
+      ['10015', '醤', 'soy sauce']
     ],
   '23G':
     [

@@ -18,6 +18,8 @@ A simple game to aid those who are learning the Japanese Kanji using the book "R
 ## To Do
 - On mobile screens tick mark does not line up correctly.
 - Replace explict state with 6 mutually exclusive game phases: ['CHOOSE', 'QUESTION', 'CORRECT', 'FALSE', 'UNKNOWN', 'END']
+- add suspense to vocab api fetch
+- cache radical images and vocab string
 
 ## Acknowledgments
 - [Remembering the Kanji](https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi)
