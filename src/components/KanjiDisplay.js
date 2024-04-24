@@ -11,7 +11,7 @@ import { ExampleWord } from './ExampleWord';
 import { useEffect, useState } from 'react';
 
 export default function KanjiDisplay() {
-    console.log("inside KanjiDisplay")
+    //console.log("inside KanjiDisplay")
     const { lesson,
         currentQuestion,
         isShowInfo,
@@ -78,7 +78,7 @@ export default function KanjiDisplay() {
                 let temp = vocabData.characters + ", " + vocabData.reading + ", " + vocabData.meaning
                 setKanjiExample(temp);
             }
-            console.log("getApiVocab, vocab is:", kanjiExample)
+            // console.log("getApiVocab, vocab is:", kanjiExample)
         }
 
         getApiVocab(kanjiExampleID);

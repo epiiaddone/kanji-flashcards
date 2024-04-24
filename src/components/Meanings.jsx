@@ -1,5 +1,5 @@
 export const Meanings = ({ meaningsArray }) => {
-    console.log("inside Meanings");
+    // console.log("inside Meanings");
 
     if (!meaningsArray) {
         return (

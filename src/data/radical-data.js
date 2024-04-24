@@ -2541,7 +2541,7 @@ export const radicalData = {
         'characters': '豊'
     },
     10017: {
-        'slug': 'wish',
+        'slug': 'thought',
         'level': 100,
         'characters': '念'
     },
@@ -2570,4 +2570,190 @@ export const radicalData = {
         'level': 100,
         'characters': '栗'
     },
+    10023: {
+        'slug': 'profit',
+        'level': 100,
+        'characters': '利'
+    },
+    10024: {
+        'slug': 'know',
+        'level': 100,
+        'characters': '知'
+    },
+    10025: {
+        'slug': 'young',
+        'level': 100,
+        'characters': '若'
+    },
+    10026: {
+        'slug': 'angle',
+        'level': 100,
+        'characters': '角'
+    },
+    10027: {
+        'slug': 'point',
+        'level': 100,
+        'characters': '旨'
+    },
+    10028: {
+        'slug': 'beg',
+        'level': 100,
+        'characters': '乞'
+    },
+    10029: {
+        'slug': 'char',
+        'level': 100,
+        'characters': '焦'
+    },
+    10030: {
+        'slug': 'certain',
+        'level': 100,
+        'characters': '某'
+    },
+    10031: {
+        'slug': 'revered',
+        'level': 100,
+        'characters': '尊'
+    },
+    10032: {
+        'slug': 'cause',
+        'level': 100,
+        'characters': '因'
+    },
+    10033: {
+        'slug': 'mutual',
+        'level': 100,
+        'characters': '相'
+    },
+    10034: {
+        'slug': 'intention',
+        'level': 100,
+        'characters': '志'
+    },
+    10035: {
+        'slug': 'endure',
+        'level': 100,
+        'characters': '忍'
+    },
+    10036: {
+        'slug': 'alert',
+        'level': 100,
+        'characters': '敏'
+    },
+    10037: {
+        'slug': 'lodge',
+        'level': 100,
+        'characters': '宿'
+    },
+    10038: {
+        'slug': 'obey',
+        'level': 100,
+        'characters': '従'
+    },
+    10039: {
+        'slug': 'do',
+        'level': 100,
+        'characters': '致'
+    },
+    10040: {
+        'slug': 'spring',
+        'level': 100,
+        'characters': '泉'
+    },
+    10041: {
+        'slug': 'sovereign',
+        'level': 100,
+        'characters': '帝'
+    },
+    10042: {
+        'slug': 'maintain',
+        'level': 100,
+        'characters': '維'
+    },
+    10043: {
+        'slug': 'climb',
+        'level': 100,
+        'characters': '登'
+    },
+    10044: {
+        'slug': 'shield',
+        'level': 100,
+        'characters': '盾'
+    },
+    10045: {
+        'slug': 'steps',
+        'level': 100,
+        'characters': '段'
+    },
+    10046: {
+        'slug': 'from',
+        'level': 100,
+        'characters': '以'
+    },
+    10047: {
+        'slug': 'smell',
+        'level': 100,
+        'characters': '匂'
+    },
+    10048: {
+        'slug': 'alive',
+        'level': 100,
+        'characters': '居'
+    },
+    10049: {
+        'slug': 'belong',
+        'level': 100,
+        'characters': '属'
+    },
+    10050: {
+        'slug': 'tile',
+        'level': 100,
+        'characters': '瓦'
+    },
+    10051: {
+        'slug': 'arrival',
+        'level': 100,
+        'characters': '到'
+    },
+    10052: {
+        'slug': 'courts',
+        'level': 100,
+        'characters': '廷'
+    },
+    10053: {
+        'slug': 'ball',
+        'level': 100,
+        'characters': '玉'
+    },
+    10054: {
+        'slug': 'all',
+        'level': 100,
+        'characters': '全'
+    },
+    10055: {
+        'slug': 'detain',
+        'level': 100,
+        'characters': '留'
+    },
+    10056: {
+        'slug': 'indication',
+        'level': 100,
+        'characters': '徴'
+    },
+    10057: {
+        'slug': 'deal with',
+        'level': 100,
+        'characters': '処'
+    },
+    10058: {
+        'slug': 'mediocre',
+        'level': 100,
+        'characters': '凡'
+    },
+    10059: {
+        'slug': 'generally',
+        'level': 100,
+        'characters': '般'
+    },
+
 }

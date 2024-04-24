@@ -1396,7 +1396,8 @@ const heisig_kanji_map = new Map([
       ['1182', '崇', 'worship', '崇拝, すうはい, worship', 'The mountain religion must be worshiped'],
       ['1183', '祭', 'festival', '祭, まつり, festival', 'Radical: festival'],
       ['1184', '察', 'guess', '警察, けいさつ, police', 'On the roof at the festival, have to guess what is happening'],
-      ['1185', '擦', 'rub', '摩擦, まさつ, friction', 'Guess how many fingers are rubbing together']
+      ['1185', '擦', 'rub', '摩擦, まさつ, friction', 'Guess how many fingers are rubbing together'],
+      ['10017', '襖', 'fusuma', '襖, ふすま, fusuma', ' The *R[spirit]R* wants to *R[drop]R* a *R[big]R* *R[sickle]R* on your *R[head]R*. So you should close the *K[fusuma]K* to keep him out.']
     ]],
   ['30B',
     [
@@ -1614,7 +1615,8 @@ const heisig_kanji_map = new Map([
       ['1368', '交', 'mix', '外交, がいこう, diplomacy', 'Father puts a lid on his mixture'],
       ['1369', '効', 'effective', '効果, こうか, an effect', 'Mixing different powers will be effective'],
       ['1370', '較', 'contrast', '比較, ひかく, comparison', 'Cars don\'t mix due to contrast'],
-      ['1371', '校', 'school', '学校, がっこう, school', '学校, がっこう, school']
+      ['1371', '校', 'school', '学校, がっこう, school', '学校, がっこう, school'],
+      ['10018', '菅', 'Sedge', '', '']
     ]],
   ['34C',
     [
@@ -2133,7 +2135,9 @@ const heisig_kanji_map = new Map([
       ['1809', '働', 'work', '働く, はたらく, to work', ''],
       ['1810', '種', 'species'],
       ['1811', '衝', 'collide'],
-      ['1812', '薫', 'fragrant', 'N/A', '']
+      ['1812', '薫', 'fragrant', 'N/A', ''],
+      ['10016', '鹸', 'salt', '石鹸, , soap', 'The *R[squid]R* has a *R[fortune]R* that he will get *R[drops]R* of *R[treasure]R*. This is *K[salt]K*.']
+
 
     ]],
   ['44A',

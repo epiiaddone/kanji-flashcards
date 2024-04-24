@@ -79,9 +79,9 @@ export const wk_api_missing_kanji_data = {
     },
     '腺': {
         "heisig_id": 141,
-        "component_subject_ids": [43, 52, 45],
+        "component_subject_ids": [43, 10040],
         "meanings": ["gland"],
-        "meaning_mnemonic": `*R[moon]R* shaped body excretes *R[white]R* *R[water]R* from *K[gland]K*`,
+        "meaning_mnemonic": `The *R[moon]R* has many hot *R[springs]R*, there like it's *K[gland]K*s`,
         "example_word": 'N/A',
     },
     '汎': {
@@ -317,9 +317,9 @@ export const wk_api_missing_kanji_data = {
     },
     '詣': {
         "heisig_id": 495,
-        "component_subject_ids": [112, 22, 57],
+        "component_subject_ids": [117, 10027],
         "meanings": ["visit a temple"],
-        "meaning_mnemonic": `*R[say]R*ing about a *R[spoon]R* the *R[sun]R* when you *K[visit a temple]K*`,
+        "meaning_mnemonic": `Don't *R[say]R* or *R[point]R* when you *K[visit a temple]K*`,
         "example_word": 'N/A',
     },
     '壱': {
@@ -674,9 +674,9 @@ export const wk_api_missing_kanji_data = {
     },
     '裾': {
         "heisig_id": 1145,
-        "component_subject_ids": [80, 37, 69],
+        "component_subject_ids": [80, 10048],
         "meanings": ["hem"],
-        "meaning_mnemonic": `*R[spirits]R* use *R[old]R* *R[flag]R* to make *K[hem]K*`,
+        "meaning_mnemonic": `*R[spirits]R* are still *R[alive]R* and living in the *K[hem]K*`,
         "example_word": '裾, すそ, hem',
     },
     '斥': {
@@ -828,16 +828,16 @@ export const wk_api_missing_kanji_data = {
     },
     '繕': {
         "heisig_id": 1433,
-        "component_subject_ids": [86, 136, 16],
+        "component_subject_ids": [86, 10001],
         "meanings": ["patch up"],
-        "meaning_mnemonic": `*R[Sheep]R* uses *R[thread]R* to *K[patch up]K* *R[mouth]R*`,
+        "meaning_mnemonic": `*R[Thread]R* is *R[morally good]R* when it is being used to *K[patch up]K*`,
         "example_word": '繕う, つくろ, to mend',
     },
     '緻': {
         "heisig_id": 1437,
-        "component_subject_ids": [60, 274, 86],
-        "meanings": ["fine"],
-        "meaning_mnemonic": `In *R[winter]R* *R[mole]R* makes *K[fine]K* *R[thread]R*`,
+        "component_subject_ids": [86, 10039],
+        "meanings": ["fine, precise"],
+        "meaning_mnemonic": `With *R[thread]R* you can *R[do]R* things which are *K[fine]K* and *K[precise]K*`,
         "example_word": '緻密, ちみつ, fine',
     },
     '畿': {
@@ -1017,9 +1017,9 @@ export const wk_api_missing_kanji_data = {
     },
     '捻': {
         "heisig_id": 1716,
-        "component_subject_ids": [63, 100017],
+        "component_subject_ids": [63, 10017],
         "meanings": ["twist"],
-        "meaning_mnemonic": `*R[fingers]R* are *R[wishing]R* that they can *K[twist]K*`,
+        "meaning_mnemonic": `*R[fingers]R* have a *R[thought]R* that they can *K[twist]K*`,
         "example_word": '捻る, ひねる, to twist',
     },
     '栗': {
@@ -1052,9 +1052,9 @@ export const wk_api_missing_kanji_data = {
     },
     '勅': {
         "heisig_id": 1796,
-        "component_subject_ids": [63, 100017],
+        "component_subject_ids": [219, 13],
         "meanings": ["imperial order"],
-        "meaning_mnemonic": `*R[buldle]R* of *R[power]R* is an *K[imperial order]K*`,
+        "meaning_mnemonic": `*R[bundle]R* of *R[power]R* is an *K[imperial order]K*`,
         "example_word": 'N/A',
     },
     '辣': {
@@ -1372,5 +1372,20 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": `*R[say]R* that you have to *R[thread]R* the *R[hand]R* twice because it's *K[crooked]K*`,
         "example_word": '攣縮, れんしゅく, spasm',
     },
+    '鹸': {
+        "heisig_id": 10016,
+        "component_subject_ids": [8757, 143, 31, 3],
+        "meanings": ["salt"],
+        "meaning_mnemonic": `The *R[squid]R* has a *R[fortune]R* that he will get *R[drops]R* of *R[treasure]R*. This is *K[salt]K*.`,
+        "example_word": '石鹸, せっけん, soap',
+    },
+    '襖': {
+        "heisig_id": 10017,
+        "component_subject_ids": [80, 3, 18, 164, 29],
+        "meanings": ["fusuma"],
+        "meaning_mnemonic": `The *R[spirit]R* wants to *R[drop]R* a *R[big]R* *R[sickle]R* on your *R[head]R*. So you should close the *K[fusuma]K* to keep him out.`,
+        "example_word": '襖, ふすま, fusuma',
+    },
+
 }
 

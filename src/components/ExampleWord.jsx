@@ -1,7 +1,7 @@
 
 
 export const ExampleWord = ({ exampleWordString }) => {
-    console.log("ExampleWord:", exampleWordString)
+    //console.log("ExampleWord:", exampleWordString)
 
     if (!exampleWordString) {
         return (
