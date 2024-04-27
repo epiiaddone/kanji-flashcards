@@ -2755,5 +2755,150 @@ export const radicalData = {
         'level': 100,
         'characters': '般'
     },
+    10060: {
+        'slug': 'replace',
+        'level': 100,
+        'characters': '替'
+    },
+    10061: {
+        'slug': 'move',
+        'level': 100,
+        'characters': '動'
+    },
+    10062: {
+        'slug': 'I',
+        'level': 100,
+        'characters': '吾'
+    },
+    10063: {
+        'slug': 'table',
+        'level': 100,
+        'characters': '卓'
+    },
+    10064: {
+        'slug': 'ritual',
+        'level': 100,
+        'characters': '式'
+    },
+    10065: {
+        'slug': 'pierce',
+        'level': 100,
+        'characters': '貫'
+    },
+    10066: {
+        'slug': 'span',
+        'level': 100,
+        'characters': '亘'
+    },
+    10067: {
+        'slug': 'grief',
+        'level': 100,
+        'characters': '憂'
+    },
+    10068: {
+        'slug': 'cloth',
+        'level': 100,
+        'characters': ' 布'
+    },
+    10069: {
+        'slug': 'left',
+        'level': 100,
+        'characters': '左'
+    },
+    10070: {
+        'slug': 'scene',
+        'level': 100,
+        'characters': '景'
+    },
+    10071: {
+        'slug': 'army',
+        'level': 100,
+        'characters': '軍'
+    },
+    10072: {
+        'slug': 'take along',
+        'level': 100,
+        'characters': '連'
+    },
+    10073: {
+        'slug': 'slice',
+        'level': 100,
+        'characters': '斬'
+    },
+    10074: {
+        'slug': 'absolutely',
+        'level': 100,
+        'characters': '是'
+    },
+    10075: {
+        'slug': 'livestock',
+        'level': 100,
+        'characters': '畜'
+    },
+    10076: {
+        'slug': 'seedling',
+        'level': 100,
+        'characters': '苗'
+    },
+    10077: {
+        'slug': 'lowly',
+        'level': 100,
+        'characters': '卑'
+    },
+    10078: {
+        'slug': 'differ',
+        'level': 100,
+        'characters': '異'
+    },
+    10079: {
+        'slug': 'dude',
+        'level': 100,
+        'characters': '奴'
+    },
+    10080: {
+        'slug': 'home town',
+        'level': 100,
+        'characters': '郷'
+    },
+    10081: {
+        'slug': 'previously',
+        'level': 100,
+        'characters': '既'
+    },
+    10082: {
+        'slug': 'instant',
+        'level': 100,
+        'characters': '即'
+    },
+    10083: {
+        'slug': 'ship counter',
+        'level': 100,
+        'characters': '隻'
+    },
+    10084: {
+        'slug': 'uncle',
+        'level': 100,
+        'characters': '叔'
+    },
+    10085: {
+        'slug': 'grab',
+        'level': 100,
+        'characters': '采'
+    },
+    10086: {
+        'slug': 'address',
+        'level': 100,
+        'characters': '宛'
+    },
+    10087: {
+        'slug': 'build',
+        'level': 100,
+        'characters': '建'
+    },
+    10088: {
+        'slug': 'china',
+        'level': 100,
+        'characters': '唐'
+    },
 
 }

@@ -1737,6 +1737,7 @@ const heisig_kanji_map = new Map([
       ['1471', '緑', 'green', '緑, みどり, green', ''],
       ['1472', '縁', 'affinity'],
       ['1473', '網', 'netting'],
+      ['2114', '綱', 'rope', '綱引き, つなひき, tug-of-war', 'Thread on the hill is actually a rope'],
       ['1474', '緊', 'tense', '緊張, きんちょう, tension',],
       ['1475', '紫', 'purple'],
       ['1476', '縛', 'truss'],
@@ -1806,7 +1807,8 @@ const heisig_kanji_map = new Map([
       ['1530', '印', 'stamp'],
       ['1531', '臼', 'mortar'],
       ['1532', '毀', 'break'],
-      ['1533', '興', 'entertain']
+      ['1533', '興', 'entertain'],
+      ['10020', '碗', 'bowl', '茶碗, ちゃわん, rice bowl', 'A *R[stone]R* on your *R[arm]R* is your *K[bowl]K*.']
     ]],
   ['38A',
     [
@@ -2499,7 +2501,6 @@ const heisig_kanji_map = new Map([
       ['2111', '遡', 'go upstream', '遡る, さかのぼる, to go upstream', 'Barracks and scooter on moon trying to go upstream'],
       ['2112', '岡', 'Hill', '岡山県, おかやまけん, Okayama prefecture', 'Radical: hill'],
       ['2113', '鋼', 'steel', '鋼, はがね, steel', 'Gold hill is actually made of steel'],
-      ['2114', '綱', 'rope', '綱引き, つなひき, tug-of-war', 'Thread on the hill is actually a rope'],
       ['2115', '剛', 'sturdy', '強情, ごうじょう, stubborn', 'A hill knife is the most sturdy knife you can find'],
       ['2116', '缶', 'tin can', '缶, かん, tin can', 'Radcial: tin can'],
       ['2117', '陶', 'pottery', '陶器, とうき, pottery', 'In the prison building cans are pottery'],
@@ -2577,7 +2578,8 @@ const heisig_kanji_map = new Map([
       ['2178', '魔', 'devil', '邪魔, じゃま, hindrance', 'Below the tree canopy demon is meeting devil'],
       ['2179', '魅', 'alluring', '魅力, みりょく, charm', 'Demon on jet is pretty alluring'],
       ['2180', '塊', 'lump', '塊, かたまり, lump', 'Demon puts dirt into lumps'],
-      ['2181', '襲', 'attack', '襲撃, しゅうげき, surprise attack', 'Imperial clothes will allow you to attack']
+      ['2181', '襲', 'attack', '襲撃, しゅうげき, surprise attack', 'Imperial clothes will allow you to attack'],
+      ['10019', '賑', 'bustling', '賑やか, にぎやか, bustling', '']
     ]],
   ['56',
     [

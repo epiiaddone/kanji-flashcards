@@ -415,16 +415,16 @@ export const wk_api_missing_kanji_data = {
     },
     '憬': {
         "heisig_id": 682,
-        "component_subject_ids": [232, 22, 299],
+        "component_subject_ids": [232, 10070],
         "meanings": ["yearn (rare)"],
-        "meaning_mnemonic": `*R[Soul]R* *K[yearn]K*s for the *R[sun]R* in the *R[capital]R*`,
+        "meaning_mnemonic": `It's rare for *R[Soul]R* to *K[yearn]K*s for a beautiful *R[scene]R*`,
         "example_word": 'N/A',
     },
     '拭': {
         "heisig_id": 695,
-        "component_subject_ids": [63, 25, 79],
+        "component_subject_ids": [63, 10064],
         "meanings": ["wipe"],
-        "meaning_mnemonic": `*K[Wipe]K* *R[fingers]R* at the *R[construction]R* *R[ceremony]R*`,
+        "meaning_mnemonic": `*K[Wipe]K* *R[fingers]R* for the *R[ritual]R*.`,
         "example_word": '拭く, ふく, to wipe',
     },
     '抄': {
@@ -1367,7 +1367,7 @@ export const wk_api_missing_kanji_data = {
     },
     '攣': {
         "heisig_id": 10014,
-        "component_subject_ids": [2, 86, 117],
+        "component_subject_ids": [41, 86, 117],
         "meanings": ["crooked"],
         "meaning_mnemonic": `*R[say]R* that you have to *R[thread]R* the *R[hand]R* twice because it's *K[crooked]K*`,
         "example_word": '攣縮, れんしゅく, spasm',
@@ -1385,6 +1385,20 @@ export const wk_api_missing_kanji_data = {
         "meanings": ["fusuma"],
         "meaning_mnemonic": `The *R[spirit]R* wants to *R[drop]R* a *R[big]R* *R[sickle]R* on your *R[head]R*. So you should close the *K[fusuma]K* to keep him out.`,
         "example_word": '襖, ふすま, fusuma',
+    },
+    '賑': {
+        "heisig_id": 10019,
+        "component_subject_ids": [94, 183],
+        "meanings": ["bustling"],
+        "meaning_mnemonic": `During the *R[landslide]R* the *R[shellfish]R* all crowd together creating a *K[bustling]K* area.`,
+        "example_word": '賑やか, にぎやか, bustling',
+    },
+    '碗': {
+        "heisig_id": 10020,
+        "component_subject_ids": [54, 10086],
+        "meanings": ["bowl"],
+        "meaning_mnemonic": 'A *R[stone]R* on your *R[arm]R* is your *K[bowl]K*.',
+        "example_word": '茶碗, ちゃわん, rice bowl',
     },
 
 }
