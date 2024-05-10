@@ -2900,5 +2900,104 @@ export const radicalData = {
         'level': 100,
         'characters': '唐'
     },
-
+    10089: {
+        'slug': 'row',
+        'level': 100,
+        'characters': '列'
+    },
+    10090: {
+        'slug': 'row',
+        'level': 100,
+        'characters': '旬'
+    },
+    10091: {
+        'slug': 'death',
+        'level': 100,
+        'characters': '死'
+    },
+    10092: {
+        'slug': 'vermillion',
+        'level': 100,
+        'characters': '朱'
+    },
+    10093: {
+        'slug': 'take',
+        'level': 100,
+        'characters': '取'
+    },
+    10094: {
+        'slug': 'most',
+        'level': 100,
+        'characters': '最'
+    },
+    10095: {
+        'slug': 'degree',
+        'level': 100,
+        'characters': '度'
+    },
+    10096: {
+        'slug': 'all',
+        'level': 100,
+        'characters': '庶'
+    },
+    10097: {
+        'slug': 'decorate',
+        'level': 100,
+        'characters': '賁'
+    },
+    10098: {
+        'slug': 'road',
+        'level': 100,
+        'characters': '路'
+    },
+    10099: {
+        'slug': 'add',
+        'level': 100,
+        'characters': '加'
+    },
+    10100: {
+        'slug': 'subjugate',
+        'level': 100,
+        'characters': '征'
+    },
+    10101: {
+        'slug': 'astray',
+        'level': 100,
+        'characters': '迷'
+    },
+    10102: {
+        'slug': 'quantity',
+        'level': 100,
+        'characters': '量'
+    },
+    10103: {
+        'slug': 'rule',
+        'level': 100,
+        'characters': '則'
+    },
+    10104: {
+        'slug': 'chastity',
+        'level': 100,
+        'characters': '貞'
+    },
+    10105: {
+        'slug': 'officer',
+        'level': 100,
+        'characters': '吏'
+    },
+    10106: {
+        'slug': 'commander',
+        'level': 100,
+        'characters': '帥'
+    },
+    10107: {
+        'slug': 'restore',
+        'level': 100,
+        'characters': '復'
+    },
+    10108: {
+        'slug': 'methodical',
+        'level': 100,
+        'characters': '侖'
+    },
 }

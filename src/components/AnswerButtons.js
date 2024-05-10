@@ -19,8 +19,8 @@ export default function AnswerButtons() {
 
 
     const modifiedOnAnswerClick = answersActive ? verifyAnswer : null;
-    console.log('AB-lesson[' + lesson + ']')
-    console.log('AB-answerOrder:' + answerOrder);
+    //console.log('AB-lesson[' + lesson + ']')
+    //console.log('AB-answerOrder:' + answerOrder);
 
     const classNameString = isDarkTheme ? "answer-buttons__card button_dark-theme" : "answer-buttons__card";
     let highlightClassName = '';

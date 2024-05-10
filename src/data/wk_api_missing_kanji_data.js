@@ -1397,7 +1397,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 10020,
         "component_subject_ids": [54, 10086],
         "meanings": ["bowl"],
-        "meaning_mnemonic": 'A *R[stone]R* on your *R[arm]R* is your *K[bowl]K*.',
+        "meaning_mnemonic": 'The *R[stone]R* sent to your *R[address]R* is a *K[bowl]K*.',
         "example_word": '茶碗, ちゃわん, rice bowl',
     },
 

@@ -1809,7 +1809,7 @@ const heisig_kanji =
       ['1531', '臼', 'mortar'],
       ['1532', '毀', 'break'],
       ['1533', '興', 'entertain'],
-      ['10020', '碗', 'bowl', '茶碗, ちゃわん, rice bowl', 'A *R[stone]R* on your *R[arm]R* is your *K[bowl]K*.']
+      ['10020', '碗', 'bowl',]
 
     ],
   '38A':
