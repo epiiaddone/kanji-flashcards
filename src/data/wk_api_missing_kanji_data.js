@@ -380,14 +380,14 @@ export const wk_api_missing_kanji_data = {
     },
     '錮': {
         "heisig_id": 623,
-        "component_subject_ids": [118, 16, 69],
+        "component_subject_ids": [118, 10013],
         "meanings": ["weld"],
-        "meaning_mnemonic": `*K[weld]K* *R[gold]R* into the *R[old]R* *R[mouth]R*`,
+        "meaning_mnemonic": `*R[Gold]R* is *R[hard]R* so you have to *K[weld]K* it`,
         "example_word": '禁錮, きんこ, imprisonment',
     },
     '咽': {
         "heisig_id": 628,
-        "component_subject_ids": [16],
+        "component_subject_ids": [16, 10032],
         "meanings": ["windpipe"],
         "meaning_mnemonic": `*R[Mouth]R* *R[causes]R* air to get into *K[windpipe]K*`,
         "example_word": '咽喉, いんこう, throat',
@@ -548,9 +548,9 @@ export const wk_api_missing_kanji_data = {
     },
     '愁': {
         "heisig_id": 967,
-        "component_subject_ids": [135, 46, 65],
+        "component_subject_ids": [10113, 65],
         "meanings": ["distress"],
-        "meaning_mnemonic": `*R[Grain]R* on *R[fire]R* causes the *R[heart]R* *K[distress]K*`,
+        "meaning_mnemonic": `In *[autumn]R*, the *R[heart]R* feels *K[distress]K*`,
         "example_word": 'N/A',
     },
     '稽': {
@@ -982,9 +982,9 @@ export const wk_api_missing_kanji_data = {
     },
     '椿': {
         "heisig_id": 1691,
-        "component_subject_ids": [23, 22, 8779],
+        "component_subject_ids": [23, 10119],
         "meanings": ["camellia"],
-        "meaning_mnemonic": `*R[tree]R* in the *R[spring]R* *R[sun]R* is *K[camellia]K*`,
+        "meaning_mnemonic": `The *R[tree]R* which looks good in *R[spring]R* is *K[camellia]K*`,
         "example_word": '椿, つばき, common camellia',
     },
     '僅': {
@@ -1299,12 +1299,12 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 2185,
         "component_subject_ids": [85, 10013],
         "meanings": ["item"],
-        "meaning_mnemonic": `*R[Hard]R* *[bamboo]R* is used to make *K[items]K*`,
+        "meaning_mnemonic": `*R[Hard]R* *R[bamboo]R* is used to make *K[items]K*`,
         "example_word": '箇所, かしょ, place',
     },
     '遵': {
         "heisig_id": 2187,
-        "component_subject_ids": [74, 10015],
+        "component_subject_ids": [114, 10015],
         "meanings": ["abide by"],
         "meaning_mnemonic": `The *R[revered]R* on *R[scooters]R* must *K[abide by]K* the law`,
         "example_word": '遵守, じゅんしゅ, abiding by',

@@ -3000,4 +3000,70 @@ export const radicalData = {
         'level': 100,
         'characters': '侖'
     },
+    10109: {
+        'slug': 'express',
+        'level': 100,
+        'characters': '表'
+    },
+    10110: {
+        'slug': 'pathetic',
+        'level': 100,
+        'characters': '哀'
+    },
+    10111: {
+        'slug': 'put together',
+        'level': 100,
+        'characters': '并'
+    },
+    10112: {
+        'slug': 'present',
+        'level': 100,
+        'characters': '呈'
+    },
+    10113: {
+        'slug': 'autumn',
+        'level': 100,
+        'characters': '秋'
+    },
+    10114: {
+        'slug': 'zodiac tiger',
+        'level': 100,
+        'characters': '寅'
+    },
+    10115: {
+        'slug': 'participate',
+        'level': 100,
+        'characters': '参'
+    },
+    10116: {
+        'slug': 'lad',
+        'level': 100,
+        'characters': '彦'
+    },
+    10117: {
+        'slug': 'respect',
+        'level': 100,
+        'characters': '敬'
+    },
+    10118: {
+        'slug': 'damage',
+        'level': 100,
+        'characters': '害'
+    },
+    10119: {
+        'slug': 'spring',
+        'level': 100,
+        'characters': '春'
+    },
+    10120: {
+        'slug': 'lifespan',
+        'level': 100,
+        'characters': '寿'
+    },
+    10121: {
+        'slug': 'dedicate',
+        'level': 100,
+        'characters': '奉'
+    },
+
 }

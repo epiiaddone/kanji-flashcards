@@ -1151,7 +1151,8 @@ const heisig_kanji_map = new Map([
       ['973', '梨', 'pear tree', '梨, なし, Japanese pear', 'Profit from pear trees'],
       ['974', '穫', 'harvest', '収穫, しゅうかく, harvest', 'Feed  harvest grain and flowers to turkey on stool'],
       ['975', '穂', 'head of a plant', '穂, ほ, ear of plant', 'The part of grain that people favor is the head of the plant'],
-      ['976', '稲', 'rice plant', '稲, いね, rice plant', 'Grain from former rice plant stuck in cleats']
+      ['976', '稲', 'rice plant', '稲, いね, rice plant', 'Grain from former rice plant stuck in cleats'],
+      ['10021', '莉', 'jasmine']
     ]],
   ['26B',
     [

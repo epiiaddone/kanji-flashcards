@@ -2666,10 +2666,10 @@ export const wk_api_kanji_data = {
     772: {
         "slug": "顔",
         "level": 10,
-        "component_subject_ids": [55, 116, 38, 184],
+        "component_subject_ids": [10116, 184],
         "amalgamation_subject_ids": [3228, 3229, 3857, 7491, 7750, 8223],
         "meanings": ["Face"],
-        "meaning_mnemonic": `Here you *R[stand]R*, a *R[hair]R*’s breadth away from the edge of a *R[cliff]R*, when out of nowhere a *R[geoduck]R* slaps you right in the *K[face]K*. Geoducks are gross, and you back away from the edge of the cliff you were standing but a hair’s breadth away from just before. Your face is all gooey from the geoduck’s slimy residue.`
+        "meaning_mnemonic": `The *R[lad]R* and the *R[geoduck]R* slap each other in the *K[face]K*.`
     },
     773: {
         "slug": "病",
@@ -3665,7 +3665,7 @@ export const wk_api_kanji_data = {
         "component_subject_ids": [93, 10108],
         "amalgamation_subject_ids": [3626, 3627, 3900, 3901, 8243],
         "meanings": ["Wheel", "Ring", "Loop", "Circle"],
-        "meaning_mnemonic": `For your *R[car]R* you shuould be *R[methodiacal]R* about how you use the *K[wheel]K*. I mean, it's generally *K[ring]K* and *K[loop]K* shaped, it just needs to be a *K[circle]K*, so it should work, right?`
+        "meaning_mnemonic": `For your *R[car]R* you should be *R[methodiacal]R* about how you use the *K[wheel]K*. I mean, it's generally *K[ring]K* and *K[loop]K* shaped, it just needs to be a *K[circle]K*, so it should work, right?`
     },
     886: {
         "slug": "選",
@@ -4748,10 +4748,10 @@ export const wk_api_kanji_data = {
     1023: {
         "slug": "警",
         "level": 17,
-        "component_subject_ids": [255, 60, 117],
+        "component_subject_ids": [10117, 117],
         "amalgamation_subject_ids": [4044, 4184, 4349, 4383, 4707, 4708, 6398, 6865, 7592],
         "meanings": ["Warn", "Admonish"],
-        "meaning_mnemonic": `You have a *R[poem]R* about *R[winter]R* that you *R[say]R* to *K[warn]K* people against going outside. It's cold and dangerous in winter! You *K[admonish]K* anyone and everyone you see going out there with your scary winter poem.`
+        "meaning_mnemonic": `You must *R[respectfully]R* *R[say]R* when you *K[warn]K* people.`
     },
     1024: {
         "slug": "恋",
@@ -6247,10 +6247,10 @@ export const wk_api_kanji_data = {
     1193: {
         "slug": "割",
         "level": 23,
-        "component_subject_ids": [78, 210, 16, 128],
+        "component_subject_ids": [10118, 128],
         "amalgamation_subject_ids": [4613, 4614, 4615, 4616, 4764, 4765, 7132, 7353, 8754],
         "meanings": ["Divide"],
-        "meaning_mnemonic": `Under the *R[roof]R* of *R[life]R* a *R[mouth]R* with a *R[knife]R* *K[divide]K*s cells to create life.`
+        "meaning_mnemonic": `The *R[damage]R* done with a *R[knife]R*, is that you *K[divide]K* stuff.`
     },
     1194: {
         "slug": "裁",
@@ -6271,10 +6271,10 @@ export const wk_api_kanji_data = {
     1196: {
         "slug": "演",
         "level": 23,
-        "component_subject_ids": [103, 78, 8763, 51, 2],
+        "component_subject_ids": [103, 10114],
         "amalgamation_subject_ids": [5874, 6177, 7506, 7507, 7508, 7598],
         "meanings": ["Acting", "Perform"],
-        "meaning_mnemonic": `There is a *R[tsunami]R* coming, so you stand on your *R[roof]R* holding a *R[leaf]R*, wearing *R[fins]R* before a *R[rice paddy]R* full of people. These are your neighbors and they're here to watch your *K[acting]K*.`
+        "meaning_mnemonic": `During the *R[tsunami]R*, the *R[zodiac tiger]R* starts *K[acting]K*.`
     },
     1197: {
         "slug": "律",
@@ -7657,10 +7657,10 @@ export const wk_api_kanji_data = {
     1369: {
         "slug": "程",
         "level": 28,
-        "component_subject_ids": [135, 16, 48],
+        "component_subject_ids": [135, 10112],
         "amalgamation_subject_ids": [5182, 5183, 5184, 5185, 5400, 7771, 8685],
         "meanings": ["Extent"],
-        "meaning_mnemonic": `The *R[Grain]R* *R[Mouth]R* *R[King]R* pours grain from his mouth for you and his other subjects. You go to him and pull his finger. When you do this, grain pours from his mouth. But we were greedy. We didn't understand the *K[extent]K* to which we were harvesting his mouth wheat.`
+        "meaning_mnemonic": `The *R[Grain]R* is *R[presented]R* to show the *K[extent]K* that it has grown.`
     },
     1370: {
         "slug": "精",
@@ -8497,18 +8497,18 @@ export const wk_api_kanji_data = {
     1457: {
         "slug": "棒",
         "level": 31,
-        "component_subject_ids": [23, 8779, 61],
+        "component_subject_ids": [23, 10121],
         "amalgamation_subject_ids": [5446, 5707, 7774, 8971],
         "meanings": ["Pole", "Rod", "Wooden Pole"],
-        "meaning_mnemonic": `A *R[tree]R* in *R[spring]R* that's nice and *R[dry]R* will make a good *K[pole]K* or *K[rod]K*. Break it out of the ground and it's just flexible enough for tons of applications.`
+        "meaning_mnemonic": `The *R[tree]R* is *R[dedicated]R* to be used as a *K[pole]K* or *K[rod]K*.`
     },
     1458: {
         "slug": "驚",
         "level": 31,
-        "component_subject_ids": [255, 60, 165],
+        "component_subject_ids": [255, 10117],
         "amalgamation_subject_ids": [5447, 5448, 5709],
         "meanings": ["Surprised"],
-        "meaning_mnemonic": `If you can write an interesting *R[poem]R* about *R[winter]R* while riding on a *R[horse]R*, I’ll be pretty *K[surprised]K*. It’s hard enough to write a poem as it is, let alone an interesting one. And then you’re riding on a horse and the poem has to be about winter? Heck, I’d be surprised if you didn’t fall off the horse and injure yourself.`
+        "meaning_mnemonic": `The *R[horse]R* is show *R[respect]R*, which is *K[surprising]K*.`
     },
     1459: {
         "slug": "嘆",
@@ -10279,10 +10279,10 @@ export const wk_api_kanji_data = {
     1686: {
         "slug": "併",
         "level": 38,
-        "component_subject_ids": [75, 8767, 171],
+        "component_subject_ids": [75, 10111],
         "amalgamation_subject_ids": [6180, 6181],
         "meanings": ["Join"],
-        "meaning_mnemonic": `A *R[leader]R* with *R[horns]R* takes a *R[lantern]R* and searches for people to *K[join]K* him. He needs more people to join his cause so he can get his horns removed. He’s embarrassed of them which is why he only travels at night, hence the lantern.`
+        "meaning_mnemonic": `The *R[leader]R* *R[puts together]R* stuff by *K[joining]K* it.`
     },
     1687: {
         "slug": "傾",
@@ -12039,10 +12039,10 @@ export const wk_api_kanji_data = {
     1889: {
         "slug": "梨",
         "level": 44,
-        "component_subject_ids": [135, 128, 23],
+        "component_subject_ids": [10023, 23],
         "amalgamation_subject_ids": [6808],
         "meanings": ["Pear"],
-        "meaning_mnemonic": `The *R[grain]R* you cut off a *R[tree]R* with a *R[knife]R* is a *K[pear]K*. I don't know if you've ever seen Asian pears, but they're pretty big and sturdy. You can't just pick them off of the tree, you need the help of a knife. That's why this is a pear, and not an apple or peach or something else.`
+        "meaning_mnemonic": `The *R[profit]R* from *R[trees]R* is the *K[pear]K*.`
     },
     1892: {
         "slug": "叫",
@@ -12687,10 +12687,10 @@ export const wk_api_kanji_data = {
     1974: {
         "slug": "俵",
         "level": 46,
-        "component_subject_ids": [75, 210, 8770],
+        "component_subject_ids": [75, 10109],
         "amalgamation_subject_ids": [7047, 7048, 7155],
         "meanings": ["Sack"],
-        "meaning_mnemonic": `The *R[leader]R* of your sad *R[life]R* aims a *R[kick]R* at the *K[sack]K* you are holding. This leader is in charge of making your life sad. The next step in the leader making your life suck is attempting to kick your sack out of your hands. Your sack holds all your valuables, so it's not something you want to have kicked.`
+        "meaning_mnemonic": `The *R[leader]R* is *R[exoressing]R* himself using a *K[sack]K*.`
     },
     1975: {
         "slug": "綿",
@@ -12807,10 +12807,10 @@ export const wk_api_kanji_data = {
     1989: {
         "slug": "塀",
         "level": 47,
-        "component_subject_ids": [17, 37, 8767, 171],
+        "component_subject_ids": [17, 37, 10111],
         "amalgamation_subject_ids": [7088, 7089],
         "meanings": ["Fence"],
-        "meaning_mnemonic": `In the *R[dirt]R* there are *R[flag]R*s and *R[horns]R* lined up with a *R[lantern]R* attached to them, making a *K[fence]K*. It's a little weird looking, but these things are definitely supposed to fence something in.`
+        "meaning_mnemonic": `In the *R[dirt]R* there are *R[flags]R* *R[put together]R* to make a *K[fence]K*.`
     },
     1990: {
         "slug": "墜",
@@ -13511,10 +13511,10 @@ export const wk_api_kanji_data = {
     2078: {
         "slug": "衰",
         "level": 49,
-        "component_subject_ids": [8, 22, 8770],
+        "component_subject_ids": [1, 10110],
         "amalgamation_subject_ids": [7341, 7342, 7343],
         "meanings": ["Decline"],
-        "meaning_mnemonic": `You take a *R[lid]R*, and aiming it at the *R[sun]R* you *R[kick]R* it into the air and eventually it begins to *K[decline]K* and crashes into the sun, causing it to supernova. Imagine kicking this lid so hard that it flies into space. See it fly up to the peak of its arch, then watch as it begins the decline until it finally collides with the sun.`
+        "meaning_mnemonic": `The *R[ground]R* is *R[pathetic]R* and it's condition will only *K[decline]K*.`
     },
     2079: {
         "slug": "奨",
@@ -13921,10 +13921,10 @@ export const wk_api_kanji_data = {
     8993: {
         "slug": "餅",
         "level": 42,
-        "component_subject_ids": [139, 8767, 171],
+        "component_subject_ids": [139, 10111],
         "amalgamation_subject_ids": [8999, 9003],
         "meanings": ["Mochi", "Sticky Rice Cake"],
-        "meaning_mnemonic": `What do you *R[eat]R* if you’re wearing *R[horns]R* and surrounded by *R[lantern]R*s? *K[Mochi]K* (or *K[sticky rice cake]K*s) of course!`
+        "meaning_mnemonic": `*R[Eat]R* food that has to be *R[put together]R* is *K[Mochi]K.`
     },
     9312: {
         "slug": "肢",
@@ -14009,10 +14009,10 @@ export const wk_api_kanji_data = {
     2128: {
         "slug": "瓶",
         "level": 51,
-        "component_subject_ids": [8767, 171, 10050],
+        "component_subject_ids": [10111, 10050],
         "amalgamation_subject_ids": [7813, 7814, 7815, 7816, 7817, 8113],
         "meanings": ["Bottle", "Jar"],
-        "meaning_mnemonic": `A *R[lantern]R* with *R[horns]R* with a *R[tile]R* pattern is actually a fancy *K[bottle]K*.`
+        "meaning_mnemonic": `*R[Put together]R* *R[tiles]R* and it will make a fancy *K[bottle]K*.`
     },
     2129: {
         "slug": "耕",
@@ -14637,10 +14637,10 @@ export const wk_api_kanji_data = {
     2207: {
         "slug": "惨",
         "level": 53,
-        "component_subject_ids": [232, 140, 18, 38],
+        "component_subject_ids": [232, 10015],
         "amalgamation_subject_ids": [7982, 7983, 7984, 7985, 7986],
         "meanings": ["Disaster"],
-        "meaning_mnemonic": `If you get a *R[big]R* *R[hair]R* stuck in your *R[private]R* *R[soul]R* it will be a *K[disaster]K*! Have you ever gotten a hair in your eye or your mouth that you just couldn't get out? You cough, your eyes water, it's awful! You can't focus on anything until it's gone. Now imagine if a big 'ol hair got stuck in your own private soul!!! Disaster!!!`
+        "meaning_mnemonic": `If your *R[soul]R* *R[participates]R*, it will be a *K[disaster]K*!`
     },
     2208: {
         "slug": "虐",
@@ -14773,10 +14773,10 @@ export const wk_api_kanji_data = {
     2224: {
         "slug": "莉",
         "level": 53,
-        "component_subject_ids": [90, 135, 128],
+        "component_subject_ids": [90, 10023],
         "amalgamation_subject_ids": [9104],
         "meanings": ["Jasmine"],
-        "meaning_mnemonic": `You cut the *R[flowers]R* off the *R[grain]R* with your *R[knife]R*. The flowers that fall off are *K[jasmine]K* flowers.`
+        "meaning_mnemonic": `The *R[flowers]R* that make a lot of *R[profit]R* are *K[jasmine]K* flowers.`
     },
     2225: {
         "slug": "鯨",
@@ -15475,10 +15475,10 @@ export const wk_api_kanji_data = {
     2311: {
         "slug": "轄",
         "level": 56,
-        "component_subject_ids": [93, 78, 210, 16],
+        "component_subject_ids": [93, 10118],
         "amalgamation_subject_ids": [8325, 8326, 8327],
         "meanings": ["Control"],
-        "meaning_mnemonic": `When you drive a *R[car]R*, everyone under your *R[roof]R* is putting their *R[life]R* in your hands, even if they don't say it with their *R[mouth]R*—it's still under your *K[control]K*.`
+        "meaning_mnemonic": `When you drive a *R[car]R*, there is the potential for a lot of *R[damage]R*, so you need *K[control]K*.`
     },
     2312: {
         "slug": "弦",
@@ -15715,10 +15715,10 @@ export const wk_api_kanji_data = {
     2341: {
         "slug": "俸",
         "level": 57,
-        "component_subject_ids": [75, 8779, 61],
+        "component_subject_ids": [75, 10121],
         "amalgamation_subject_ids": [8346, 8347],
         "meanings": ["Salary"],
-        "meaning_mnemonic": `The *R[leader]R* says *R[spring]R* is looking *R[dry]R*, so you'll need your *K[salary]K* in advance.`
+        "meaning_mnemonic": `The *R[leader]R* is *R[dedicated]R* because he has a high *K[salary]K*.`
     },
     2342: {
         "slug": "醸",
@@ -16301,10 +16301,10 @@ export const wk_api_kanji_data = {
     2415: {
         "slug": "姻",
         "level": 59,
-        "component_subject_ids": [19, 16, 18],
+        "component_subject_ids": [19, 10032],
         "amalgamation_subject_ids": [8528],
         "meanings": ["Marry"],
-        "meaning_mnemonic": `You meet a *R[woman]R* whose *R[mouth]R* is *R[big]R* and you instantly know this is the person you want to *K[marry]K*.`
+        "meaning_mnemonic": `It's *R[women]R* who *R[cause]R* *K[marrige]K*.`
     },
     2416: {
         "slug": "擬",
@@ -16365,10 +16365,10 @@ export const wk_api_kanji_data = {
     2423: {
         "slug": "鋳",
         "level": 59,
-        "component_subject_ids": [118, 377, 5, 74],
+        "component_subject_ids": [118, 10120],
         "amalgamation_subject_ids": [8589],
         "meanings": ["Cast", "Casting"],
-        "meaning_mnemonic": `Take *R[three]R* *R[measurement]R*s of *R[gold]R* and *R[slide]R* them into a mold to make a *K[cast]K*! You'll have cast three gold swords, or goblets, or ducks. Just make sure you follow those directions, or your casting won't come out right.`
+        "meaning_mnemonic": `*R[Gold]R* has an excellent *R[lifespan]R* which makes it great to for a+ *K[cast]K*.`
     },
     2424: {
         "slug": "蔑",
