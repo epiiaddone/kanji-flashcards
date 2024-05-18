@@ -3065,5 +3065,50 @@ export const radicalData = {
         'level': 100,
         'characters': '奉'
     },
+    10122: {
+        'slug': 'return',
+        'level': 100,
+        'characters': '戻'
+    },
+    10123: {
+        'slug': 'contrary',
+        'level': 100,
+        'characters': '却'
+    },
+    10124: {
+        'slug': 'wholesale',
+        'level': 100,
+        'characters': '卸'
+    },
+    10125: {
+        'slug': 'religion',
+        'level': 100,
+        'characters': '宗'
+    },
+    10126: {
+        'slug': 'guess',
+        'level': 100,
+        'characters': '察'
+    },
+    10126: {
+        'slug': 'military officer',
+        'level': 100,
+        'characters': '尉'
+    },
+    10127: {
+        'slug': 'prohibit',
+        'level': 100,
+        'characters': '禁'
+    },
+    10128: {
+        'slug': 'pledge',
+        'level': 100,
+        'characters': '契'
+    },
+    10129: {
+        'slug': 'interior',
+        'level': 100,
+        'characters': '奥'
+    },
 
 }

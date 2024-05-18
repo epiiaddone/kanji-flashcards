@@ -107,16 +107,16 @@ export const wk_api_missing_kanji_data = {
     },
     '厘': {
         "heisig_id": 190,
-        "component_subject_ids": [116, 5],
+        "component_subject_ids": [116, 125],
         "meanings": ["rin"],
         "meaning_mnemonic": `The *R[village]R* under the *R[cliff]R* needs to be precise as a *K[rin]K*`,
         "example_word": '厘, りん, 0.3mm',
     },
     '宵': {
         "heisig_id": 201,
-        "component_subject_ids": [116, 5],
+        "component_subject_ids": [78, 8765, 43],
         "meanings": ["wee hours"],
-        "meaning_mnemonic": `In the *K[wee hours]K* the *R[triceratops]R* jumps from *R[roof]R* to *K[moon]K*`,
+        "meaning_mnemonic": `In the *K[wee hours]K* the *R[triceratops]R* jumps from *R[roof]R* to *R[moon]R*`,
         "example_word": 'N/A',
     },
     '桂': {
@@ -1381,9 +1381,9 @@ export const wk_api_missing_kanji_data = {
     },
     '襖': {
         "heisig_id": 10017,
-        "component_subject_ids": [80, 3, 18, 164, 29],
+        "component_subject_ids": [80, 10129],
         "meanings": ["fusuma"],
-        "meaning_mnemonic": `The *R[spirit]R* wants to *R[drop]R* a *R[big]R* *R[sickle]R* on your *R[head]R*. So you should close the *K[fusuma]K* to keep him out.`,
+        "meaning_mnemonic": `There is a *R[spirit]R* in the *R[interior]R* of your home. You can close the *K[fusuma]K* to keep him out.`,
         "example_word": '襖, ふすま, fusuma',
     },
     '賑': {
