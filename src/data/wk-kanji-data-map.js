@@ -2493,7 +2493,8 @@ const heisig_kanji_map = new Map([
       ['2105', '偶', 'accidentally', '偶然, ぐうぜん, coincedence', 'Leader accidentally makes Splinter'],
       ['2106', '遇', 'treatment', '', 'Splinter uses scooter to go for treatment'],
       ['2107', '愚', 'foolish', '愚か, おろか, foolish', 'Foolish to give Splinter your heart'],
-      ['2108', '隅', 'corner', '隅, すみ, corner', 'Splinter likes the corner of the building']
+      ['2108', '隅', 'corner', '隅, すみ, corner', 'Splinter likes the corner of the building'],
+      ['10022', '雀', 'sparrow']
     ]],
   ['53C',
     [

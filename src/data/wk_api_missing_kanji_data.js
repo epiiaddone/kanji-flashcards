@@ -632,7 +632,7 @@ export const wk_api_missing_kanji_data = {
     },
     '挫': {
         "heisig_id": 1101,
-        "component_subject_ids": [63, 312, 17],
+        "component_subject_ids": [63, 9, 17],
         "meanings": ["sprain"],
         "meaning_mnemonic": `Two *R[people]R* *K[sprain]K* their *R[fingers]R* lifting *R[dirt]R*`,
         "example_word": '挫折, ざせつ, setback',
@@ -802,7 +802,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 1420,
         "component_subject_ids": [170, 10018],
         "meanings": ["cavern"],
-        "meaning_mnemonic": `*R[hole]R* that you mush *R[yield]R* is a *K[cavern]K*`,
+        "meaning_mnemonic": `*R[hole]R* that you must *R[yield]R* is a *K[cavern]K*`,
         "example_word": 'N/A',
     },
     '窪': {
@@ -1374,7 +1374,7 @@ export const wk_api_missing_kanji_data = {
     },
     '鹸': {
         "heisig_id": 10016,
-        "component_subject_ids": [8757, 143, 31, 3],
+        "component_subject_ids": [8785, 143, 31, 3],
         "meanings": ["salt"],
         "meaning_mnemonic": `The *R[squid]R* has a *R[fortune]R* that he will get *R[drops]R* of *R[treasure]R*. This is *K[salt]K*.`,
         "example_word": '石鹸, せっけん, soap',
@@ -1400,6 +1400,12 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": 'The *R[stone]R* sent to your *R[address]R* is a *K[bowl]K*.',
         "example_word": '茶碗, ちゃわん, rice bowl',
     },
-
+    '雀': {
+        "heisig_id": 10022,
+        "component_subject_ids": [198, 240],
+        "meanings": ["sparrow"],
+        "meaning_mnemonic": 'There are only a *R[few]R* *R[turkeys]R*, so you have to eat *K[sparrow]K*.',
+        "example_word": '雀, すずめ, sparrow',
+    },
 }
 
