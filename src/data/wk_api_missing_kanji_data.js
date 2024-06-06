@@ -1193,7 +1193,7 @@ export const wk_api_missing_kanji_data = {
     '畏': {
         "heisig_id": 2069,
         "component_subject_ids": [51, 8770],
-        "meanings": ["zodiac dragon"],
+        "meanings": ["apprehensive"],
         "meaning_mnemonic": `*K[Apprehensive]K* to *R[kick]R* in *R[rice paddy]R*`,
         "example_word": '畏まりました, かしこまりました, certainly (teineigo)',
     },

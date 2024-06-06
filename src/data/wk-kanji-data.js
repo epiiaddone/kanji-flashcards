@@ -737,7 +737,8 @@ const heisig_kanji =
       ['616', '習', 'learn', '習う, ならう, to learn', 'Learn where white feathers come from'],
       ['617', '翌', 'next', '翌日, よくじつ, next day', 'Stand next to the feathers'],
       ['618', '曜', 'weekday', '曜日, ようび, week day', 'Wolverine chases turkeys on weekdays'],
-      ['619', '濯', 'laundry', '濯ぐ, すすぐ, to rinse', 'Tsunami washes wolverine and turkey']
+      ['619', '濯', 'laundry', '濯ぐ, すすぐ, to rinse', 'Tsunami washes wolverine and turkey'],
+      ['10023','翔','fly']
     ],
   '22A':
     [

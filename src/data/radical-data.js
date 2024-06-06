@@ -2901,7 +2901,7 @@ export const radicalData = {
         'characters': '列'
     },
     10090: {
-        'slug': 'row',
+        'slug': 'in season',
         'level': 100,
         'characters': '旬'
     },
@@ -3135,5 +3135,84 @@ export const radicalData = {
         'level': 100,
         'characters': '帚'
     },
-
+    10136: {
+        'slug': 'trust',
+        'level': 100,
+        'characters': '頼'
+    },
+    10137: {
+        'slug': 'prefect',
+        'level': 100,
+        'characters': '完'
+    },
+    10138: {
+        'slug': 'squad',
+        'level': 100,
+        'characters': '隊'
+    },
+    10139: {
+        'slug': 'demand',
+        'level': 100,
+        'characters': '需'
+    },
+    10140: {
+        'slug': 'task',
+        'level': 100,
+        'characters': '務'
+    },
+    10141: {
+        'slug': 'boast',
+        'level': 100,
+        'characters': '喬'
+    },
+    10142: {
+        'slug': 'shoot',
+        'level': 100,
+        'characters': '射'
+    },
+    10143: {
+        'slug': 'think',
+        'level': 100,
+        'characters': '考'
+    },
+    10144: {
+        'slug': 'robust',
+        'level': 100,
+        'characters': '壮'
+    },
+    10145: {
+        'slug': 'grandchild',
+        'level': 100,
+        'characters': '孫'
+    },
+    10146: {
+        'slug': 'how many',
+        'level': 100,
+        'characters': '幾'
+    },
+    10147: {
+        'slug': 'normal',
+        'level': 100,
+        'characters': '普'
+    },
+    10148: {
+        'slug': 'ride',
+        'level': 100,
+        'characters': '乗'
+    },
+    10149: {
+        'slug': 'excel',
+        'level': 100,
+        'characters': '秀'
+    },
+    10150: {
+        'slug': 'get a position',
+        'level': 100,
+        'characters': '就'
+    },
+    10151: {
+        'slug': 'ritual',
+        'level': 100,
+        'characters': '式'
+    }
 }
