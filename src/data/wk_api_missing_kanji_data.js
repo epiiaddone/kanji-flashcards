@@ -296,16 +296,16 @@ export const wk_api_missing_kanji_data = {
     },
     '謁': {
         "heisig_id": 489,
-        "component_subject_ids": [112, 22, 14, 57],
+        "component_subject_ids": [112, 22, 10047],
         "meanings": ["audience"],
-        "meaning_mnemonic": `When *R[say]R*ing about a *R[spoon]R* the *R[sun]R* in *R[prison]R*, one would like an *K[audience]K*`,
+        "meaning_mnemonic": `You *R[say]R* "*R[smell]R* the *R[sun]R*" to the *K[audience]K*.`,
         "example_word": 'N/A',
     },
     '褐': {
         "heisig_id": 490,
-        "component_subject_ids": [80, 22, 14, 57],
+        "component_subject_ids": [80, 22, 10047],
         "meanings": ["brown"],
-        "meaning_mnemonic": `*R[spirit]R* visits *R[prison]R* *R[spoon]R* in *R[sun]R* for *K[brown]K* things?!`,
+        "meaning_mnemonic": `The *R[spirit]R* *R[smells]R* the *R[sun]R* which is *K[brown]K*`,
         "example_word": '褐色, かっしょく, dark brown',
     },
     '葛': {
@@ -562,9 +562,9 @@ export const wk_api_missing_kanji_data = {
     },
     '萎': {
         "heisig_id": 986,
-        "component_subject_ids": [90, 135, 19],
+        "component_subject_ids": [90, 10151],
         "meanings": ["numb"],
-        "meaning_mnemonic": `*R[Flowers]R* and *R[grain]R* make the *R[woman]R* *K[numb]K*`,
+        "meaning_mnemonic": `*R[Flowers]R* make the *R[committee]R* *K[numb]K*`,
         "example_word": '萎む, しぼむ, to wither',
     },
     '楼': {
@@ -1407,5 +1407,12 @@ export const wk_api_missing_kanji_data = {
         "meaning_mnemonic": 'There are only a *R[few]R* *R[turkeys]R*, so you have to eat *K[sparrow]K*.',
         "example_word": '雀, すずめ, sparrow',
     },
+    '惚': {
+        "heisig_id": 10024,
+        "component_subject_ids": [232, 173, 65],
+        "meanings": ["fall in love"],
+        "meaning_mnemonic": '*R[Heart]R* gets *R[wings]R* and your *R[soul]R* will fly. Nonsense like this must mean *K[falling in love]K*.',
+        "example_word": '惚れる, ほれる, to fall in love',
+    }
 }
 

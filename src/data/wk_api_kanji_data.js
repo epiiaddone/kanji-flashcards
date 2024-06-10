@@ -2790,7 +2790,7 @@ export const wk_api_kanji_data = {
     1029: {
         "slug": "試",
         "level": 9,
-        "component_subject_ids": [117, 10151],
+        "component_subject_ids": [117, 10064],
         "amalgamation_subject_ids": [4147, 4148, 4149, 4150, 4165, 4354, 6032],
         "meanings": ["Try", "Attempt"],
         "meaning_mnemonic": `You *R[say]R* a *R[ritual]R* before you *K[try]K* or *K[attempt]K* things.`
@@ -5949,10 +5949,10 @@ export const wk_api_kanji_data = {
     1156: {
         "slug": "誕",
         "level": 22,
-        "component_subject_ids": [117, 206, 229],
+        "component_subject_ids": [117, 10052],
         "amalgamation_subject_ids": [4498, 4659, 4969],
         "meanings": ["Birth"],
-        "meaning_mnemonic": `They *R[say]R* *R[yoga]R* is the *R[correct]R* way to go through *K[birth]K*. Birth isn't easy, but people keep telling you that yoga is the right way to prepare and actually do it.`
+        "meaning_mnemonic": `What's the worst thing to *R[say]R* has to be *R[prolonged]R*: *K[birth]K*, because it's ouchy.`
     },
     1157: {
         "slug": "脱",

@@ -815,6 +815,7 @@ const heisig_kanji_map = new Map([
       ['684', '添', 'append', '添える, そえる, to garnish', 'Tsunami from heaven caused small drops to append to you'],
       ['685', '必', 'certain', '必要, ひつよう, necessary', 'Radical: certain'],
       ['686', '泌', 'secrete', '沁み沁み, しみじみ, keenly', 'Tsunami is certain to secrete'],
+      ['10024', '惚', 'fall in love', '惚れる, ほれる, to fall in love']
     ]],
   ['23A',
     [
