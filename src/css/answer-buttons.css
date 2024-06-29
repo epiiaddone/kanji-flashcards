@@ -7,7 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
 .answer-buttons>div {
@@ -21,6 +21,7 @@
   padding: 0.4rem 0.7rem;
   min-width: 3rem;
   text-transform: capitalize;
+  font-size: 1.2rem;
 }
 
 @media (min-width:500px) {

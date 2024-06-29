@@ -3085,11 +3085,6 @@ export const radicalData = {
         'level': 100,
         'characters': '察'
     },
-    10126: {
-        'slug': 'military officer',
-        'level': 100,
-        'characters': '尉'
-    },
     10127: {
         'slug': 'prohibit',
         'level': 100,
@@ -3219,6 +3214,10 @@ export const radicalData = {
         'slug': 'prolong',
         'level': 100,
         'characters': '延'
+    },
+    10153: {
+        'slug': 'military officer',
+        'level': 100,
+        'characters': '尉'
     }
-
 }

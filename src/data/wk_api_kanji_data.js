@@ -1612,10 +1612,10 @@ export const wk_api_kanji_data = {
     640: {
         "slug": "海",
         "level": 6,
-        "component_subject_ids": [103, 8762, 107],
+        "component_subject_ids": [103, 379],
         "amalgamation_subject_ids": [2917, 2918, 2984, 3276, 3794, 5799, 5885, 6121, 6927, 7474, 7569, 8355, 8409, 8647, 8662],
         "meanings": ["Sea", "Ocean"],
-        "meaning_mnemonic": `A *R[tsunami]R* is coming, so you point your *R[gun]R* out the *R[window]R* at it. "You better turn back, *K[sea]K*, or I'll shoot!"`
+        "meaning_mnemonic": `*R[Every]R* *R[tsunami]R* comes from the *K[sea]K*.`
     },
     641: {
         "slug": "点",
@@ -4620,10 +4620,10 @@ export const wk_api_kanji_data = {
     1007: {
         "slug": "梅",
         "level": 17,
-        "component_subject_ids": [23, 8762, 107],
+        "component_subject_ids": [23, 379],
         "amalgamation_subject_ids": [4015, 4016, 4214, 9271],
         "meanings": ["Ume", "Japanese Plum"],
-        "meaning_mnemonic": `Aiming your *R[gun]R* out the *R[window]R*, you shoot at a *R[tree]R* filled with *K[ume]K*, *K[Japanese plum]K*s. This is, in your opinion, the best way to harvest the plums – shooting at them out your window with a gun.`
+        "meaning_mnemonic": `*R[Every]R* *R[tree]R* produces K[Japanese plums]K*.`
     },
     1008: {
         "slug": "無",

@@ -4,7 +4,6 @@ import ThemeToggle from "./ThemeToggle";
 import { useThemeContext } from "../context/theme_context";
 
 
-
 export default function GameHeader() {
     const { isDarkTheme } = useThemeContext();
 
