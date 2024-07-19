@@ -408,7 +408,7 @@ export const wk_api_missing_kanji_data = {
     },
     '惧': {
         "heisig_id": 680,
-        "component_subject_ids": [232],
+        "component_subject_ids": [232, 10155],
         "meanings": ["disquieting"],
         "meaning_mnemonic": `*R[Soul]R* is a good *R[tool]R* for *K[disquieting]K*`,
         "example_word": 'N/A',
@@ -417,7 +417,7 @@ export const wk_api_missing_kanji_data = {
         "heisig_id": 682,
         "component_subject_ids": [232, 10070],
         "meanings": ["yearn (rare)"],
-        "meaning_mnemonic": `It's rare for *R[Soul]R* to *K[yearn]K*s for a beautiful *R[scene]R*`,
+        "meaning_mnemonic": `It's rare for *R[Soul]R* to *K[yearn]K* for a beautiful *R[scene]R*`,
         "example_word": 'N/A',
     },
     '拭': {

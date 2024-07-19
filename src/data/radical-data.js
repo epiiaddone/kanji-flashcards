@@ -3219,5 +3219,31 @@ export const radicalData = {
         'slug': 'military officer',
         'level': 100,
         'characters': '尉'
+    },
+    10154: {
+        'slug': 'persue',
+        'level': 100,
+        'characters': '逐'
+    },
+    10155: {
+        'slug': 'tool',
+        'level': 100,
+        'characters': '具'
+    },
+    10156: {
+        'slug': 'juvenile',
+        'level': 100,
+        'characters': '童'
+    },
+    10157: {
+        'slug': 'commandment',
+        'level': 100,
+        'characters': '戒'
+    },
+    10158: {
+        'slug': 'punish',
+        'level': 100,
+        'characters': '刑'
     }
+
 }

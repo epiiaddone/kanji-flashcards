@@ -3468,7 +3468,7 @@ export const wk_api_kanji_data = {
     861: {
         "slug": "想",
         "level": 13,
-        "component_subject_ids": [10032, 65],
+        "component_subject_ids": [10033, 65],
         "amalgamation_subject_ids": [3524, 3543, 3544, 3545, 3589, 3990, 7083, 7694, 8607],
         "meanings": ["Concept"],
         "meaning_mnemonic": `*R[Mutual]R* *R[hearts]R* express some sort of *K[concept]K*.`
@@ -5354,10 +5354,10 @@ export const wk_api_kanji_data = {
     1102: {
         "slug": "械",
         "level": 20,
-        "component_subject_ids": [23, 194, 106],
+        "component_subject_ids": [23, 10157],
         "amalgamation_subject_ids": [4295],
         "meanings": ["Contraption"],
-        "meaning_mnemonic": `Under a *R[tree]R* a *R[drunkard]R* sits with *R[twenty]R* little *K[contraptions]K*. There's little electronic ones, little bopping ones, little walking ones... twenty of them.`
+        "meaning_mnemonic": `There is a *R[commandment]R* that *R[tree]R*s must be used to make *K[contraptions]K*.`
     },
     1103: {
         "slug": "確",
@@ -6559,10 +6559,10 @@ export const wk_api_kanji_data = {
     1232: {
         "slug": "型",
         "level": 24,
-        "component_subject_ids": [171, 128, 17],
+        "component_subject_ids": [10158, 17],
         "amalgamation_subject_ids": [4703, 4704, 4705, 4770, 5740, 6819],
         "meanings": ["Model", "Type"],
-        "meaning_mnemonic": `There is a *R[lantern]R* on top of a *R[knife]R* in the *R[dirt]R*. You walk up to take the knife and lantern when you realize it's just a *K[model]K*. It all looked real from far away, but now that you're up close you can see none of it is real.`
+        "meaning_mnemonic": `Your *R[punishment]R* is to use *R[dirt]R* to make a *K[model]K*.`
     },
     1233: {
         "slug": "庁",
@@ -10876,7 +10876,7 @@ export const wk_api_kanji_data = {
         "component_subject_ids": [144, 90, 10083],
         "amalgamation_subject_ids": [6421, 6422, 6423],
         "meanings": ["Seize"],
-        "meaning_mnemonic": `You are *R[counting ships]R* to tranport flowers, when an *R[animal]R* is going after them, you must *K[seize]K* this animal.`
+        "meaning_mnemonic": `You are *R[counting ships]R* to tranport *R[flowers]R*, when an *R[animal]R* is going after them, you must *K[seize]K* this animal.`
     },
     1763: {
         "slug": "茂",
@@ -11791,7 +11791,7 @@ export const wk_api_kanji_data = {
     1856: {
         "slug": "慰",
         "level": 43,
-        "component_subject_ids": [10126, 65],
+        "component_subject_ids": [10153, 65],
         "amalgamation_subject_ids": [6710, 6711, 6712, 6713, 8691],
         "meanings": ["Consolation"],
         "meaning_mnemonic": `The *R[military officer's]R* *R[heart]R* is in need of *K[consolation]K*.`
@@ -13231,10 +13231,10 @@ export const wk_api_kanji_data = {
     2042: {
         "slug": "遂",
         "level": 48,
-        "component_subject_ids": [114, 8767, 233],
+        "component_subject_ids": [10154, 8767],
         "amalgamation_subject_ids": [7239, 7240, 7444],
         "meanings": ["Accomplish"],
-        "meaning_mnemonic": `A *R[scooter]R* with *R[horns]R* with a *R[pig]R* riding on it will be able to *K[accomplish]K* anything.`
+        "meaning_mnemonic": `To *R[persue]R* the beast with *R[horns]R* is quite an *K[accomplishment]K*.`
     },
     2043: {
         "slug": "班",
@@ -13924,7 +13924,7 @@ export const wk_api_kanji_data = {
         "component_subject_ids": [139, 10111],
         "amalgamation_subject_ids": [8999, 9003],
         "meanings": ["Mochi", "Sticky Rice Cake"],
-        "meaning_mnemonic": `*R[Eat]R* food that has to be *R[put together]R* is *K[Mochi]K.`
+        "meaning_mnemonic": `*R[Eat]R* food that has to be *R[put together]R* is *K[Mochi]K*.`
     },
     9312: {
         "slug": "肢",
@@ -15125,7 +15125,7 @@ export const wk_api_kanji_data = {
     2268: {
         "slug": "悼",
         "level": 55,
-        "component_subject_ids": [232, 10062],
+        "component_subject_ids": [232, 10063],
         "amalgamation_subject_ids": [8198, 8199],
         "meanings": ["Grieve", "Mourn"],
         "meaning_mnemonic": `The *R[soul]R* in the haunted *R[table]R* is *K[grieving]K*.`
@@ -16411,10 +16411,10 @@ export const wk_api_kanji_data = {
     2429: {
         "slug": "憧",
         "level": 59,
-        "component_subject_ids": [232, 55, 125],
+        "component_subject_ids": [232, 10156],
         "amalgamation_subject_ids": [8540, 8541],
         "meanings": ["Long For", "Yearn"],
-        "meaning_mnemonic": `Your *R[soul]R* *R[stand]R*s in the *R[village]R* you *K[long for]K*. It's the village you're from, and no matter how far you go, no matter how old you get, your soul is still there, and you *K[yearn]K* for it.`
+        "meaning_mnemonic": `The *R[soul]R* is *R[juvenile]R* and it still *K[longs for]K* things.`
     },
     2430: {
         "slug": "慶",
