@@ -3,6 +3,7 @@ import { BUTTON_ORDER_VALUES, useLessonContext } from "../context/lesson_context
 import { getScoreColorClassName } from "../utils/scoreColors";
 import { getSortedLessons } from "../utils/sortLessonButtons";
 import { Link } from "react-router-dom";
+import heisig_kanji from "../data/wk-kanji-data";
 
 export default function LessonSelect() {
     const { isDarkTheme } = useThemeContext();
@@ -51,7 +52,10 @@ export default function LessonSelect() {
                                 key={lesson}
                                 data-lesson={lesson}
                                 onClick={() => { selectLesson(lesson) }}>
-                                <Link to="/game">{lesson}: {lessonScore || 0}%</Link>
+                                <Link to="/game" className="lesson-select__link">
+                                    <span className="lesson-select__link--kanji">{heisig_kanji[lesson][0][1] || lesson}</span>
+                                    {lessonScore || 0}%
+                                </Link>
                             </div>
                         )
                     }

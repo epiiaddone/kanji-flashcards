@@ -55,3 +55,13 @@
   padding: 0.5rem;
   text-align: center;
 }
+
+.lesson-select__link {
+  display: flex;
+  align-items: center;
+}
+
+.lesson-select__link--kanji {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
